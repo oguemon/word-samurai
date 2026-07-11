@@ -71,6 +71,9 @@ const WordListSection: FC<{
           <li key={word.id}>
             <Link to={`/words/${word.id}`} className={styles.wordRow}>
               <span className={styles.term}>{word.term}</span>
+              {word.senses.length > 0 && (
+                <span className={styles.sense}>{word.senses[0].ja}</span>
+              )}
               <span className={styles.arrow} aria-hidden="true">
                 ›
               </span>
