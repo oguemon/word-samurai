@@ -1,10 +1,11 @@
-import { useEffect, type FC } from 'react';
+import { useEffect, type FC, type ReactNode } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { PosBadge } from '../components/PosBadge';
 import { SpeakButton } from '../components/SpeakButton';
 import { dictionary } from '../data/dictionary';
 import { useWordStatus, type WordStatus } from '../hooks/useWordStatus';
 import { formatDateTime, formatRate } from '../lib/format';
+import { findTermSpan } from '../lib/highlight';
 import { speakTerm, stopSpeaking } from '../lib/speech';
 import styles from './WordPage.module.css';
 
@@ -64,7 +65,7 @@ export const WordPage: FC = () => {
           <h2 className={styles.cardTitle}>例文</h2>
           <SpeakButton term={word.example.en} label="例文" small />
         </div>
-        <p className={styles.exampleEn}>{word.example.en}</p>
+        <p className={styles.exampleEn}>{highlightTerm(word.term, word.example.en)}</p>
         <p className={styles.exampleJa}>{word.example.ja}</p>
       </section>
 
@@ -99,6 +100,20 @@ export const WordPage: FC = () => {
         </button>
       </div>
     </div>
+  );
+};
+
+/** 例文中の「その単語」に当たる箇所（活用形を含む）へ下線を引いて返す */
+const highlightTerm = (term: string, sentence: string): ReactNode => {
+  const span = findTermSpan(term, sentence);
+  if (!span) return sentence;
+  const [start, end] = span;
+  return (
+    <>
+      {sentence.slice(0, start)}
+      <u className={styles.exampleHit}>{sentence.slice(start, end)}</u>
+      {sentence.slice(end)}
+    </>
   );
 };
 
