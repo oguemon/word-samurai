@@ -33,7 +33,15 @@
   padding: 16px;
 }
 
+.termRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .term {
+  min-width: 0;
   font-size: 34px;
   font-weight: 800;
   line-height: 1.2;

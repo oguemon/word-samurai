@@ -1,5 +1,6 @@
 import { useMemo, type FC } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
+import { SpeakButton } from '../components/SpeakButton';
 import { TimerBar } from '../components/TimerBar';
 import { dictionary } from '../data/dictionary';
 import { useQuizSession, type QuizFeedback } from '../hooks/useQuizSession';
@@ -68,7 +69,10 @@ const QuestionView: FC<QuestionViewProps> = ({
     <TimerBar startAt={startAt} frozen={feedback !== null} />
 
     <div className={styles.termBox}>
-      <span className={styles.quizTerm}>{question.word.term}</span>
+      <div className={styles.quizTermRow}>
+        <span className={styles.quizTerm}>{question.word.term}</span>
+        <SpeakButton term={question.word.term} />
+      </div>
       {question.word.phonetic && <span className={styles.quizPhonetic}>{question.word.phonetic}</span>}
     </div>
 

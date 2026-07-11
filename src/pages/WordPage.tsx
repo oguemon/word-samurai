@@ -1,9 +1,11 @@
-import type { FC } from 'react';
+import { useEffect, type FC } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { PosBadge } from '../components/PosBadge';
+import { SpeakButton } from '../components/SpeakButton';
 import { dictionary } from '../data/dictionary';
 import { useWordStatus, type WordStatus } from '../hooks/useWordStatus';
 import { formatDateTime, formatRate } from '../lib/format';
+import { speakTerm, stopSpeaking } from '../lib/speech';
 import styles from './WordPage.module.css';
 
 export const WordPage: FC = () => {
@@ -11,6 +13,12 @@ export const WordPage: FC = () => {
   const navigate = useNavigate();
   const word = wordId ? dictionary.wordById.get(wordId) : undefined;
   const status = useWordStatus(word);
+
+  // 単語の表示時に自動で発音する（OSにブロックされる環境でも🔊ボタンで再生できる）
+  useEffect(() => {
+    if (word) speakTerm(word.term);
+    return stopSpeaking;
+  }, [word]);
 
   if (!word) {
     return (
@@ -36,7 +44,10 @@ export const WordPage: FC = () => {
       </div>
 
       <section className={styles.card}>
-        <h1 className={styles.term}>{word.term}</h1>
+        <div className={styles.termRow}>
+          <h1 className={styles.term}>{word.term}</h1>
+          <SpeakButton term={word.term} />
+        </div>
         {word.phonetic && <p className={styles.phonetic}>{word.phonetic}</p>}
         <ul className={styles.senses}>
           {word.senses.map((sense, i) => (

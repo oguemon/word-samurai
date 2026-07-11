@@ -43,13 +43,21 @@
   padding: 16px;
 }
 
+.quizTermRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+}
+
 .quizTerm {
+  min-width: 0;
   font-size: 34px;
   font-weight: 800;
   line-height: 1.2;
   text-align: center;
   overflow-wrap: break-word;
-  max-width: 100%;
 }
 
 .quizPhonetic {
