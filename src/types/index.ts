@@ -16,6 +16,8 @@ export type Word = {
   /** 全セクション横断で一意 */
   id: string;
   term: string;
+  /** 発音記号（例: "/nɪˈɡoʊʃieɪt/"）。任意。無い場合は画面に表示されない */
+  phonetic?: string;
   /** 品詞と意味。通常1件 */
   senses: Sense[];
   example: { en: string; ja: string };

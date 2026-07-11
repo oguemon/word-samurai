@@ -37,6 +37,7 @@ export const WordPage: FC = () => {
 
       <section className={styles.card}>
         <h1 className={styles.term}>{word.term}</h1>
+        {word.phonetic && <p className={styles.phonetic}>{word.phonetic}</p>}
         <ul className={styles.senses}>
           {word.senses.map((sense, i) => (
             <li key={i} className={styles.sense}>

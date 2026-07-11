@@ -24,7 +24,21 @@ export const validateData = (wordData: WordData, quizData: QuizData): Validation
 
   const quizResult = validateQuizEntries(wordsById(wordData.sections), quizData.entries);
   errors.push(...quizResult.errors);
-  return { errors, warnings: quizResult.warnings };
+  return { errors, warnings: [...phoneticWarnings(wordData.sections), ...quizResult.warnings] };
+};
+
+/** 発音記号が無い単語の警告。エラーにはしない（画面では単に非表示になる） */
+const phoneticWarnings = (sections: SectionData[]): string[] => {
+  const warnings: string[] = [];
+  for (const section of sections) {
+    if (!Array.isArray(section.words)) continue;
+    for (const word of section.words) {
+      if (word.id && !word.phonetic) {
+        warnings.push(`words.json: ${word.id} に phonetic（発音記号）がありません（画面では非表示になります）`);
+      }
+    }
+  }
+  return warnings;
 };
 
 const validateVersions = (wordData: WordData, quizData: QuizData): string[] => {

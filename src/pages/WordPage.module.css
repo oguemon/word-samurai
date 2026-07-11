@@ -40,6 +40,12 @@
   overflow-wrap: break-word;
 }
 
+.phonetic {
+  font-size: var(--font-size-md);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
 .senses {
   display: flex;
   flex-direction: column;

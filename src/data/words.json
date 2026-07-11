@@ -8,6 +8,7 @@
         {
           "id": "w001",
           "term": "negotiate",
+          "phonetic": "/nɪˈɡoʊʃieɪt/",
           "senses": [{ "pos": "動詞", "ja": "交渉する" }],
           "example": {
             "en": "We negotiated the terms of the contract.",
@@ -17,6 +18,7 @@
         {
           "id": "w002",
           "term": "deadline",
+          "phonetic": "/ˈdedlaɪn/",
           "senses": [{ "pos": "名詞", "ja": "締め切り、期限" }],
           "example": {
             "en": "The deadline for the report is this Friday.",
@@ -26,6 +28,7 @@
         {
           "id": "w003",
           "term": "revenue",
+          "phonetic": "/ˈrevənuː/",
           "senses": [{ "pos": "名詞", "ja": "収益、売上高" }],
           "example": {
             "en": "The company's revenue grew by 20 percent last year.",
@@ -35,6 +38,7 @@
         {
           "id": "w004",
           "term": "proposal",
+          "phonetic": "/prəˈpoʊzl/",
           "senses": [{ "pos": "名詞", "ja": "提案、企画書" }],
           "example": {
             "en": "She submitted a proposal for the new project.",
@@ -44,6 +48,7 @@
         {
           "id": "w005",
           "term": "colleague",
+          "phonetic": "/ˈkɑːliːɡ/",
           "senses": [{ "pos": "名詞", "ja": "同僚" }],
           "example": {
             "en": "I had lunch with my colleagues from the office.",
@@ -53,6 +58,7 @@
         {
           "id": "w006",
           "term": "postpone",
+          "phonetic": "/poʊstˈpoʊn/",
           "senses": [{ "pos": "動詞", "ja": "を延期する" }],
           "example": {
             "en": "The meeting was postponed until next week.",
@@ -62,6 +68,7 @@
         {
           "id": "w007",
           "term": "approve",
+          "phonetic": "/əˈpruːv/",
           "senses": [{ "pos": "動詞", "ja": "を承認する" }],
           "example": {
             "en": "The manager approved the budget plan.",
@@ -71,6 +78,7 @@
         {
           "id": "w008",
           "term": "budget",
+          "phonetic": "/ˈbʌdʒɪt/",
           "senses": [{ "pos": "名詞", "ja": "予算" }],
           "example": {
             "en": "We are over budget this quarter.",
@@ -80,6 +88,7 @@
         {
           "id": "w009",
           "term": "client",
+          "phonetic": "/ˈklaɪənt/",
           "senses": [{ "pos": "名詞", "ja": "顧客、取引先" }],
           "example": {
             "en": "He is meeting an important client this afternoon.",
@@ -89,6 +98,7 @@
         {
           "id": "w010",
           "term": "submit",
+          "phonetic": "/səbˈmɪt/",
           "senses": [{ "pos": "動詞", "ja": "を提出する" }],
           "example": {
             "en": "Please submit the application form by Monday.",
@@ -98,6 +108,7 @@
         {
           "id": "w011",
           "term": "schedule",
+          "phonetic": "/ˈskedʒuːl/",
           "senses": [{ "pos": "名詞", "ja": "予定、日程" }],
           "example": {
             "en": "My schedule is completely full this week.",
@@ -107,6 +118,7 @@
         {
           "id": "w012",
           "term": "confirm",
+          "phonetic": "/kənˈfɜːrm/",
           "senses": [{ "pos": "動詞", "ja": "を確認する、を確定させる" }],
           "example": {
             "en": "I would like to confirm my reservation.",
@@ -116,6 +128,7 @@
         {
           "id": "w013",
           "term": "attend",
+          "phonetic": "/əˈtend/",
           "senses": [{ "pos": "動詞", "ja": "に出席する" }],
           "example": {
             "en": "About fifty people attended the seminar.",
@@ -125,6 +138,7 @@
         {
           "id": "w014",
           "term": "estimate",
+          "phonetic": "/ˈestɪmeɪt/",
           "senses": [{ "pos": "動詞", "ja": "を見積もる" }],
           "example": {
             "en": "We estimated the total cost at one million yen.",
@@ -134,6 +148,7 @@
         {
           "id": "w015",
           "term": "contract",
+          "phonetic": "/ˈkɑːntrækt/",
           "senses": [{ "pos": "名詞", "ja": "契約、契約書" }],
           "example": {
             "en": "They signed a two-year contract.",
@@ -143,6 +158,7 @@
         {
           "id": "w016",
           "term": "department",
+          "phonetic": "/dɪˈpɑːrtmənt/",
           "senses": [{ "pos": "名詞", "ja": "部署、部門" }],
           "example": {
             "en": "She works in the sales department.",
@@ -152,6 +168,7 @@
         {
           "id": "w017",
           "term": "efficient",
+          "phonetic": "/ɪˈfɪʃnt/",
           "senses": [{ "pos": "形容詞", "ja": "効率的な" }],
           "example": {
             "en": "This new system is more efficient than the old one.",
@@ -161,6 +178,7 @@
         {
           "id": "w018",
           "term": "profit",
+          "phonetic": "/ˈprɑːfɪt/",
           "senses": [{ "pos": "名詞", "ja": "利益" }],
           "example": {
             "en": "The company made a large profit this year.",
@@ -170,6 +188,7 @@
         {
           "id": "w019",
           "term": "expand",
+          "phonetic": "/ɪkˈspænd/",
           "senses": [{ "pos": "動詞", "ja": "を拡大する、広がる" }],
           "example": {
             "en": "The company plans to expand its business overseas.",
@@ -179,6 +198,7 @@
         {
           "id": "w020",
           "term": "recruit",
+          "phonetic": "/rɪˈkruːt/",
           "senses": [{ "pos": "動詞", "ja": "を採用する、を募集する" }],
           "example": {
             "en": "We are recruiting new engineers this spring.",
@@ -194,6 +214,7 @@
         {
           "id": "w021",
           "term": "grocery",
+          "phonetic": "/ˈɡroʊsəri/",
           "senses": [{ "pos": "名詞", "ja": "食料品、食料雑貨" }],
           "example": {
             "en": "I go grocery shopping every Saturday morning.",
@@ -203,6 +224,7 @@
         {
           "id": "w022",
           "term": "laundry",
+          "phonetic": "/ˈlɔːndri/",
           "senses": [{ "pos": "名詞", "ja": "洗濯、洗濯物" }],
           "example": {
             "en": "I do the laundry twice a week.",
@@ -212,6 +234,7 @@
         {
           "id": "w023",
           "term": "commute",
+          "phonetic": "/kəˈmjuːt/",
           "senses": [{ "pos": "動詞", "ja": "通勤する、通学する" }],
           "example": {
             "en": "I commute to work by train every day.",
@@ -221,6 +244,7 @@
         {
           "id": "w024",
           "term": "appointment",
+          "phonetic": "/əˈpɔɪntmənt/",
           "senses": [{ "pos": "名詞", "ja": "（面会・診察などの）予約、約束" }],
           "example": {
             "en": "I have a dentist appointment at three o'clock.",
@@ -230,6 +254,7 @@
         {
           "id": "w025",
           "term": "refrigerator",
+          "phonetic": "/rɪˈfrɪdʒəreɪtər/",
           "senses": [{ "pos": "名詞", "ja": "冷蔵庫" }],
           "example": {
             "en": "Put the milk back in the refrigerator.",
@@ -239,6 +264,7 @@
         {
           "id": "w026",
           "term": "neighbor",
+          "phonetic": "/ˈneɪbər/",
           "senses": [{ "pos": "名詞", "ja": "隣人、近所の人" }],
           "example": {
             "en": "Our neighbors are very friendly.",
@@ -248,6 +274,7 @@
         {
           "id": "w027",
           "term": "errand",
+          "phonetic": "/ˈerənd/",
           "senses": [{ "pos": "名詞", "ja": "用事、お使い" }],
           "example": {
             "en": "I have a few errands to run today.",
@@ -257,6 +284,7 @@
         {
           "id": "w028",
           "term": "leftover",
+          "phonetic": "/ˈleftoʊvər/",
           "senses": [{ "pos": "名詞", "ja": "（食事の）残り物" }],
           "example": {
             "en": "We had leftovers for dinner last night.",
@@ -266,6 +294,7 @@
         {
           "id": "w029",
           "term": "utility",
+          "phonetic": "/juːˈtɪləti/",
           "senses": [{ "pos": "名詞", "ja": "公共料金、光熱費" }],
           "example": {
             "en": "Utilities are included in the rent.",
@@ -275,6 +304,7 @@
         {
           "id": "w030",
           "term": "vacuum",
+          "phonetic": "/ˈvækjuːm/",
           "senses": [{ "pos": "動詞", "ja": "に掃除機をかける" }],
           "example": {
             "en": "I vacuum the living room every morning.",
@@ -284,6 +314,7 @@
         {
           "id": "w031",
           "term": "ingredient",
+          "phonetic": "/ɪnˈɡriːdiənt/",
           "senses": [{ "pos": "名詞", "ja": "材料、成分" }],
           "example": {
             "en": "Mix all the ingredients in a large bowl.",
@@ -293,6 +324,7 @@
         {
           "id": "w032",
           "term": "recipe",
+          "phonetic": "/ˈresəpi/",
           "senses": [{ "pos": "名詞", "ja": "レシピ、調理法" }],
           "example": {
             "en": "This recipe is easy even for beginners.",
@@ -302,6 +334,7 @@
         {
           "id": "w033",
           "term": "allowance",
+          "phonetic": "/əˈlaʊəns/",
           "senses": [{ "pos": "名詞", "ja": "小遣い、手当" }],
           "example": {
             "en": "My son gets a monthly allowance.",
@@ -311,6 +344,7 @@
         {
           "id": "w034",
           "term": "chore",
+          "phonetic": "/tʃɔːr/",
           "senses": [{ "pos": "名詞", "ja": "家事、雑用" }],
           "example": {
             "en": "Doing the dishes is my least favorite chore.",
@@ -320,6 +354,7 @@
         {
           "id": "w035",
           "term": "detergent",
+          "phonetic": "/dɪˈtɜːrdʒənt/",
           "senses": [{ "pos": "名詞", "ja": "洗剤" }],
           "example": {
             "en": "We are running out of laundry detergent.",
@@ -329,6 +364,7 @@
         {
           "id": "w036",
           "term": "landlord",
+          "phonetic": "/ˈlændlɔːrd/",
           "senses": [{ "pos": "名詞", "ja": "大家、家主" }],
           "example": {
             "en": "The landlord raised the rent this year.",
@@ -338,6 +374,7 @@
         {
           "id": "w037",
           "term": "furniture",
+          "phonetic": "/ˈfɜːrnɪtʃər/",
           "senses": [{ "pos": "名詞", "ja": "家具" }],
           "example": {
             "en": "We bought new furniture for the living room.",
@@ -347,6 +384,7 @@
         {
           "id": "w038",
           "term": "mortgage",
+          "phonetic": "/ˈmɔːrɡɪdʒ/",
           "senses": [{ "pos": "名詞", "ja": "住宅ローン" }],
           "example": {
             "en": "They pay their mortgage at the beginning of every month.",
@@ -356,6 +394,7 @@
         {
           "id": "w039",
           "term": "pedestrian",
+          "phonetic": "/pəˈdestriən/",
           "senses": [{ "pos": "名詞", "ja": "歩行者" }],
           "example": {
             "en": "Watch out for pedestrians when you drive.",
@@ -365,6 +404,7 @@
         {
           "id": "w040",
           "term": "nap",
+          "phonetic": "/næp/",
           "senses": [{ "pos": "名詞", "ja": "昼寝、うたた寝" }],
           "example": {
             "en": "I took a short nap after lunch.",

@@ -32,8 +32,10 @@
 
 .termBox {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2px;
   min-height: 110px;
   background: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -48,6 +50,11 @@
   text-align: center;
   overflow-wrap: break-word;
   max-width: 100%;
+}
+
+.quizPhonetic {
+  font-size: var(--font-size-md);
+  color: var(--color-text-muted);
 }
 
 .choices {

@@ -69,6 +69,7 @@ const QuestionView: FC<QuestionViewProps> = ({
 
     <div className={styles.termBox}>
       <span className={styles.quizTerm}>{question.word.term}</span>
+      {question.word.phonetic && <span className={styles.quizPhonetic}>{question.word.phonetic}</span>}
     </div>
 
     <div className={styles.choices}>

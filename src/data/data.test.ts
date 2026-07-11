@@ -30,6 +30,25 @@ describe('収録データの整合性', () => {
     }
   });
 
+  it('発音記号がない単語は警告される（エラーにはならない）', () => {
+    const words: WordData = {
+      version: 1,
+      sections: [
+        {
+          id: 'sec',
+          label: 'セクション',
+          words: [
+            { id: 'a', term: 'alpha', senses: [{ pos: '名詞', ja: '意味A' }], example: { en: 'e', ja: '例' } },
+          ],
+        },
+      ],
+    };
+    const quiz: QuizData = { version: 1, entries: [{ wordId: 'a', distractors: ['x', 'y', 'z'] }] };
+    const { errors, warnings } = validateData(words, quiz);
+    expect(errors).toEqual([]);
+    expect(warnings.some((w) => w.includes('phonetic'))).toBe(true);
+  });
+
   it('壊れたデータはエラーとして検出される', () => {
     const broken: WordData = {
       version: 1,
