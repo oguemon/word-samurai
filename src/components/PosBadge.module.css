@@ -1,0 +1,66 @@
+.badge {
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+/* 品詞ごとの配色（文字色 / 淡い背景色） */
+
+.noun {
+  color: #3056d3;
+  background: #e7ecfb;
+}
+
+.verb {
+  color: #178a4c;
+  background: #e3f5eb;
+}
+
+.adjective {
+  color: #b26a11;
+  background: #fdf1df;
+}
+
+.adverb {
+  color: #7c3aed;
+  background: #f2ebfd;
+}
+
+.preposition {
+  color: #0f766e;
+  background: #e0f5f3;
+}
+
+.conjunction {
+  color: #be3a70;
+  background: #fce8f1;
+}
+
+.pronoun {
+  color: #0e7490;
+  background: #e0f4fa;
+}
+
+.auxiliary {
+  color: #526079;
+  background: #eaeef5;
+}
+
+.interjection {
+  color: #5f7a0f;
+  background: #f0f5df;
+}
+
+.idiom {
+  color: #8a5f3d;
+  background: #f3ece2;
+}
+
+/* 未知の品詞 */
+.other {
+  color: var(--color-text-muted);
+  background: var(--color-border);
+}

@@ -53,16 +53,6 @@
   gap: 8px;
 }
 
-.pos {
-  flex-shrink: 0;
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  color: var(--color-warning);
-  background: var(--color-warning-soft);
-  border-radius: 6px;
-  padding: 2px 8px;
-}
-
 .meaning {
   font-size: var(--font-size-lg);
   font-weight: 600;

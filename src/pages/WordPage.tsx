@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { PosBadge } from '../components/PosBadge';
 import { dictionary } from '../data/dictionary';
 import { useWordStatus, type WordStatus } from '../hooks/useWordStatus';
 import { formatDateTime, formatRate } from '../lib/format';
@@ -39,7 +40,7 @@ export const WordPage: FC = () => {
         <ul className={styles.senses}>
           {word.senses.map((sense, i) => (
             <li key={i} className={styles.sense}>
-              <span className={styles.pos}>{sense.pos}</span>
+              <PosBadge pos={sense.pos} />
               <span className={styles.meaning}>{sense.ja}</span>
             </li>
           ))}
