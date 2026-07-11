@@ -1,6 +1,9 @@
 import type { QuizQuestionResult, QuizSession, ViewEvent } from '../types';
 import {
   DAY_MS,
+  FREQUENT_MISS_MAX_RATE,
+  FREQUENT_MISS_MAX_WORDS,
+  FREQUENT_MISS_RATIO,
   RECENT_WRONG_WINDOW_MS,
   WEAK_LIMIT,
   WEAK_MIN_ASKED,
@@ -115,13 +118,12 @@ export const recentWrongWords = (
 
 export type WeakWordSummary = { wordId: string; asked: number; timelyCorrect: number; rate: number };
 
-/** 直近 windowMs で minAsked 回以上出題され、時間内正解率が低い順の単語（最大 limit 件） */
-export const weakWords = (
+/** 期間内の単語ごとの出題数・時間内正解数を集計する */
+const accuracyByWord = (
   sessions: QuizSession[],
   now: number,
-  options?: { windowMs?: number; minAsked?: number; limit?: number },
-): WeakWordSummary[] => {
-  const { windowMs = WEAK_WINDOW_MS, minAsked = WEAK_MIN_ASKED, limit = WEAK_LIMIT } = options ?? {};
+  windowMs: number,
+): Map<string, { asked: number; timelyCorrect: number }> => {
   const byWord = new Map<string, { asked: number; timelyCorrect: number }>();
   for (const q of questionsInWindow(sessions, now, windowMs)) {
     const item = byWord.get(q.wordId) ?? { asked: 0, timelyCorrect: 0 };
@@ -129,11 +131,52 @@ export const weakWords = (
     if (isTimelyCorrect(q)) item.timelyCorrect += 1;
     byWord.set(q.wordId, item);
   }
-  return [...byWord.entries()]
+  return byWord;
+};
+
+/** 正答率の低い順（同率なら出題数の多い順 → 単語IDの昇順） */
+const byWeakness = (a: WeakWordSummary, b: WeakWordSummary): number =>
+  a.rate - b.rate || b.asked - a.asked || (a.wordId < b.wordId ? -1 : 1);
+
+/** 直近 windowMs で minAsked 回以上出題され、時間内正解率が低い順の単語（最大 limit 件） */
+export const weakWords = (
+  sessions: QuizSession[],
+  now: number,
+  options?: { windowMs?: number; minAsked?: number; limit?: number },
+): WeakWordSummary[] => {
+  const { windowMs = WEAK_WINDOW_MS, minAsked = WEAK_MIN_ASKED, limit = WEAK_LIMIT } = options ?? {};
+  return [...accuracyByWord(sessions, now, windowMs).entries()]
     .filter(([, v]) => v.asked >= minAsked)
     .map(([wordId, v]) => ({ wordId, ...v, rate: v.timelyCorrect / v.asked }))
-    .sort((a, b) => a.rate - b.rate || b.asked - a.asked || (a.wordId < b.wordId ? -1 : 1))
+    .sort(byWeakness)
     .slice(0, limit);
+};
+
+/**
+ * 「よく間違える単語」のID一覧（正答率の低い順）。
+ * 直近 windowMs に出題された単語のうち時間内正解率が maxRate 以下のものを
+ * 正解率の低い順に並べ、出題済み単語数 × ratio（切り上げ）件・最大 maxCount 件を返す。
+ * maxRate を超えた単語は克服済みとみなし、下位順位でも含めない。
+ */
+export const frequentlyMissedWordIds = (
+  sessions: QuizSession[],
+  now: number,
+  options?: { windowMs?: number; ratio?: number; maxCount?: number; maxRate?: number },
+): string[] => {
+  const {
+    windowMs = WEAK_WINDOW_MS,
+    ratio = FREQUENT_MISS_RATIO,
+    maxCount = FREQUENT_MISS_MAX_WORDS,
+    maxRate = FREQUENT_MISS_MAX_RATE,
+  } = options ?? {};
+  const byWord = accuracyByWord(sessions, now, windowMs);
+  const count = Math.min(Math.ceil(byWord.size * ratio), maxCount);
+  return [...byWord.entries()]
+    .map(([wordId, v]) => ({ wordId, ...v, rate: v.timelyCorrect / v.asked }))
+    .filter((w) => w.rate <= maxRate)
+    .sort(byWeakness)
+    .slice(0, count)
+    .map((w) => w.wordId);
 };
 
 export type SessionScore = {

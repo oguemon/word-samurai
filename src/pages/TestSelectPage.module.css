@@ -4,6 +4,12 @@
   gap: 10px;
 }
 
+.divider {
+  height: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 6px 0;
+}
+
 .item {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -15,6 +21,19 @@
   box-shadow: var(--shadow-card);
   padding: 14px 16px;
   text-decoration: none;
+}
+
+/* よく間違える単語（要復習の赤系デザイン） */
+.itemWeak {
+  background: var(--color-danger-soft);
+  border: 1px solid var(--color-danger-border);
+}
+
+.itemWeak .label,
+.itemWeak .count,
+.itemWeak .itemSub,
+.itemWeak .arrow {
+  color: var(--color-danger);
 }
 
 .itemMain {

@@ -31,3 +31,14 @@ export const WEAK_MIN_ASKED = 2;
 export const WEAK_LIMIT = 20;
 /** 「最近のテスト結果」の表示件数 */
 export const RECENT_SESSIONS_LIMIT = 10;
+
+/** 「よく間違える単語」: 出題済み単語数に対する抽出割合（正答率の下位20%） */
+export const FREQUENT_MISS_RATIO = 0.2;
+/** 「よく間違える単語」の最大語数 */
+export const FREQUENT_MISS_MAX_WORDS = 50;
+/** 「よく間違える単語」に含める時間内正解率の上限。これを超えた単語は克服済みとみなし、下位順位でも表示しない */
+export const FREQUENT_MISS_MAX_RATE = 0.6;
+/** 「よく間違える単語」仮想セクションのID。words.json のセクションIDとしては予約済み（使用不可） */
+export const WEAK_SECTION_ID = 'weak';
+/** 「よく間違える単語」仮想セクションの表示名 */
+export const WEAK_SECTION_LABEL = 'よく間違える単語';

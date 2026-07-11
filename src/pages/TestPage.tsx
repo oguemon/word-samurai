@@ -4,6 +4,8 @@ import { SpeakButton } from '../components/SpeakButton';
 import { TimerBar } from '../components/TimerBar';
 import { dictionary } from '../data/dictionary';
 import { useQuizSession, type QuizFeedback } from '../hooks/useQuizSession';
+import { useWeakSection } from '../hooks/useWeakSection';
+import { WEAK_SECTION_ID } from '../lib/constants';
 import { formatRate, formatSeconds } from '../lib/format';
 import type { QuizQuestion } from '../lib/quizEngine';
 import { isTimelyCorrect, scoreQuestions } from '../lib/stats';
@@ -12,7 +14,14 @@ import styles from './TestPage.module.css';
 
 export const TestPage: FC = () => {
   const { sectionId } = useParams();
-  const section = useMemo(() => dictionary.sections.find((s) => s.id === sectionId), [sectionId]);
+  const weakSection = useWeakSection();
+  const section = useMemo(
+    () =>
+      sectionId === WEAK_SECTION_ID
+        ? (weakSection ?? undefined)
+        : dictionary.sections.find((s) => s.id === sectionId),
+    [sectionId, weakSection],
+  );
   const session = useQuizSession(section);
 
   if (!section) return <Navigate to="/test" replace />;

@@ -3,6 +3,7 @@ import type { QuizQuestionResult, QuizSession, ViewEvent } from '../types';
 import { DAY_MS, WEEK_MS } from './constants';
 import {
   countRecentViews,
+  frequentlyMissedWordIds,
   groupViewsByDay,
   latestSessionOfSection,
   recentWrongWords,
@@ -102,6 +103,62 @@ describe('weakWords', () => {
   it('出題数が足りない単語は除外する', () => {
     const sessions = [session('s1', NOW - 1000, [q('a', false, false)])];
     expect(weakWords(sessions, NOW)).toHaveLength(0);
+  });
+});
+
+describe('frequentlyMissedWordIds', () => {
+  // 10単語を出題し、a: 0/2, b: 1/2, c: 1/2, d〜j: 2/2 とする
+  const tenWords = () => [
+    session('s1', NOW - 1000, [
+      q('a', false, false),
+      q('b', true, false),
+      q('c', false, false),
+      ...['d', 'e', 'f', 'g', 'h', 'i', 'j'].map((id) => q(id, true, false)),
+    ]),
+    session('s2', NOW - 2000, [
+      q('a', true, true),
+      q('b', false, false),
+      q('c', true, false),
+      ...['d', 'e', 'f', 'g', 'h', 'i', 'j'].map((id) => q(id, true, false)),
+    ]),
+  ];
+
+  it('間違いのある単語を正答率の低い順に、出題済み単語数の20%（切り上げ）だけ返す', () => {
+    // 出題済み10語 → ceil(10 × 0.2) = 2件。候補は a(0%), b(50%), c(50%) で、同率はID昇順
+    expect(frequentlyMissedWordIds(tenWords(), NOW)).toEqual(['a', 'b']);
+  });
+
+  it('全問時間内正解の単語は含めない', () => {
+    const sessions = [session('s1', NOW - 1000, [q('a', true, false), q('b', true, false)])];
+    expect(frequentlyMissedWordIds(sessions, NOW)).toEqual([]);
+  });
+
+  it('正答率が60%を超える単語は、下位順位でも含めない（克服済み扱い）', () => {
+    // a: 3/5 = 60%（ちょうど60% → 含む）、b: 2/3 ≈ 67%（含めない）、c〜j: 全問正解
+    const sessions = [
+      session('s1', NOW - 1000, [
+        q('a', true, false),
+        q('a', true, false),
+        q('a', true, false),
+        q('a', false, false),
+        q('a', false, false),
+        q('b', true, false),
+        q('b', true, false),
+        q('b', false, false),
+        ...['c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'].map((id) => q(id, true, false)),
+      ]),
+    ];
+    // 出題済み10語 → 枠は ceil(10 × 0.2) = 2件あるが、60%以下の候補は a のみ
+    expect(frequentlyMissedWordIds(sessions, NOW)).toEqual(['a']);
+  });
+
+  it('maxCount で件数を打ち切る', () => {
+    expect(frequentlyMissedWordIds(tenWords(), NOW, { maxCount: 1 })).toEqual(['a']);
+  });
+
+  it('期間外のセッションは集計しない', () => {
+    const sessions = [session('s1', NOW - 40 * DAY_MS, [q('a', false, false)])];
+    expect(frequentlyMissedWordIds(sessions, NOW)).toEqual([]);
   });
 });
 

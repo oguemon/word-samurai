@@ -2,7 +2,12 @@ import { useMemo, useState, type FC, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { dictionary } from '../data/dictionary';
-import { RECENT_SESSIONS_LIMIT, VIEW_HISTORY_DAYS } from '../lib/constants';
+import {
+  RECENT_SESSIONS_LIMIT,
+  VIEW_HISTORY_DAYS,
+  WEAK_SECTION_ID,
+  WEAK_SECTION_LABEL,
+} from '../lib/constants';
 import { formatDateTime, formatDayLabel, formatRate, formatTime } from '../lib/format';
 import {
   groupViewsByDay,
@@ -162,12 +167,11 @@ const TestHistoryTab: FC<TestHistoryTabProps> = ({ wrongs, weak, sessions, now }
     >
       {sessions.map((session) => {
         const score = sessionScore(session);
-        const section = dictionary.sections.find((sec) => sec.id === session.sectionId);
         return (
           <HistoryRow
             key={session.id}
             to={`/test/${session.sectionId}`}
-            main={section ? section.label : session.sectionId}
+            main={sectionLabelOf(session.sectionId)}
             badge={{ text: `${score.timelyCorrect}/${score.total}`, tone: 'primary' }}
             sub={formatDateTime(session.finishedAt, now)}
           />
@@ -176,6 +180,12 @@ const TestHistoryTab: FC<TestHistoryTabProps> = ({ wrongs, weak, sessions, now }
     </HistoryBlock>
   </>
 );
+
+/** セクションIDから表示名を引く（「よく間違える単語」の仮想セクションにも対応） */
+const sectionLabelOf = (sectionId: string): string =>
+  sectionId === WEAK_SECTION_ID
+    ? WEAK_SECTION_LABEL
+    : (dictionary.sections.find((s) => s.id === sectionId)?.label ?? sectionId);
 
 type HistoryBlockProps = {
   title: string;

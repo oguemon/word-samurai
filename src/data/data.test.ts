@@ -30,6 +30,30 @@ describe('収録データの整合性', () => {
     }
   });
 
+  it('予約セクションID "weak" はエラーになる', () => {
+    const words: WordData = {
+      version: 1,
+      sections: [
+        {
+          id: 'weak',
+          label: 'よく間違える単語もどき',
+          words: [
+            {
+              id: 'a',
+              term: 'alpha',
+              phonetic: '/ˈælfə/',
+              senses: [{ pos: '名詞', ja: '意味A' }],
+              example: { en: 'e', ja: '例' },
+            },
+          ],
+        },
+      ],
+    };
+    const quiz: QuizData = { version: 1, entries: [{ wordId: 'a', distractors: ['x', 'y', 'z'] }] };
+    const { errors } = validateData(words, quiz);
+    expect(errors.some((e) => e.includes('予約'))).toBe(true);
+  });
+
   it('発音記号がない単語は警告される（エラーにはならない）', () => {
     const words: WordData = {
       version: 1,

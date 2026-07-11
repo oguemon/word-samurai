@@ -1,3 +1,4 @@
+import { WEAK_SECTION_ID } from '../lib/constants';
 import type { QuizData, QuizEntry, SectionData, Word, WordData } from '../types';
 import wordsJson from './words.json';
 import quizJson from './quiz.json';
@@ -55,6 +56,9 @@ const validateSections = (sections: SectionData[]): string[] => {
   const seenWordIds = new Set<string>();
   for (const section of sections) {
     if (!section.id) errors.push('words.json: id のないセクションがあります');
+    if (section.id === WEAK_SECTION_ID) {
+      errors.push(`words.json: セクションID "${WEAK_SECTION_ID}" は「よく間違える単語」用に予約されています`);
+    }
     if (seenSectionIds.has(section.id)) errors.push(`words.json: セクションIDが重複しています: ${section.id}`);
     seenSectionIds.add(section.id);
     if (!section.label) errors.push(`words.json: セクション ${section.id} に label がありません`);
