@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 20px;
+}
+
+.track {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--color-primary);
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.fillExpired {
+  background: var(--color-danger);
+}
+
+.expiredLabel {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-danger);
+  white-space: nowrap;
+}

@@ -1,0 +1,11 @@
+.app {
+  max-width: var(--app-max-width);
+  margin-inline: auto;
+  min-height: 100dvh;
+  background: var(--color-bg);
+  box-shadow: 0 0 32px rgba(18, 25, 46, 0.08);
+}
+
+.main {
+  padding: 16px 16px calc(var(--nav-height) + env(safe-area-inset-bottom) + 24px);
+}

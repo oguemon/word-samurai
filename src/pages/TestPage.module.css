@@ -1,0 +1,285 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.quizHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quizSection {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.progress {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.quitLink {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 6px 0 6px 6px;
+}
+
+.termBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 16px;
+}
+
+.quizTerm {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice {
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 14px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  text-align: left;
+}
+
+.choiceCorrect {
+  border-color: var(--color-success);
+  background: var(--color-success-soft);
+}
+
+.choiceWrong {
+  border-color: var(--color-danger);
+  background: var(--color-danger-soft);
+}
+
+.choiceMuted {
+  opacity: 0.55;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fbGood,
+.fbOvertime,
+.fbBad {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-weight: 800;
+}
+
+.fbGood {
+  color: var(--color-success);
+}
+
+.fbOvertime {
+  color: var(--color-warning);
+}
+
+.fbBad {
+  color: var(--color-danger);
+}
+
+.fbTime {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.primaryBtn {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  border-radius: var(--radius-lg);
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.primaryBtn:active {
+  background: var(--color-primary-strong);
+}
+
+.secondaryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ---- 結果画面 ---- */
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.resultHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.resultTitle {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.resultSection {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.scoreCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.scoreMain {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.scoreNum {
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.scoreRate {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.scoreSub {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-top: 6px;
+}
+
+.blockTitle {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.perfect {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+}
+
+.wrongList {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.wrongList li + li {
+  border-top: 1px solid var(--color-border);
+}
+
+.wrongRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+
+.badgeWrong,
+.badgeOvertime {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+}
+
+.badgeWrong {
+  color: var(--color-danger);
+  background: var(--color-danger-soft);
+}
+
+.badgeOvertime {
+  color: var(--color-warning);
+  background: var(--color-warning-soft);
+}
+
+.wrongTerm {
+  font-weight: 700;
+}
+
+.wrongMeaning {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arrow {
+  color: var(--color-text-muted);
+}
+
+.resultActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}

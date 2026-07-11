@@ -1,0 +1,139 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backLink {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.sectionChip {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 16px;
+}
+
+.term {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.senses {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.sense {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.pos {
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-warning);
+  background: var(--color-warning-soft);
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.meaning {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.cardTitle {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.exampleEn {
+  font-weight: 600;
+}
+
+.exampleJa {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.statusList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statusRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.statusRow dt {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.statusRow dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.pager {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.pagerBtn {
+  flex: 1;
+  min-height: 52px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  box-shadow: var(--shadow-card);
+}
+
+.pagerBtn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 0;
+}

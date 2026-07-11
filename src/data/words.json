@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "id": "business",
+      "label": "ビジネス",
+      "words": [
+        {
+          "id": "w001",
+          "term": "negotiate",
+          "senses": [{ "pos": "動詞", "ja": "交渉する" }],
+          "example": {
+            "en": "We negotiated the terms of the contract.",
+            "ja": "私たちは契約の条件を交渉した。"
+          }
+        },
+        {
+          "id": "w002",
+          "term": "deadline",
+          "senses": [{ "pos": "名詞", "ja": "締め切り、期限" }],
+          "example": {
+            "en": "The deadline for the report is this Friday.",
+            "ja": "レポートの締め切りは今週の金曜日だ。"
+          }
+        },
+        {
+          "id": "w003",
+          "term": "revenue",
+          "senses": [{ "pos": "名詞", "ja": "収益、売上高" }],
+          "example": {
+            "en": "The company's revenue grew by 20 percent last year.",
+            "ja": "その会社の売上高は昨年20%伸びた。"
+          }
+        },
+        {
+          "id": "w004",
+          "term": "proposal",
+          "senses": [{ "pos": "名詞", "ja": "提案、企画書" }],
+          "example": {
+            "en": "She submitted a proposal for the new project.",
+            "ja": "彼女は新プロジェクトの企画書を提出した。"
+          }
+        },
+        {
+          "id": "w005",
+          "term": "colleague",
+          "senses": [{ "pos": "名詞", "ja": "同僚" }],
+          "example": {
+            "en": "I had lunch with my colleagues from the office.",
+            "ja": "職場の同僚たちと昼食をとった。"
+          }
+        },
+        {
+          "id": "w006",
+          "term": "postpone",
+          "senses": [{ "pos": "動詞", "ja": "を延期する" }],
+          "example": {
+            "en": "The meeting was postponed until next week.",
+            "ja": "会議は来週に延期された。"
+          }
+        },
+        {
+          "id": "w007",
+          "term": "approve",
+          "senses": [{ "pos": "動詞", "ja": "を承認する" }],
+          "example": {
+            "en": "The manager approved the budget plan.",
+            "ja": "部長は予算案を承認した。"
+          }
+        },
+        {
+          "id": "w008",
+          "term": "budget",
+          "senses": [{ "pos": "名詞", "ja": "予算" }],
+          "example": {
+            "en": "We are over budget this quarter.",
+            "ja": "今四半期は予算を超過している。"
+          }
+        },
+        {
+          "id": "w009",
+          "term": "client",
+          "senses": [{ "pos": "名詞", "ja": "顧客、取引先" }],
+          "example": {
+            "en": "He is meeting an important client this afternoon.",
+            "ja": "彼は今日の午後、大事な顧客と会う。"
+          }
+        },
+        {
+          "id": "w010",
+          "term": "submit",
+          "senses": [{ "pos": "動詞", "ja": "を提出する" }],
+          "example": {
+            "en": "Please submit the application form by Monday.",
+            "ja": "月曜日までに申込書を提出してください。"
+          }
+        },
+        {
+          "id": "w011",
+          "term": "schedule",
+          "senses": [{ "pos": "名詞", "ja": "予定、日程" }],
+          "example": {
+            "en": "My schedule is completely full this week.",
+            "ja": "今週は予定がぎっしり詰まっている。"
+          }
+        },
+        {
+          "id": "w012",
+          "term": "confirm",
+          "senses": [{ "pos": "動詞", "ja": "を確認する、を確定させる" }],
+          "example": {
+            "en": "I would like to confirm my reservation.",
+            "ja": "予約を確認したいのですが。"
+          }
+        },
+        {
+          "id": "w013",
+          "term": "attend",
+          "senses": [{ "pos": "動詞", "ja": "に出席する" }],
+          "example": {
+            "en": "About fifty people attended the seminar.",
+            "ja": "約50人がそのセミナーに出席した。"
+          }
+        },
+        {
+          "id": "w014",
+          "term": "estimate",
+          "senses": [{ "pos": "動詞", "ja": "を見積もる" }],
+          "example": {
+            "en": "We estimated the total cost at one million yen.",
+            "ja": "総費用を100万円と見積もった。"
+          }
+        },
+        {
+          "id": "w015",
+          "term": "contract",
+          "senses": [{ "pos": "名詞", "ja": "契約、契約書" }],
+          "example": {
+            "en": "They signed a two-year contract.",
+            "ja": "彼らは2年契約に署名した。"
+          }
+        },
+        {
+          "id": "w016",
+          "term": "department",
+          "senses": [{ "pos": "名詞", "ja": "部署、部門" }],
+          "example": {
+            "en": "She works in the sales department.",
+            "ja": "彼女は営業部で働いている。"
+          }
+        },
+        {
+          "id": "w017",
+          "term": "efficient",
+          "senses": [{ "pos": "形容詞", "ja": "効率的な" }],
+          "example": {
+            "en": "This new system is more efficient than the old one.",
+            "ja": "この新しいシステムは古いものより効率的だ。"
+          }
+        },
+        {
+          "id": "w018",
+          "term": "profit",
+          "senses": [{ "pos": "名詞", "ja": "利益" }],
+          "example": {
+            "en": "The company made a large profit this year.",
+            "ja": "その会社は今年大きな利益を上げた。"
+          }
+        },
+        {
+          "id": "w019",
+          "term": "expand",
+          "senses": [{ "pos": "動詞", "ja": "を拡大する、広がる" }],
+          "example": {
+            "en": "The company plans to expand its business overseas.",
+            "ja": "その会社は海外へ事業を拡大する計画だ。"
+          }
+        },
+        {
+          "id": "w020",
+          "term": "recruit",
+          "senses": [{ "pos": "動詞", "ja": "を採用する、を募集する" }],
+          "example": {
+            "en": "We are recruiting new engineers this spring.",
+            "ja": "この春、新しいエンジニアを募集している。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "daily-life",
+      "label": "日常生活",
+      "words": [
+        {
+          "id": "w021",
+          "term": "grocery",
+          "senses": [{ "pos": "名詞", "ja": "食料品、食料雑貨" }],
+          "example": {
+            "en": "I go grocery shopping every Saturday morning.",
+            "ja": "毎週土曜日の朝に食料品の買い出しに行く。"
+          }
+        },
+        {
+          "id": "w022",
+          "term": "laundry",
+          "senses": [{ "pos": "名詞", "ja": "洗濯、洗濯物" }],
+          "example": {
+            "en": "I do the laundry twice a week.",
+            "ja": "週に2回洗濯をする。"
+          }
+        },
+        {
+          "id": "w023",
+          "term": "commute",
+          "senses": [{ "pos": "動詞", "ja": "通勤する、通学する" }],
+          "example": {
+            "en": "I commute to work by train every day.",
+            "ja": "毎日電車で通勤している。"
+          }
+        },
+        {
+          "id": "w024",
+          "term": "appointment",
+          "senses": [{ "pos": "名詞", "ja": "（面会・診察などの）予約、約束" }],
+          "example": {
+            "en": "I have a dentist appointment at three o'clock.",
+            "ja": "3時に歯医者の予約がある。"
+          }
+        },
+        {
+          "id": "w025",
+          "term": "refrigerator",
+          "senses": [{ "pos": "名詞", "ja": "冷蔵庫" }],
+          "example": {
+            "en": "Put the milk back in the refrigerator.",
+            "ja": "牛乳を冷蔵庫に戻してね。"
+          }
+        },
+        {
+          "id": "w026",
+          "term": "neighbor",
+          "senses": [{ "pos": "名詞", "ja": "隣人、近所の人" }],
+          "example": {
+            "en": "Our neighbors are very friendly.",
+            "ja": "うちの近所の人たちはとても気さくだ。"
+          }
+        },
+        {
+          "id": "w027",
+          "term": "errand",
+          "senses": [{ "pos": "名詞", "ja": "用事、お使い" }],
+          "example": {
+            "en": "I have a few errands to run today.",
+            "ja": "今日はいくつか済ませる用事がある。"
+          }
+        },
+        {
+          "id": "w028",
+          "term": "leftover",
+          "senses": [{ "pos": "名詞", "ja": "（食事の）残り物" }],
+          "example": {
+            "en": "We had leftovers for dinner last night.",
+            "ja": "昨夜は残り物を夕食にした。"
+          }
+        },
+        {
+          "id": "w029",
+          "term": "utility",
+          "senses": [{ "pos": "名詞", "ja": "公共料金、光熱費" }],
+          "example": {
+            "en": "Utilities are included in the rent.",
+            "ja": "家賃には光熱費が含まれている。"
+          }
+        },
+        {
+          "id": "w030",
+          "term": "vacuum",
+          "senses": [{ "pos": "動詞", "ja": "に掃除機をかける" }],
+          "example": {
+            "en": "I vacuum the living room every morning.",
+            "ja": "毎朝リビングに掃除機をかける。"
+          }
+        },
+        {
+          "id": "w031",
+          "term": "ingredient",
+          "senses": [{ "pos": "名詞", "ja": "材料、成分" }],
+          "example": {
+            "en": "Mix all the ingredients in a large bowl.",
+            "ja": "大きなボウルで材料をすべて混ぜてください。"
+          }
+        },
+        {
+          "id": "w032",
+          "term": "recipe",
+          "senses": [{ "pos": "名詞", "ja": "レシピ、調理法" }],
+          "example": {
+            "en": "This recipe is easy even for beginners.",
+            "ja": "このレシピは初心者でも簡単だ。"
+          }
+        },
+        {
+          "id": "w033",
+          "term": "allowance",
+          "senses": [{ "pos": "名詞", "ja": "小遣い、手当" }],
+          "example": {
+            "en": "My son gets a monthly allowance.",
+            "ja": "息子は毎月お小遣いをもらっている。"
+          }
+        },
+        {
+          "id": "w034",
+          "term": "chore",
+          "senses": [{ "pos": "名詞", "ja": "家事、雑用" }],
+          "example": {
+            "en": "Doing the dishes is my least favorite chore.",
+            "ja": "皿洗いは一番苦手な家事だ。"
+          }
+        },
+        {
+          "id": "w035",
+          "term": "detergent",
+          "senses": [{ "pos": "名詞", "ja": "洗剤" }],
+          "example": {
+            "en": "We are running out of laundry detergent.",
+            "ja": "洗濯洗剤が切れかけている。"
+          }
+        },
+        {
+          "id": "w036",
+          "term": "landlord",
+          "senses": [{ "pos": "名詞", "ja": "大家、家主" }],
+          "example": {
+            "en": "The landlord raised the rent this year.",
+            "ja": "大家が今年家賃を値上げした。"
+          }
+        },
+        {
+          "id": "w037",
+          "term": "furniture",
+          "senses": [{ "pos": "名詞", "ja": "家具" }],
+          "example": {
+            "en": "We bought new furniture for the living room.",
+            "ja": "リビング用に新しい家具を買った。"
+          }
+        },
+        {
+          "id": "w038",
+          "term": "mortgage",
+          "senses": [{ "pos": "名詞", "ja": "住宅ローン" }],
+          "example": {
+            "en": "They pay their mortgage at the beginning of every month.",
+            "ja": "彼らは毎月月初に住宅ローンを支払っている。"
+          }
+        },
+        {
+          "id": "w039",
+          "term": "pedestrian",
+          "senses": [{ "pos": "名詞", "ja": "歩行者" }],
+          "example": {
+            "en": "Watch out for pedestrians when you drive.",
+            "ja": "運転するときは歩行者に気をつけて。"
+          }
+        },
+        {
+          "id": "w040",
+          "term": "nap",
+          "senses": [{ "pos": "名詞", "ja": "昼寝、うたた寝" }],
+          "example": {
+            "en": "I took a short nap after lunch.",
+            "ja": "昼食後に少し昼寝をした。"
+          }
+        }
+      ]
+    }
+  ]
+}
