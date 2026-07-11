@@ -60,7 +60,10 @@ export const WordPage: FC = () => {
       </section>
 
       <section className={styles.card}>
-        <h2 className={styles.cardTitle}>例文</h2>
+        <div className={styles.exampleHead}>
+          <h2 className={styles.cardTitle}>例文</h2>
+          <SpeakButton term={word.example.en} label="例文" small />
+        </div>
         <p className={styles.exampleEn}>{word.example.en}</p>
         <p className={styles.exampleJa}>{word.example.ja}</p>
       </section>

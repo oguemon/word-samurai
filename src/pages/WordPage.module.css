@@ -80,6 +80,17 @@
   margin-bottom: 8px;
 }
 
+.exampleHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.exampleHead .cardTitle {
+  margin-bottom: 0;
+}
+
 .exampleEn {
   font-weight: 600;
 }
