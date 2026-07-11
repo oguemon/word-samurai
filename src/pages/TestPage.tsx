@@ -166,8 +166,9 @@ const ResultView: FC<ResultViewProps> = ({ section, answers, onRetry }) => {
       </section>
 
       <div className={styles.resultActions}>
-        <button type="button" className={styles.primaryBtn} onClick={onRetry}>
-          もう一度（再抽選）
+        <button type="button" className={styles.retryBtn} onClick={onRetry}>
+          もう一度
+          <span className={styles.retryNote}>出題順は変わります</span>
         </button>
         <Link to="/test" className={styles.secondaryBtn}>
           セクション選択へ
