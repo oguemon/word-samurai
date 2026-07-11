@@ -1,45 +1,6863 @@
 {
   "version": 1,
   "entries": [
-    { "wordId": "w001", "distractors": ["を承認する", "を延期する", "を見積もる", "に出席する"] },
-    { "wordId": "w002", "distractors": ["予算", "見積もり", "日程", "部署"] },
-    { "wordId": "w003", "distractors": ["支出", "負債", "配当", "株主"] },
-    { "wordId": "w004", "distractors": ["契約書", "請求書", "議事録", "報告書"] },
-    { "wordId": "w005", "distractors": ["上司", "部下", "取引先", "来客"] },
-    { "wordId": "w006", "distractors": ["を中止する", "を短縮する", "を前倒しする", "を再開する"] },
-    { "wordId": "w007", "distractors": ["を却下する", "を検討する", "を保留する", "を修正する"] },
-    { "wordId": "w008", "distractors": ["経費", "収益", "資産", "請求額"] },
-    { "wordId": "w009", "distractors": ["同僚", "株主", "仕入先", "応募者"] },
-    { "wordId": "w010", "distractors": ["を受け取る", "を作成する", "を保管する", "を破棄する"] },
-    { "wordId": "w011", "distractors": ["締め切り", "議題", "名簿", "休暇"] },
-    { "wordId": "w012", "distractors": ["を変更する", "を取り消す", "を延長する", "を申し込む"] },
-    { "wordId": "w013", "distractors": ["を主催する", "を欠席する", "を見学する", "を運営する"] },
-    { "wordId": "w014", "distractors": ["を請求する", "を支払う", "を値引きする", "を精算する"] },
-    { "wordId": "w015", "distractors": ["企画書", "領収書", "保証書", "請求書"] },
-    { "wordId": "w016", "distractors": ["支店", "本社", "工場", "倉庫"] },
-    { "wordId": "w017", "distractors": ["勤勉な", "柔軟な", "慎重な", "迅速な"] },
-    { "wordId": "w018", "distractors": ["損失", "売上高", "経費", "資本"] },
-    { "wordId": "w019", "distractors": ["を縮小する", "を移転する", "を統合する", "を売却する"] },
-    { "wordId": "w020", "distractors": ["を解雇する", "を昇進させる", "を研修する", "を評価する"] },
-    { "wordId": "w021", "distractors": ["文房具", "家電製品", "衣料品", "調味料"] },
-    { "wordId": "w022", "distractors": ["掃除", "炊事", "アイロンがけ", "買い出し"] },
-    { "wordId": "w023", "distractors": ["出張する", "引っ越す", "帰宅する", "遠回りする"] },
-    { "wordId": "w024", "distractors": ["会議", "締め切り", "招待状", "順番待ち"] },
-    { "wordId": "w025", "distractors": ["電子レンジ", "食器棚", "炊飯器", "洗濯機"] },
-    { "wordId": "w026", "distractors": ["親戚", "同居人", "大家", "幼なじみ"] },
-    { "wordId": "w027", "distractors": ["習い事", "残業", "内職", "早退"] },
-    { "wordId": "w028", "distractors": ["作り置き", "保存食", "お惣菜", "非常食"] },
-    { "wordId": "w029", "distractors": ["家賃", "敷金", "管理費", "保険料"] },
-    { "wordId": "w030", "distractors": ["を拭き掃除する", "を換気する", "を片付ける", "を磨く"] },
-    { "wordId": "w031", "distractors": ["調味料", "献立", "盛り付け", "分量"] },
-    { "wordId": "w032", "distractors": ["献立", "食材", "調理器具", "味付け"] },
-    { "wordId": "w033", "distractors": ["貯金", "給料", "ご褒美", "割引"] },
-    { "wordId": "w034", "distractors": ["趣味", "日課", "休憩", "娯楽"] },
-    { "wordId": "w035", "distractors": ["柔軟剤", "漂白剤", "石けん", "消臭剤"] },
-    { "wordId": "w036", "distractors": ["不動産屋", "管理人", "隣人", "保証人"] },
-    { "wordId": "w037", "distractors": ["家電", "食器", "寝具", "雑貨"] },
-    { "wordId": "w038", "distractors": ["家賃", "頭金", "固定資産税", "保証金"] },
-    { "wordId": "w039", "distractors": ["運転手", "乗客", "横断歩道", "信号"] },
-    { "wordId": "w040", "distractors": ["散歩", "休憩", "夜更かし", "早起き"] }
+    {
+      "wordId": "absentee",
+      "distractors": [
+        "出席者",
+        "志願者",
+        "後任者",
+        "仲介者"
+      ]
+    },
+    {
+      "wordId": "affiliated",
+      "distractors": [
+        "独立した",
+        "買収された",
+        "認可された",
+        "破綻した"
+      ]
+    },
+    {
+      "wordId": "afford",
+      "distractors": [
+        "を借りる",
+        "を請求する",
+        "を節約する",
+        "を浪費する"
+      ]
+    },
+    {
+      "wordId": "amenity",
+      "distractors": [
+        "手当",
+        "割増料金",
+        "空き室",
+        "日程表"
+      ]
+    },
+    {
+      "wordId": "appoint",
+      "distractors": [
+        "を解雇する",
+        "を昇進させる",
+        "を推薦する",
+        "を評価する"
+      ]
+    },
+    {
+      "wordId": "audit",
+      "distractors": [
+        "オーディション",
+        "聴衆",
+        "予算案",
+        "負債"
+      ]
+    },
+    {
+      "wordId": "cater",
+      "distractors": [
+        "を接待する",
+        "を勧誘する",
+        "を配達する",
+        "を予約する"
+      ]
+    },
+    {
+      "wordId": "chore",
+      "distractors": [
+        "合唱",
+        "日課",
+        "趣味",
+        "休憩"
+      ]
+    },
+    {
+      "wordId": "clerical",
+      "distractors": [
+        "営業の",
+        "技術職の",
+        "管理職の",
+        "臨時の"
+      ]
+    },
+    {
+      "wordId": "colleague",
+      "distractors": [
+        "大学",
+        "上司",
+        "取引先",
+        "見習い"
+      ]
+    },
+    {
+      "wordId": "commission",
+      "distractors": [
+        "補償",
+        "通勤",
+        "使命",
+        "割引"
+      ]
+    },
+    {
+      "wordId": "commodity",
+      "distractors": [
+        "設備",
+        "通貨",
+        "特典",
+        "委員会"
+      ]
+    },
+    {
+      "wordId": "commute",
+      "distractors": [
+        "出張する",
+        "引っ越す",
+        "帰宅する",
+        "転勤する"
+      ]
+    },
+    {
+      "wordId": "compensation",
+      "distractors": [
+        "競争",
+        "手数料",
+        "苦情",
+        "貢献"
+      ]
+    },
+    {
+      "wordId": "competency",
+      "distractors": [
+        "競争",
+        "満足度",
+        "一貫性",
+        "互換性"
+      ]
+    },
+    {
+      "wordId": "complaint",
+      "distractors": [
+        "賛辞",
+        "要望",
+        "提案",
+        "承諾"
+      ]
+    },
+    {
+      "wordId": "confidential",
+      "distractors": [
+        "自信のある",
+        "楽観的な",
+        "信頼できる",
+        "慎重な"
+      ]
+    },
+    {
+      "wordId": "contract",
+      "distractors": [
+        "連絡",
+        "対比",
+        "請求書",
+        "草案"
+      ]
+    },
+    {
+      "wordId": "coordinate",
+      "distractors": [
+        "を指揮する",
+        "を従属させる",
+        "を装飾する",
+        "を複製する"
+      ]
+    },
+    {
+      "wordId": "currency",
+      "distractors": [
+        "海流",
+        "貯蓄",
+        "関税",
+        "小切手"
+      ]
+    },
+    {
+      "wordId": "deficit",
+      "distractors": [
+        "黒字",
+        "欠陥",
+        "利益",
+        "配当"
+      ]
+    },
+    {
+      "wordId": "dismiss",
+      "distractors": [
+        "を雇用する",
+        "を見逃す",
+        "を派遣する",
+        "を降格する"
+      ]
+    },
+    {
+      "wordId": "division",
+      "distractors": [
+        "展望",
+        "合併",
+        "配当",
+        "決意"
+      ]
+    },
+    {
+      "wordId": "enclosed",
+      "distractors": [
+        "公開された",
+        "未提出の",
+        "廃止された",
+        "開封済みの"
+      ]
+    },
+    {
+      "wordId": "engage",
+      "distractors": [
+        "を妨げる",
+        "を解放する",
+        "を拡大する",
+        "を賞賛する"
+      ]
+    },
+    {
+      "wordId": "expire",
+      "distractors": [
+        "を刺激する",
+        "発効する",
+        "熱望する",
+        "拡大する"
+      ]
+    },
+    {
+      "wordId": "fiscal",
+      "distractors": [
+        "身体的な",
+        "架空の",
+        "決定的な",
+        "楽観的な"
+      ]
+    },
+    {
+      "wordId": "fortune",
+      "distractors": [
+        "要塞",
+        "名声",
+        "遺言",
+        "勇気"
+      ]
+    },
+    {
+      "wordId": "furnish",
+      "distractors": [
+        "を仕上げる",
+        "を改装する",
+        "を清掃する",
+        "を売却する"
+      ]
+    },
+    {
+      "wordId": "grant",
+      "distractors": [
+        "融資",
+        "賞金",
+        "賃金",
+        "罰金"
+      ]
+    },
+    {
+      "wordId": "gross",
+      "distractors": [
+        "差し引き後の",
+        "平均の",
+        "部分的な",
+        "上品な"
+      ]
+    },
+    {
+      "wordId": "incorporate",
+      "distractors": [
+        "を除外する",
+        "を分離する",
+        "を強調する",
+        "を延期する"
+      ]
+    },
+    {
+      "wordId": "lateness",
+      "distractors": [
+        "欠勤",
+        "早退",
+        "怠惰",
+        "目新しさ"
+      ]
+    },
+    {
+      "wordId": "monopoly",
+      "distractors": [
+        "単調",
+        "合併",
+        "大都市",
+        "委託"
+      ]
+    },
+    {
+      "wordId": "must-have",
+      "distractors": [
+        "時代遅れの",
+        "高級な",
+        "ありふれた",
+        "任意の"
+      ]
+    },
+    {
+      "wordId": "overhaul",
+      "distractors": [
+        "を見落とす",
+        "を追い越す",
+        "を運搬する",
+        "を延期する"
+      ]
+    },
+    {
+      "wordId": "owe",
+      "distractors": [
+        "を所有する",
+        "を貸している",
+        "を稼ぐ",
+        "を返済する"
+      ]
+    },
+    {
+      "wordId": "postpone",
+      "distractors": [
+        "を前倒しする",
+        "を中止する",
+        "を掲示する",
+        "を配達する"
+      ]
+    },
+    {
+      "wordId": "predecessor",
+      "distractors": [
+        "後任者",
+        "捕食者",
+        "子孫",
+        "創業者"
+      ]
+    },
+    {
+      "wordId": "preliminary",
+      "distractors": [
+        "最終的な",
+        "決定的な",
+        "補足的な",
+        "定期的な"
+      ]
+    },
+    {
+      "wordId": "prospect",
+      "distractors": [
+        "視点",
+        "尊敬",
+        "点検",
+        "遺産"
+      ]
+    },
+    {
+      "wordId": "retention",
+      "distractors": [
+        "退職",
+        "意図",
+        "注目",
+        "緊張"
+      ]
+    },
+    {
+      "wordId": "revenue",
+      "distractors": [
+        "支出",
+        "復讐",
+        "大通り",
+        "資本"
+      ]
+    },
+    {
+      "wordId": "rewarding",
+      "distractors": [
+        "報酬の高い",
+        "骨の折れる",
+        "単調な",
+        "名誉ある"
+      ]
+    },
+    {
+      "wordId": "scheme",
+      "distractors": [
+        "主題",
+        "風潮",
+        "予算",
+        "部門"
+      ]
+    },
+    {
+      "wordId": "seal",
+      "distractors": [
+        "を盗む",
+        "を破る",
+        "を縫い付ける",
+        "を包装する"
+      ]
+    },
+    {
+      "wordId": "specialized",
+      "distractors": [
+        "一般向けの",
+        "標準化された",
+        "臨時の",
+        "社交的な"
+      ]
+    },
+    {
+      "wordId": "substitute",
+      "distractors": [
+        "部下",
+        "物質",
+        "見本",
+        "本物"
+      ]
+    },
+    {
+      "wordId": "surplus",
+      "distractors": [
+        "赤字",
+        "不足",
+        "経費",
+        "損失"
+      ]
+    },
+    {
+      "wordId": "tariff",
+      "distractors": [
+        "補助金",
+        "消費税",
+        "手数料",
+        "為替"
+      ]
+    },
+    {
+      "wordId": "tip",
+      "distractors": [
+        "規則",
+        "警告",
+        "見積もり",
+        "秘密"
+      ]
+    },
+    {
+      "wordId": "undertake",
+      "distractors": [
+        "を追い越す",
+        "を理解する",
+        "を過小評価する",
+        "を延期する"
+      ]
+    },
+    {
+      "wordId": "vacancy",
+      "distractors": [
+        "休暇",
+        "予約",
+        "退職",
+        "面接"
+      ]
+    },
+    {
+      "wordId": "vocational",
+      "distractors": [
+        "休暇の",
+        "発声の",
+        "自発的な",
+        "娯楽の"
+      ]
+    },
+    {
+      "wordId": "wage",
+      "distractors": [
+        "賭け金",
+        "貯蓄",
+        "年金",
+        "荷馬車"
+      ]
+    },
+    {
+      "wordId": "reimburse",
+      "distractors": [
+        "を請求する",
+        "を寄付する",
+        "を前払いする",
+        "を差し引く"
+      ]
+    },
+    {
+      "wordId": "complimentary",
+      "distractors": [
+        "補完的な",
+        "義務的な",
+        "割引の",
+        "記念の"
+      ]
+    },
+    {
+      "wordId": "itinerary",
+      "distractors": [
+        "目的地",
+        "領収書",
+        "時刻表",
+        "招待状"
+      ]
+    },
+    {
+      "wordId": "venue",
+      "distractors": [
+        "大通り",
+        "収益",
+        "日程",
+        "主催者"
+      ]
+    },
+    {
+      "wordId": "invoice",
+      "distractors": [
+        "領収書",
+        "見積書",
+        "契約書",
+        "通知書"
+      ]
+    },
+    {
+      "wordId": "inventory",
+      "distractors": [
+        "発明",
+        "投資",
+        "倉庫",
+        "発注書"
+      ]
+    },
+    {
+      "wordId": "merger",
+      "distractors": [
+        "買収",
+        "分社化",
+        "提携",
+        "倒産"
+      ]
+    },
+    {
+      "wordId": "subsidiary",
+      "distractors": [
+        "補助金",
+        "本社",
+        "支店",
+        "株主"
+      ]
+    },
+    {
+      "wordId": "warranty",
+      "distractors": [
+        "令状",
+        "賠償金",
+        "正当な理由",
+        "免許証"
+      ]
+    },
+    {
+      "wordId": "refurbish",
+      "distractors": [
+        "を払い戻す",
+        "を再利用する",
+        "を移転する",
+        "を取り壊す"
+      ]
+    },
+    {
+      "wordId": "tentative",
+      "distractors": [
+        "注意深い",
+        "確定済みの",
+        "意図的な",
+        "魅力的な"
+      ]
+    },
+    {
+      "wordId": "lucrative",
+      "distractors": [
+        "高価な",
+        "幸運な",
+        "明快な",
+        "派手な"
+      ]
+    },
+    {
+      "wordId": "streamline",
+      "distractors": [
+        "を配信する",
+        "を強化する",
+        "を自動化する",
+        "を格下げする"
+      ]
+    },
+    {
+      "wordId": "endorse",
+      "distractors": [
+        "を批判する",
+        "を却下する",
+        "を強制する",
+        "を輸入する"
+      ]
+    },
+    {
+      "wordId": "patron",
+      "distractors": [
+        "型",
+        "見習い",
+        "従業員",
+        "通行人"
+      ]
+    },
+    {
+      "wordId": "premises",
+      "distractors": [
+        "前提",
+        "保険料",
+        "約束",
+        "首相"
+      ]
+    },
+    {
+      "wordId": "state-of-the-art",
+      "distractors": [
+        "芸術的な",
+        "国営の",
+        "旧式の",
+        "標準的な"
+      ]
+    },
+    {
+      "wordId": "durable",
+      "distractors": [
+        "疑わしい",
+        "貴重な",
+        "柔軟な",
+        "持ち運べる"
+      ]
+    },
+    {
+      "wordId": "absurd",
+      "distractors": [
+        "厳粛な",
+        "もっともな",
+        "あいまいな",
+        "突然の"
+      ]
+    },
+    {
+      "wordId": "abundant",
+      "distractors": [
+        "余分な",
+        "乏しい",
+        "従順な",
+        "快適な"
+      ]
+    },
+    {
+      "wordId": "adequate",
+      "distractors": [
+        "熱心な",
+        "正確な",
+        "精巧な",
+        "過剰な"
+      ]
+    },
+    {
+      "wordId": "adverse",
+      "distractors": [
+        "多様な",
+        "広告の",
+        "有望な",
+        "中立の"
+      ]
+    },
+    {
+      "wordId": "ample",
+      "distractors": [
+        "見本の",
+        "簡素な",
+        "貧弱な",
+        "巨大な"
+      ]
+    },
+    {
+      "wordId": "authentic",
+      "distractors": [
+        "権威ある",
+        "自動的な",
+        "偽造の",
+        "美的な"
+      ]
+    },
+    {
+      "wordId": "awful",
+      "distractors": [
+        "素晴らしい",
+        "平凡な",
+        "気まずい",
+        "退屈な"
+      ]
+    },
+    {
+      "wordId": "breadth",
+      "distractors": [
+        "呼吸",
+        "深さ",
+        "長さ",
+        "パン"
+      ]
+    },
+    {
+      "wordId": "bunch",
+      "distractors": [
+        "塊",
+        "一撃",
+        "昼食会",
+        "断片"
+      ]
+    },
+    {
+      "wordId": "crucial",
+      "distractors": [
+        "残酷な",
+        "粗雑な",
+        "些細な",
+        "巨大な"
+      ]
+    },
+    {
+      "wordId": "crude",
+      "distractors": [
+        "残酷な",
+        "重要な",
+        "洗練された",
+        "曲がった"
+      ]
+    },
+    {
+      "wordId": "decent",
+      "distractors": [
+        "最近の",
+        "下品な",
+        "壮大な",
+        "内気な"
+      ]
+    },
+    {
+      "wordId": "deserved",
+      "distractors": [
+        "不当な",
+        "予約された",
+        "見捨てられた",
+        "偶然の"
+      ]
+    },
+    {
+      "wordId": "dumb",
+      "distractors": [
+        "賢明な",
+        "陽気な",
+        "乱暴な",
+        "器用な"
+      ]
+    },
+    {
+      "wordId": "eminent",
+      "distractors": [
+        "差し迫った",
+        "巨大な",
+        "慎ましい",
+        "無名の"
+      ]
+    },
+    {
+      "wordId": "excess",
+      "distractors": [
+        "接近",
+        "成功",
+        "不足",
+        "例外"
+      ]
+    },
+    {
+      "wordId": "extent",
+      "distractors": [
+        "延長",
+        "意図",
+        "内容",
+        "頂点"
+      ]
+    },
+    {
+      "wordId": "genuine",
+      "distractors": [
+        "独創的な",
+        "寛大な",
+        "穏やかな",
+        "有能な"
+      ]
+    },
+    {
+      "wordId": "grave",
+      "distractors": [
+        "勇敢な",
+        "軽微な",
+        "灰色の",
+        "粗野な"
+      ]
+    },
+    {
+      "wordId": "harsh",
+      "distractors": [
+        "慌ただしい",
+        "寛大な",
+        "静かな",
+        "つややかな"
+      ]
+    },
+    {
+      "wordId": "imperative",
+      "distractors": [
+        "皇帝の",
+        "不完全な",
+        "任意の",
+        "無礼な"
+      ]
+    },
+    {
+      "wordId": "indispensable",
+      "distractors": [
+        "使い捨ての",
+        "分割できない",
+        "余分な",
+        "手に負えない"
+      ]
+    },
+    {
+      "wordId": "inevitable",
+      "distractors": [
+        "目に見えない",
+        "無敵の",
+        "偶然の",
+        "不安定な"
+      ]
+    },
+    {
+      "wordId": "inferior",
+      "distractors": [
+        "内部の",
+        "優れた",
+        "以前の",
+        "無関心な"
+      ]
+    },
+    {
+      "wordId": "justified",
+      "distractors": [
+        "調整された",
+        "有罪の",
+        "誇張された",
+        "寛容な"
+      ]
+    },
+    {
+      "wordId": "manifold",
+      "distractors": [
+        "明白な",
+        "手作業の",
+        "均一な",
+        "頑丈な"
+      ]
+    },
+    {
+      "wordId": "multitude",
+      "distractors": [
+        "高度",
+        "態度",
+        "緯度",
+        "孤独"
+      ]
+    },
+    {
+      "wordId": "negligible",
+      "distractors": [
+        "怠慢な",
+        "交渉可能な",
+        "計り知れない",
+        "読みやすい"
+      ]
+    },
+    {
+      "wordId": "notorious",
+      "distractors": [
+        "（良い意味で）名高い",
+        "頑固な",
+        "無名の",
+        "裕福な"
+      ]
+    },
+    {
+      "wordId": "numerous",
+      "distractors": [
+        "数値の",
+        "巨大な",
+        "ゆかいな",
+        "わずかな"
+      ]
+    },
+    {
+      "wordId": "outrageous",
+      "distractors": [
+        "勇敢な",
+        "時代遅れの",
+        "妥当な",
+        "慎重な"
+      ]
+    },
+    {
+      "wordId": "outstanding",
+      "distractors": [
+        "時代遅れの",
+        "平凡な",
+        "横柄な",
+        "頑固な"
+      ]
+    },
+    {
+      "wordId": "paramount",
+      "distractors": [
+        "山積みの",
+        "逆説的な",
+        "従属的な",
+        "平行の"
+      ]
+    },
+    {
+      "wordId": "peculiar",
+      "distractors": [
+        "特定の",
+        "規則的な",
+        "人気のある",
+        "完璧な"
+      ]
+    },
+    {
+      "wordId": "peripheral",
+      "distractors": [
+        "周期的な",
+        "中心的な",
+        "永続的な",
+        "危険な"
+      ]
+    },
+    {
+      "wordId": "pivotal",
+      "distractors": [
+        "些細な",
+        "予備の",
+        "部分的な",
+        "悲観的な"
+      ]
+    },
+    {
+      "wordId": "plenty",
+      "distractors": [
+        "刑罰",
+        "不足",
+        "空腹",
+        "平原"
+      ]
+    },
+    {
+      "wordId": "preferable",
+      "distractors": [
+        "予測可能な",
+        "利益になる",
+        "持ち運べる",
+        "避けられない"
+      ]
+    },
+    {
+      "wordId": "pressing",
+      "distractors": [
+        "印象的な",
+        "抑圧的な",
+        "悠長な",
+        "楽観的な"
+      ]
+    },
+    {
+      "wordId": "prestige",
+      "distractors": [
+        "特権",
+        "圧力",
+        "前兆",
+        "偏見"
+      ]
+    },
+    {
+      "wordId": "prevalent",
+      "distractors": [
+        "予防の",
+        "関連のある",
+        "慎重な",
+        "まれな"
+      ]
+    },
+    {
+      "wordId": "prominence",
+      "distractors": [
+        "昇進",
+        "発音",
+        "永続",
+        "快適さ"
+      ]
+    },
+    {
+      "wordId": "proportion",
+      "distractors": [
+        "提案",
+        "部分",
+        "予測",
+        "昇進"
+      ]
+    },
+    {
+      "wordId": "renowned",
+      "distractors": [
+        "更新された",
+        "改装された",
+        "無名の",
+        "裕福な"
+      ]
+    },
+    {
+      "wordId": "ridiculous",
+      "distractors": [
+        "厳粛な",
+        "慎重な",
+        "ぜいたくな",
+        "筋の通った"
+      ]
+    },
+    {
+      "wordId": "rigid",
+      "distractors": [
+        "活発な",
+        "柔軟な",
+        "率直な",
+        "質素な"
+      ]
+    },
+    {
+      "wordId": "scarce",
+      "distractors": [
+        "怖がった",
+        "神聖な",
+        "豊富な",
+        "傷のある"
+      ]
+    },
+    {
+      "wordId": "secondary",
+      "distractors": [
+        "最優先の",
+        "機密の",
+        "独立した",
+        "定期的な"
+      ]
+    },
+    {
+      "wordId": "severity",
+      "distractors": [
+        "寛大さ",
+        "多様性",
+        "安定性",
+        "類似性"
+      ]
+    },
+    {
+      "wordId": "sheer",
+      "distractors": [
+        "光沢のある",
+        "部分的な",
+        "内気な",
+        "陽気な"
+      ]
+    },
+    {
+      "wordId": "significant",
+      "distractors": [
+        "象徴的な",
+        "特定の",
+        "わずかな",
+        "静かな"
+      ]
+    },
+    {
+      "wordId": "sole",
+      "distractors": [
+        "魂の",
+        "太陽の",
+        "固体の",
+        "主要な"
+      ]
+    },
+    {
+      "wordId": "straightforward",
+      "distractors": [
+        "一直線の",
+        "前向きな",
+        "複雑な",
+        "厳格な"
+      ]
+    },
+    {
+      "wordId": "stringent",
+      "distractors": [
+        "緊急の",
+        "寛大な",
+        "弦楽器の",
+        "頑丈な"
+      ]
+    },
+    {
+      "wordId": "stuff",
+      "distractors": [
+        "職員",
+        "家具",
+        "主食",
+        "段階"
+      ]
+    },
+    {
+      "wordId": "superficial",
+      "distractors": [
+        "優れた",
+        "迷信的な",
+        "余分な",
+        "誠実な"
+      ]
+    },
+    {
+      "wordId": "superfluous",
+      "distractors": [
+        "表面的な",
+        "上位の",
+        "流動的な",
+        "不可欠な"
+      ]
+    },
+    {
+      "wordId": "superior",
+      "distractors": [
+        "表面的な",
+        "劣った",
+        "迷信深い",
+        "内部の"
+      ]
+    },
+    {
+      "wordId": "tremendous",
+      "distractors": [
+        "震えている",
+        "一時的な",
+        "ささいな",
+        "陰険な"
+      ]
+    },
+    {
+      "wordId": "trivial",
+      "distractors": [
+        "勝ち誇った",
+        "三倍の",
+        "伝統的な",
+        "重大な"
+      ]
+    },
+    {
+      "wordId": "ubiquitous",
+      "distractors": [
+        "曖昧な",
+        "独特の",
+        "希少な",
+        "均質な"
+      ]
+    },
+    {
+      "wordId": "utmost",
+      "distractors": [
+        "最も外側の",
+        "ありふれた",
+        "遠方の",
+        "未熟な"
+      ]
+    },
+    {
+      "wordId": "warranted",
+      "distractors": [
+        "指名手配の",
+        "疲れ切った",
+        "不当な",
+        "用心深い"
+      ]
+    },
+    {
+      "wordId": "widespread",
+      "distractors": [
+        "幅広の",
+        "局地的な",
+        "遠く離れた",
+        "風通しのよい"
+      ]
+    },
+    {
+      "wordId": "accumulate",
+      "distractors": [
+        "を計算する",
+        "を循環させる",
+        "を刺激する",
+        "を分配する"
+      ]
+    },
+    {
+      "wordId": "alleviate",
+      "distractors": [
+        "を上昇させる",
+        "を悪化させる",
+        "を評価する",
+        "を除去する"
+      ]
+    },
+    {
+      "wordId": "arise",
+      "distractors": [
+        "到着する",
+        "を上げる",
+        "逆らう",
+        "沈む"
+      ]
+    },
+    {
+      "wordId": "burgeoning",
+      "distractors": [
+        "負担となる",
+        "燃え盛る",
+        "衰退しつつある",
+        "停滞している"
+      ]
+    },
+    {
+      "wordId": "cause",
+      "distractors": [
+        "結果",
+        "小休止",
+        "条項",
+        "行進"
+      ]
+    },
+    {
+      "wordId": "cease",
+      "distractors": [
+        "をつかむ",
+        "続く",
+        "増加する",
+        "折り目をつける"
+      ]
+    },
+    {
+      "wordId": "commence",
+      "distractors": [
+        "を称賛する",
+        "について論評する",
+        "通勤する",
+        "を完了する"
+      ]
+    },
+    {
+      "wordId": "embark",
+      "distractors": [
+        "を禁輸にする",
+        "下船する",
+        "吠える",
+        "を包含する"
+      ]
+    },
+    {
+      "wordId": "forge",
+      "distractors": [
+        "を忘れる",
+        "を放棄する",
+        "を許す",
+        "を予測する"
+      ]
+    },
+    {
+      "wordId": "coincide",
+      "distractors": [
+        "衝突する",
+        "決定する",
+        "協力する",
+        "落下する"
+      ]
+    },
+    {
+      "wordId": "curb",
+      "distractors": [
+        "を治す",
+        "を巻き上げる",
+        "を彫刻する",
+        "を促進する"
+      ]
+    },
+    {
+      "wordId": "deterioration",
+      "distractors": [
+        "決意",
+        "改善",
+        "抑止",
+        "蒸発"
+      ]
+    },
+    {
+      "wordId": "disrupt",
+      "distractors": [
+        "を噴火させる",
+        "を分配する",
+        "を腐敗させる",
+        "を解散させる"
+      ]
+    },
+    {
+      "wordId": "dissipate",
+      "distractors": [
+        "に参加する",
+        "を予期する",
+        "を凝縮する",
+        "を蒸留する"
+      ]
+    },
+    {
+      "wordId": "drive",
+      "distractors": [
+        "を導く",
+        "を妨げる",
+        "を遅らせる",
+        "を拒否する"
+      ]
+    },
+    {
+      "wordId": "emerge",
+      "distractors": [
+        "合併する",
+        "浸す",
+        "沈む",
+        "逃げ出す"
+      ]
+    },
+    {
+      "wordId": "encourage",
+      "distractors": [
+        "を落胆させる",
+        "を危険にさらす",
+        "を保証する",
+        "を訂正する"
+      ]
+    },
+    {
+      "wordId": "enduring",
+      "distractors": [
+        "愛らしい",
+        "骨の折れる",
+        "一時的な",
+        "保証された"
+      ]
+    },
+    {
+      "wordId": "enlarge",
+      "distractors": [
+        "を延長する",
+        "を啓発する",
+        "を登録する",
+        "を縮小する"
+      ]
+    },
+    {
+      "wordId": "eternal",
+      "distractors": [
+        "内部の",
+        "外部の",
+        "母性の",
+        "季節の"
+      ]
+    },
+    {
+      "wordId": "evoke",
+      "distractors": [
+        "を無効にする",
+        "を発動する",
+        "を回避する",
+        "を蒸発させる"
+      ]
+    },
+    {
+      "wordId": "exert",
+      "distractors": [
+        "を主張する",
+        "を輸出する",
+        "を挿入する",
+        "を免除する"
+      ]
+    },
+    {
+      "wordId": "extinguish",
+      "distractors": [
+        "を区別する",
+        "を絶滅させる",
+        "を延長する",
+        "を称賛する"
+      ]
+    },
+    {
+      "wordId": "fade",
+      "distractors": [
+        "流行する",
+        "濃くなる",
+        "逃げ去る",
+        "揺れる"
+      ]
+    },
+    {
+      "wordId": "facilitate",
+      "distractors": [
+        "を設備する",
+        "を模倣する",
+        "を複雑にする",
+        "を委託する"
+      ]
+    },
+    {
+      "wordId": "flourish",
+      "distractors": [
+        "に栄養を与える",
+        "衰退する",
+        "洪水を起こす",
+        "磨き上げる"
+      ]
+    },
+    {
+      "wordId": "foster",
+      "distractors": [
+        "を強制する",
+        "を予測する",
+        "を凍結する",
+        "を妨げる"
+      ]
+    },
+    {
+      "wordId": "fuel",
+      "distractors": [
+        "を冷ます",
+        "を満たす",
+        "をだます",
+        "を感じる"
+      ]
+    },
+    {
+      "wordId": "halt",
+      "distractors": [
+        "を半減させる",
+        "を持ち上げる",
+        "を加速させる",
+        "をつるす"
+      ]
+    },
+    {
+      "wordId": "impetus",
+      "distractors": [
+        "衝動",
+        "障害物",
+        "皮肉",
+        "免疫"
+      ]
+    },
+    {
+      "wordId": "induce",
+      "distractors": [
+        "を導入する",
+        "を推論する",
+        "を減らす",
+        "を生産する"
+      ]
+    },
+    {
+      "wordId": "interfere",
+      "distractors": [
+        "交流する",
+        "通訳する",
+        "推論する",
+        "仲裁する"
+      ]
+    },
+    {
+      "wordId": "lasting",
+      "distractors": [
+        "最後の",
+        "遅れがちな",
+        "最新の",
+        "一瞬の"
+      ]
+    },
+    {
+      "wordId": "mitigate",
+      "distractors": [
+        "を移住させる",
+        "を模倣する",
+        "を瞑想する",
+        "を悪化させる"
+      ]
+    },
+    {
+      "wordId": "mount",
+      "distractors": [
+        "を数える",
+        "を減らす",
+        "を告発する",
+        "を隠す"
+      ]
+    },
+    {
+      "wordId": "nurture",
+      "distractors": [
+        "に栄養を与える",
+        "を無視する",
+        "を看護する",
+        "を測定する"
+      ]
+    },
+    {
+      "wordId": "obstacle",
+      "distractors": [
+        "奇跡",
+        "見せ物",
+        "執着",
+        "器具"
+      ]
+    },
+    {
+      "wordId": "obtain",
+      "distractors": [
+        "を維持する",
+        "を含む",
+        "を控える",
+        "を延期する"
+      ]
+    },
+    {
+      "wordId": "overcome",
+      "distractors": [
+        "を歓迎する",
+        "を追い越す",
+        "を見落とす",
+        "を引き継ぐ"
+      ]
+    },
+    {
+      "wordId": "overtake",
+      "distractors": [
+        "を引き継ぐ",
+        "を克服する",
+        "を持ち帰る",
+        "を過大評価する"
+      ]
+    },
+    {
+      "wordId": "pave",
+      "distractors": [
+        "を波立たせる",
+        "を証明する",
+        "を掘り返す",
+        "を祝う"
+      ]
+    },
+    {
+      "wordId": "perpetual",
+      "distractors": [
+        "垂直の",
+        "潜在的な",
+        "断続的な",
+        "個別の"
+      ]
+    },
+    {
+      "wordId": "plunge",
+      "distractors": [
+        "急上昇する",
+        "を差し込む",
+        "を耕す",
+        "を投げる"
+      ]
+    },
+    {
+      "wordId": "prolong",
+      "distractors": [
+        "に属する",
+        "を切望する",
+        "を短縮する",
+        "を予約する"
+      ]
+    },
+    {
+      "wordId": "prosperous",
+      "distractors": [
+        "見込みのある",
+        "提案された",
+        "貧しい",
+        "慎重な"
+      ]
+    },
+    {
+      "wordId": "provoke",
+      "distractors": [
+        "を呼び起こす",
+        "を証明する",
+        "を提供する",
+        "を予防する"
+      ]
+    },
+    {
+      "wordId": "reinforce",
+      "distractors": [
+        "を執行する",
+        "を繰り返す",
+        "を返済する",
+        "を思い出させる"
+      ]
+    },
+    {
+      "wordId": "relieve",
+      "distractors": [
+        "を信じる",
+        "を受け取る",
+        "を明らかにする",
+        "を取り戻す"
+      ]
+    },
+    {
+      "wordId": "shifting",
+      "distractors": [
+        "持ち上がる",
+        "固定された",
+        "ずる賢い",
+        "輝いている"
+      ]
+    },
+    {
+      "wordId": "soar",
+      "distractors": [
+        "痛む",
+        "急降下する",
+        "のこぎりで切る",
+        "ため息をつく"
+      ]
+    },
+    {
+      "wordId": "spare",
+      "distractors": [
+        "きらめく",
+        "を発火させる",
+        "を槍で突く",
+        "を耕す"
+      ]
+    },
+    {
+      "wordId": "spur",
+      "distractors": [
+        "を拒絶する",
+        "全力疾走する",
+        "を延期する",
+        "をこぼす"
+      ]
+    },
+    {
+      "wordId": "stability",
+      "distractors": [
+        "能力",
+        "負債",
+        "馬小屋",
+        "柔軟性"
+      ]
+    },
+    {
+      "wordId": "stem",
+      "distractors": [
+        "蒸気",
+        "段階",
+        "縫い目",
+        "宝石"
+      ]
+    },
+    {
+      "wordId": "suppress",
+      "distractors": [
+        "を押す",
+        "を驚かせる",
+        "を表現する",
+        "を支持する"
+      ]
+    },
+    {
+      "wordId": "surge",
+      "distractors": [
+        "手術を受ける",
+        "急落する",
+        "静まる",
+        "合併する"
+      ]
+    },
+    {
+      "wordId": "surpass",
+      "distractors": [
+        "を通過する",
+        "を包囲する",
+        "を我慢する",
+        "を見下す"
+      ]
+    },
+    {
+      "wordId": "thrive",
+      "distractors": [
+        "努力する",
+        "到着する",
+        "運転する",
+        "飛び込む"
+      ]
+    },
+    {
+      "wordId": "undergo",
+      "distractors": [
+        "地下に潜る",
+        "を過小評価する",
+        "を支える",
+        "を打ち消す"
+      ]
+    },
+    {
+      "wordId": "underpin",
+      "distractors": [
+        "を弱体化させる",
+        "に下線を引く",
+        "を理解する",
+        "を着込む"
+      ]
+    },
+    {
+      "wordId": "uninterrupted",
+      "distractors": [
+        "中断された",
+        "興味のない",
+        "意図的でない",
+        "未完成の"
+      ]
+    },
+    {
+      "wordId": "urge",
+      "distractors": [
+        "を合併する",
+        "を延期する",
+        "を非難する",
+        "を断念する"
+      ]
+    },
+    {
+      "wordId": "vanish",
+      "distractors": [
+        "ニスを塗る",
+        "を罰する",
+        "を磨く",
+        "復活する"
+      ]
+    },
+    {
+      "wordId": "withstand",
+      "distractors": [
+        "を理解する",
+        "を差し控える",
+        "から撤退する",
+        "を目撃する"
+      ]
+    },
+    {
+      "wordId": "ascend",
+      "distractors": [
+        "下る",
+        "同意する",
+        "を送り出す",
+        "を査定する"
+      ]
+    },
+    {
+      "wordId": "bend",
+      "distractors": [
+        "を混ぜる",
+        "を貸す",
+        "を送る",
+        "を修理する"
+      ]
+    },
+    {
+      "wordId": "grab",
+      "distractors": [
+        "をこする",
+        "を包む",
+        "を自慢する",
+        "を掘る"
+      ]
+    },
+    {
+      "wordId": "lean",
+      "distractors": [
+        "学ぶ",
+        "跳ぶ",
+        "立ち去る",
+        "眠る"
+      ]
+    },
+    {
+      "wordId": "leap",
+      "distractors": [
+        "山積みにする",
+        "忍び寄る",
+        "すすり泣く",
+        "滑る"
+      ]
+    },
+    {
+      "wordId": "migrate",
+      "distractors": [
+        "を軽減する",
+        "を模倣する",
+        "瞑想する",
+        "を統合する"
+      ]
+    },
+    {
+      "wordId": "penetrate",
+      "distractors": [
+        "を悔い改める",
+        "を処罰する",
+        "を包囲する",
+        "を予期する"
+      ]
+    },
+    {
+      "wordId": "pile",
+      "distractors": [
+        "錠剤",
+        "書類ばさみ",
+        "巡礼者",
+        "柱"
+      ]
+    },
+    {
+      "wordId": "pour",
+      "distractors": [
+        "貧しくなる",
+        "熟読する",
+        "を押しつぶす",
+        "停止する"
+      ]
+    },
+    {
+      "wordId": "roam",
+      "distractors": [
+        "うなり声を上げる",
+        "泡立つ",
+        "漕ぐ",
+        "燃える"
+      ]
+    },
+    {
+      "wordId": "sink",
+      "distractors": [
+        "浮かぶ",
+        "考える",
+        "縮む",
+        "瞬く"
+      ]
+    },
+    {
+      "wordId": "steer",
+      "distractors": [
+        "を盗む",
+        "を凝視する",
+        "を蒸す",
+        "を停止させる"
+      ]
+    },
+    {
+      "wordId": "stick",
+      "distractors": [
+        "滑り落ちる",
+        "を積み上げる",
+        "を縫う",
+        "を選ぶ"
+      ]
+    },
+    {
+      "wordId": "stir",
+      "distractors": [
+        "を凝視する",
+        "を蒸す",
+        "を引き裂く",
+        "を留める"
+      ]
+    },
+    {
+      "wordId": "stride",
+      "distractors": [
+        "縞模様",
+        "打撃",
+        "散歩",
+        "闘争"
+      ]
+    },
+    {
+      "wordId": "stumble",
+      "distractors": [
+        "転がる",
+        "ぶつぶつ言う",
+        "謙遜する",
+        "崩れる"
+      ]
+    },
+    {
+      "wordId": "twist",
+      "distractors": [
+        "を回転させる",
+        "をつねる",
+        "を引っ張る",
+        "を折りたたむ"
+      ]
+    },
+    {
+      "wordId": "weave",
+      "distractors": [
+        "を編む",
+        "手を振る",
+        "をなびかせる",
+        "を刈り取る"
+      ]
+    },
+    {
+      "wordId": "scattered",
+      "distractors": [
+        "粉々になった",
+        "集められた",
+        "おびえた",
+        "引っかかれた"
+      ]
+    },
+    {
+      "wordId": "shatter",
+      "distractors": [
+        "をまき散らす",
+        "を黙らせる",
+        "身震いする",
+        "を保護する"
+      ]
+    },
+    {
+      "wordId": "shed",
+      "distractors": [
+        "を切り刻む",
+        "を隠す",
+        "を磨く",
+        "を積み込む"
+      ]
+    },
+    {
+      "wordId": "accuracy",
+      "distractors": [
+        "告発",
+        "効率",
+        "蓄積",
+        "敏捷さ"
+      ]
+    },
+    {
+      "wordId": "aggregate",
+      "distractors": [
+        "を悪化させる",
+        "を分離する",
+        "を移住する",
+        "を祝福する"
+      ]
+    },
+    {
+      "wordId": "ambiguity",
+      "distractors": [
+        "野心",
+        "雰囲気",
+        "明快さ",
+        "移動性"
+      ]
+    },
+    {
+      "wordId": "anecdotal",
+      "distractors": [
+        "解毒の",
+        "分析的な",
+        "統計に基づく",
+        "時代錯誤の"
+      ]
+    },
+    {
+      "wordId": "apparent",
+      "distractors": [
+        "透明な",
+        "親の",
+        "突然の",
+        "不明瞭な"
+      ]
+    },
+    {
+      "wordId": "assume",
+      "distractors": [
+        "を保証する",
+        "を消費する",
+        "を再開する",
+        "を要約する"
+      ]
+    },
+    {
+      "wordId": "attribute",
+      "distractors": [
+        "を寄付する",
+        "を分配する",
+        "を配布する",
+        "を賞賛する"
+      ]
+    },
+    {
+      "wordId": "coherent",
+      "distractors": [
+        "固有の",
+        "粘着性の",
+        "勇敢な",
+        "陽気な"
+      ]
+    },
+    {
+      "wordId": "cohesive",
+      "distractors": [
+        "接着剤の",
+        "排他的な",
+        "攻撃的な",
+        "湿った"
+      ]
+    },
+    {
+      "wordId": "compile",
+      "distractors": [
+        "を強制する",
+        "を完了する",
+        "を比較する",
+        "を補償する"
+      ]
+    },
+    {
+      "wordId": "complex",
+      "distractors": [
+        "完全な",
+        "従順な",
+        "簡潔な",
+        "満足した"
+      ]
+    },
+    {
+      "wordId": "comprise",
+      "distractors": [
+        "を妥協する",
+        "を圧縮する",
+        "を約束する",
+        "を驚かせる"
+      ]
+    },
+    {
+      "wordId": "conclude",
+      "distractors": [
+        "を含む",
+        "を除外する",
+        "を混同する",
+        "を開始する"
+      ]
+    },
+    {
+      "wordId": "concrete",
+      "distractors": [
+        "抽象的な",
+        "正しい",
+        "簡潔な",
+        "慎重な"
+      ]
+    },
+    {
+      "wordId": "conduct",
+      "distractors": [
+        "を建設する",
+        "を接続する",
+        "を征服する",
+        "を翻訳する"
+      ]
+    },
+    {
+      "wordId": "consistent",
+      "distractors": [
+        "矛盾した",
+        "粘り強い",
+        "抵抗力のある",
+        "気まぐれな"
+      ]
+    },
+    {
+      "wordId": "contemplate",
+      "distractors": [
+        "を軽蔑する",
+        "を含有する",
+        "を競い合う",
+        "を凝縮する"
+      ]
+    },
+    {
+      "wordId": "contrary",
+      "distractors": [
+        "現代の",
+        "契約上の",
+        "遺憾な",
+        "継続的な"
+      ]
+    },
+    {
+      "wordId": "credibility",
+      "distractors": [
+        "信用貸し",
+        "柔軟性",
+        "好奇心",
+        "創造性"
+      ]
+    },
+    {
+      "wordId": "deliberate",
+      "distractors": [
+        "繊細な",
+        "解放された",
+        "偶然の",
+        "美味な"
+      ]
+    },
+    {
+      "wordId": "determine",
+      "distractors": [
+        "を抑止する",
+        "を悪化させる",
+        "を終わらせる",
+        "を延期する"
+      ]
+    },
+    {
+      "wordId": "devise",
+      "distractors": [
+        "を装備する",
+        "を改訂する",
+        "を分割する",
+        "を助言する"
+      ]
+    },
+    {
+      "wordId": "disregard",
+      "distractors": [
+        "を尊重する",
+        "を見なす",
+        "を護衛する",
+        "を再考する"
+      ]
+    },
+    {
+      "wordId": "distinct",
+      "distractors": [
+        "絶滅した",
+        "遠く離れた",
+        "本能的な",
+        "上品な"
+      ]
+    },
+    {
+      "wordId": "embody",
+      "distractors": [
+        "を雇用する",
+        "に刺繍する",
+        "を埋め込む",
+        "を魅了する"
+      ]
+    },
+    {
+      "wordId": "embrace",
+      "distractors": [
+        "を拒絶する",
+        "を当惑させる",
+        "に刺繍する",
+        "を強調する"
+      ]
+    },
+    {
+      "wordId": "empirical",
+      "distractors": [
+        "帝国の",
+        "理論上の",
+        "数学的な",
+        "感情的な"
+      ]
+    },
+    {
+      "wordId": "encompass",
+      "distractors": [
+        "方角を測る",
+        "を強制する",
+        "を除外する",
+        "を圧縮する"
+      ]
+    },
+    {
+      "wordId": "enigma",
+      "distractors": [
+        "警句",
+        "空想",
+        "偏見",
+        "象徴"
+      ]
+    },
+    {
+      "wordId": "esoteric",
+      "distractors": [
+        "美的な",
+        "詩的な",
+        "大衆的な",
+        "熱狂的な"
+      ]
+    },
+    {
+      "wordId": "favor",
+      "distractors": [
+        "風味",
+        "発熱",
+        "反対",
+        "運命"
+      ]
+    },
+    {
+      "wordId": "feasible",
+      "distractors": [
+        "柔軟な",
+        "壊れやすい",
+        "目に見える",
+        "豊富な"
+      ]
+    },
+    {
+      "wordId": "foresee",
+      "distractors": [
+        "を監督する",
+        "を放棄する",
+        "を思い出す",
+        "を見送る"
+      ]
+    },
+    {
+      "wordId": "implication",
+      "distractors": [
+        "応用",
+        "複製",
+        "複雑化",
+        "埋め込み"
+      ]
+    },
+    {
+      "wordId": "inclined",
+      "distractors": [
+        "含まれた",
+        "断られた",
+        "囲まれた",
+        "拡大された"
+      ]
+    },
+    {
+      "wordId": "inquiry",
+      "distractors": [
+        "尋問",
+        "産業",
+        "侵入",
+        "在庫"
+      ]
+    },
+    {
+      "wordId": "insightful",
+      "distractors": [
+        "視力の良い",
+        "内部関係者の",
+        "些細な",
+        "表面的な"
+      ]
+    },
+    {
+      "wordId": "intention",
+      "distractors": [
+        "注意",
+        "緊張",
+        "維持",
+        "発明"
+      ]
+    },
+    {
+      "wordId": "interpretation",
+      "distractors": [
+        "中断",
+        "導入",
+        "相互作用",
+        "統合"
+      ]
+    },
+    {
+      "wordId": "involve",
+      "distractors": [
+        "を進化させる",
+        "を回転させる",
+        "を解決する",
+        "を回収する"
+      ]
+    },
+    {
+      "wordId": "moot",
+      "distractors": [
+        "無言の",
+        "感動的な",
+        "湿地の",
+        "陽気な"
+      ]
+    },
+    {
+      "wordId": "objective",
+      "distractors": [
+        "主観的な",
+        "反抗的な",
+        "効果的な",
+        "楽観的な"
+      ]
+    },
+    {
+      "wordId": "obscure",
+      "distractors": [
+        "安全な",
+        "時代遅れの",
+        "有名な",
+        "頑固な"
+      ]
+    },
+    {
+      "wordId": "outlook",
+      "distractors": [
+        "外見",
+        "見落とし",
+        "概要",
+        "出費"
+      ]
+    },
+    {
+      "wordId": "overlook",
+      "distractors": [
+        "を監督する",
+        "を追い越す",
+        "を綿密に調べる",
+        "を見習う"
+      ]
+    },
+    {
+      "wordId": "perception",
+      "distractors": [
+        "受付",
+        "例外",
+        "割合",
+        "説得"
+      ]
+    },
+    {
+      "wordId": "perplexing",
+      "distractors": [
+        "永続的な",
+        "柔軟な",
+        "完璧な",
+        "説得力のある"
+      ]
+    },
+    {
+      "wordId": "perspective",
+      "distractors": [
+        "見込み",
+        "尊敬",
+        "検査",
+        "処方箋"
+      ]
+    },
+    {
+      "wordId": "ponder",
+      "distractors": [
+        "歩き回る",
+        "を強打する",
+        "に依存する",
+        "を延期する"
+      ]
+    },
+    {
+      "wordId": "pose",
+      "distractors": [
+        "を提案する",
+        "を所有する",
+        "を一時停止する",
+        "を配達する"
+      ]
+    },
+    {
+      "wordId": "precise",
+      "distractors": [
+        "貴重な",
+        "簡潔な",
+        "以前の",
+        "おおよその"
+      ]
+    },
+    {
+      "wordId": "premise",
+      "distractors": [
+        "約束",
+        "構内",
+        "保険料",
+        "賞品"
+      ]
+    },
+    {
+      "wordId": "pretend",
+      "distractors": [
+        "を意図する",
+        "を延長する",
+        "に出席する",
+        "を防ぐ"
+      ]
+    },
+    {
+      "wordId": "probe",
+      "distractors": [
+        "を証明する",
+        "を禁止する",
+        "を保護する",
+        "を約束する"
+      ]
+    },
+    {
+      "wordId": "prone",
+      "distractors": [
+        "孤独な",
+        "目立った",
+        "誇り高い",
+        "頑丈な"
+      ]
+    },
+    {
+      "wordId": "prove",
+      "distractors": [
+        "を徹底調査する",
+        "を承認する",
+        "を改善する",
+        "を取り除く"
+      ]
+    },
+    {
+      "wordId": "rational",
+      "distractors": [
+        "国家の",
+        "配給制の",
+        "感情的な",
+        "部分的な"
+      ]
+    },
+    {
+      "wordId": "revise",
+      "distractors": [
+        "を復活させる",
+        "を逆転させる",
+        "を回収する",
+        "を復讐する"
+      ]
+    },
+    {
+      "wordId": "riddle",
+      "distractors": [
+        "さざ波",
+        "童謡",
+        "中央",
+        "冗談"
+      ]
+    },
+    {
+      "wordId": "scholarly",
+      "distractors": [
+        "学校の",
+        "奨学金の",
+        "世俗的な",
+        "気難しい"
+      ]
+    },
+    {
+      "wordId": "scrutinize",
+      "distractors": [
+        "をざっと見る",
+        "を批判する",
+        "を落書きする",
+        "を細断する"
+      ]
+    },
+    {
+      "wordId": "skepticism",
+      "distractors": [
+        "楽観主義",
+        "熱狂",
+        "迷信",
+        "皮肉"
+      ]
+    },
+    {
+      "wordId": "speculate",
+      "distractors": [
+        "観戦する",
+        "を蓄積する",
+        "を計算する",
+        "を刺激する"
+      ]
+    },
+    {
+      "wordId": "thought",
+      "distractors": [
+        "のど",
+        "戦い",
+        "糸",
+        "誘惑"
+      ]
+    },
+    {
+      "wordId": "vague",
+      "distractors": [
+        "流行の",
+        "広大な",
+        "勇敢な",
+        "空っぽの"
+      ]
+    },
+    {
+      "wordId": "constitute",
+      "distractors": [
+        "を代用する",
+        "を配布する",
+        "を建設する",
+        "を落成させる"
+      ]
+    },
+    {
+      "wordId": "pertain",
+      "distractors": [
+        "を維持する",
+        "を獲得する",
+        "を含有する",
+        "を訓練する"
+      ]
+    },
+    {
+      "wordId": "uncover",
+      "distractors": [
+        "を覆い隠す",
+        "を回復する",
+        "を撤回する",
+        "を包装する"
+      ]
+    },
+    {
+      "wordId": "admit",
+      "distractors": [
+        "を賞賛する",
+        "を否定する",
+        "を提出する",
+        "を省略する"
+      ]
+    },
+    {
+      "wordId": "appeal",
+      "distractors": [
+        "現れる",
+        "拍手する",
+        "を任命する",
+        "皮をむく"
+      ]
+    },
+    {
+      "wordId": "argue",
+      "distractors": [
+        "同意する",
+        "到着する",
+        "逮捕する",
+        "生じる"
+      ]
+    },
+    {
+      "wordId": "assure",
+      "distractors": [
+        "を保険にかける",
+        "を確実にする",
+        "を想定する",
+        "を配置する"
+      ]
+    },
+    {
+      "wordId": "blame",
+      "distractors": [
+        "を褒める",
+        "を許す",
+        "を疑う",
+        "を羨む"
+      ]
+    },
+    {
+      "wordId": "boast",
+      "distractors": [
+        "を後押しする",
+        "を沸騰させる",
+        "をあぶり焼く",
+        "を謙遜する"
+      ]
+    },
+    {
+      "wordId": "compelling",
+      "distractors": [
+        "強制的な",
+        "競争の激しい",
+        "完全な",
+        "同情的な"
+      ]
+    },
+    {
+      "wordId": "condemn",
+      "distractors": [
+        "を凝縮する",
+        "を許す",
+        "を称賛する",
+        "を推薦する"
+      ]
+    },
+    {
+      "wordId": "confess",
+      "distractors": [
+        "を混乱させる",
+        "を告発する",
+        "を隠す",
+        "を祝福する"
+      ]
+    },
+    {
+      "wordId": "contradict",
+      "distractors": [
+        "と契約する",
+        "を予言する",
+        "を制限する",
+        "に同意する"
+      ]
+    },
+    {
+      "wordId": "controversy",
+      "distractors": [
+        "会話",
+        "対照",
+        "貢献",
+        "回復"
+      ]
+    },
+    {
+      "wordId": "contentious",
+      "distractors": [
+        "満足した",
+        "継続的な",
+        "意識的な",
+        "良心的な"
+      ]
+    },
+    {
+      "wordId": "convey",
+      "distractors": [
+        "を変換する",
+        "を護送する",
+        "を招集する",
+        "を説得する"
+      ]
+    },
+    {
+      "wordId": "conviction",
+      "distractors": [
+        "大会",
+        "貢献",
+        "便利さ",
+        "予測"
+      ]
+    },
+    {
+      "wordId": "convince",
+      "distractors": [
+        "を有罪と宣告する",
+        "を混乱させる",
+        "を征服する",
+        "を発明する"
+      ]
+    },
+    {
+      "wordId": "dispute",
+      "distractors": [
+        "評判",
+        "計算",
+        "追放",
+        "賛辞"
+      ]
+    },
+    {
+      "wordId": "disclose",
+      "distractors": [
+        "を閉鎖する",
+        "を隠蔽する",
+        "を分類する",
+        "を否認する"
+      ]
+    },
+    {
+      "wordId": "emphasis",
+      "distractors": [
+        "共感",
+        "大使館",
+        "熱意",
+        "段階"
+      ]
+    },
+    {
+      "wordId": "exaggerate",
+      "distractors": [
+        "を悪化させる",
+        "を扇動する",
+        "を検査する",
+        "を称賛する"
+      ]
+    },
+    {
+      "wordId": "imitate",
+      "distractors": [
+        "をいらいらさせる",
+        "を開始する",
+        "を瞑想する",
+        "を移住させる"
+      ]
+    },
+    {
+      "wordId": "insult",
+      "distractors": [
+        "相談",
+        "賛辞",
+        "結果",
+        "洞察"
+      ]
+    },
+    {
+      "wordId": "instruct",
+      "distractors": [
+        "を建設する",
+        "を妨害する",
+        "を挿入する",
+        "を保険にかける"
+      ]
+    },
+    {
+      "wordId": "mimic",
+      "distractors": [
+        "を記憶する",
+        "を魅了する",
+        "をあざける",
+        "を測定する"
+      ]
+    },
+    {
+      "wordId": "narrate",
+      "distractors": [
+        "を狭める",
+        "を航行する",
+        "を放置する",
+        "を任命する"
+      ]
+    },
+    {
+      "wordId": "negate",
+      "distractors": [
+        "を交渉する",
+        "を航行する",
+        "を無視する",
+        "を指名する"
+      ]
+    },
+    {
+      "wordId": "objection",
+      "distractors": [
+        "目的",
+        "注射",
+        "拒絶",
+        "観察"
+      ]
+    },
+    {
+      "wordId": "persuade",
+      "distractors": [
+        "を追求する",
+        "を保存する",
+        "を耐え抜く",
+        "を予防する"
+      ]
+    },
+    {
+      "wordId": "portray",
+      "distractors": [
+        "を裏切る",
+        "を輸送する",
+        "を延期する",
+        "を鋳造する"
+      ]
+    },
+    {
+      "wordId": "praise",
+      "distractors": [
+        "を査定する",
+        "祈る",
+        "を持ち上げる",
+        "を非難する"
+      ]
+    },
+    {
+      "wordId": "quote",
+      "distractors": [
+        "投票する",
+        "を暗唱する",
+        "に言及する",
+        "を却下する"
+      ]
+    },
+    {
+      "wordId": "recap",
+      "distractors": [
+        "を回収する",
+        "を再現する",
+        "を繰り返す",
+        "を記録する"
+      ]
+    },
+    {
+      "wordId": "swear",
+      "distractors": [
+        "汗をかく",
+        "揺れる",
+        "を着用する",
+        "を交換する"
+      ]
+    },
+    {
+      "wordId": "above-all",
+      "distractors": [
+        "概して",
+        "結局のところ",
+        "その上",
+        "例外なく"
+      ]
+    },
+    {
+      "wordId": "actually",
+      "distractors": [
+        "現在は",
+        "積極的に",
+        "完全に",
+        "正式に"
+      ]
+    },
+    {
+      "wordId": "and-so-forth",
+      "distractors": [
+        "行ったり来たり",
+        "それどころか",
+        "言い換えれば",
+        "今後は"
+      ]
+    },
+    {
+      "wordId": "at-first-glance",
+      "distractors": [
+        "最初のうちは",
+        "直感的に",
+        "最終的に",
+        "突然に"
+      ]
+    },
+    {
+      "wordId": "briefly",
+      "distractors": [
+        "容易に",
+        "詳細に",
+        "突然に",
+        "率直に"
+      ]
+    },
+    {
+      "wordId": "chiefly",
+      "distractors": [
+        "元気よく",
+        "徐々に",
+        "まれに",
+        "最終的に"
+      ]
+    },
+    {
+      "wordId": "drastically",
+      "distractors": [
+        "わずかに",
+        "論理的に",
+        "悲劇的に",
+        "遠回しに"
+      ]
+    },
+    {
+      "wordId": "either",
+      "distractors": [
+        "（肯定文で）〜もまた",
+        "どちらも〜ない",
+        "いずれにせよ",
+        "その上"
+      ]
+    },
+    {
+      "wordId": "eventually",
+      "distractors": [
+        "偶然に",
+        "均等に",
+        "明らかに",
+        "直ちに"
+      ]
+    },
+    {
+      "wordId": "exponentially",
+      "distractors": [
+        "経験的に",
+        "例外的に",
+        "緩やかに",
+        "予想通りに"
+      ]
+    },
+    {
+      "wordId": "extraordinarily",
+      "distractors": [
+        "通常どおり",
+        "追加で",
+        "部分的に",
+        "偶然に"
+      ]
+    },
+    {
+      "wordId": "fiercely",
+      "distractors": [
+        "公平に",
+        "穏やかに",
+        "恐る恐る",
+        "誠実に"
+      ]
+    },
+    {
+      "wordId": "firmly",
+      "distractors": [
+        "最初に",
+        "正式に",
+        "柔らかく",
+        "以前は"
+      ]
+    },
+    {
+      "wordId": "further",
+      "distractors": [
+        "（距離が）より遠くの",
+        "父親の",
+        "最終の",
+        "以前の"
+      ]
+    },
+    {
+      "wordId": "immensely",
+      "distractors": [
+        "即座に",
+        "ほどほどに",
+        "密かに",
+        "頻繁に"
+      ]
+    },
+    {
+      "wordId": "inherently",
+      "distractors": [
+        "遺伝的に",
+        "表面的に",
+        "偶然に",
+        "独立して"
+      ]
+    },
+    {
+      "wordId": "intensely",
+      "distractors": [
+        "意図的に",
+        "のんびりと",
+        "断続的に",
+        "内密に"
+      ]
+    },
+    {
+      "wordId": "intriguingly",
+      "distractors": [
+        "複雑に",
+        "皮肉にも",
+        "率直に言えば",
+        "徹底的に"
+      ]
+    },
+    {
+      "wordId": "ironically",
+      "distractors": [
+        "鉄のように固く",
+        "象徴的に",
+        "論理的に",
+        "熱心に"
+      ]
+    },
+    {
+      "wordId": "irrespective",
+      "distractors": [
+        "敬意を欠いて",
+        "それぞれに応じて",
+        "無責任にも",
+        "例外なく"
+      ]
+    },
+    {
+      "wordId": "meticulously",
+      "distractors": [
+        "大胆に",
+        "機械的に",
+        "ざっくりと",
+        "神経質に"
+      ]
+    },
+    {
+      "wordId": "moreover",
+      "distractors": [
+        "しかしながら",
+        "それにもかかわらず",
+        "したがって",
+        "なぜなら"
+      ]
+    },
+    {
+      "wordId": "namely",
+      "distractors": [
+        "名目上は",
+        "いわゆる",
+        "匿名で",
+        "明らかに"
+      ]
+    },
+    {
+      "wordId": "nonetheless",
+      "distractors": [
+        "それゆえに",
+        "その結果",
+        "少なくとも",
+        "要するに"
+      ]
+    },
+    {
+      "wordId": "overnight",
+      "distractors": [
+        "残業で",
+        "夜遅くに",
+        "毎晩",
+        "事前に"
+      ]
+    },
+    {
+      "wordId": "owing-to",
+      "distractors": [
+        "〜に借りがあって",
+        "〜にもかかわらず",
+        "〜に加えて",
+        "〜の代わりに"
+      ]
+    },
+    {
+      "wordId": "predominantly",
+      "distractors": [
+        "予想通りに",
+        "過度に",
+        "以前は",
+        "部分的に"
+      ]
+    },
+    {
+      "wordId": "presumably",
+      "distractors": [
+        "以前に",
+        "確実に",
+        "差し当たり",
+        "誇らしげに"
+      ]
+    },
+    {
+      "wordId": "primarily",
+      "distractors": [
+        "原始的に",
+        "個人的に",
+        "二次的に",
+        "正確に"
+      ]
+    },
+    {
+      "wordId": "profoundly",
+      "distractors": [
+        "豊富に",
+        "専門的に",
+        "浅く",
+        "上品に"
+      ]
+    },
+    {
+      "wordId": "radically",
+      "distractors": [
+        "放射状に",
+        "合理的に",
+        "急速に",
+        "保守的に"
+      ]
+    },
+    {
+      "wordId": "simply-put",
+      "distractors": [
+        "正直に言うと",
+        "詳しく言えば",
+        "ついでに言うと",
+        "逆に言えば"
+      ]
+    },
+    {
+      "wordId": "so-far",
+      "distractors": [
+        "はるか遠くに",
+        "今後は",
+        "その後すぐに",
+        "それどころか"
+      ]
+    },
+    {
+      "wordId": "steadily",
+      "distractors": [
+        "こっそりと",
+        "急激に",
+        "断続的に",
+        "一時的に"
+      ]
+    },
+    {
+      "wordId": "subsequently",
+      "distractors": [
+        "その結果として",
+        "以前に",
+        "同時に",
+        "頻繁に"
+      ]
+    },
+    {
+      "wordId": "terribly",
+      "distractors": [
+        "素晴らしく",
+        "おびえて",
+        "わずかに",
+        "厳密に"
+      ]
+    },
+    {
+      "wordId": "thoroughly",
+      "distractors": [
+        "思慮深く",
+        "ざっと",
+        "途中まで",
+        "騒々しく"
+      ]
+    },
+    {
+      "wordId": "undeniably",
+      "distractors": [
+        "信じられないほど",
+        "望ましくないことに",
+        "不当にも",
+        "部分的には"
+      ]
+    },
+    {
+      "wordId": "undoubtedly",
+      "distractors": [
+        "おそらく",
+        "予想外に",
+        "不本意ながら",
+        "ためらいがちに"
+      ]
+    },
+    {
+      "wordId": "universally",
+      "distractors": [
+        "宇宙規模で",
+        "一方的に",
+        "部分的に",
+        "一時的に"
+      ]
+    },
+    {
+      "wordId": "utterly",
+      "distractors": [
+        "口に出して",
+        "最終的に",
+        "部分的に",
+        "丁寧に"
+      ]
+    },
+    {
+      "wordId": "vastly",
+      "distractors": [
+        "素早く",
+        "ばく然と",
+        "わずかに",
+        "最後に"
+      ]
+    },
+    {
+      "wordId": "virtually",
+      "distractors": [
+        "高潔に",
+        "視覚的に",
+        "物理的に",
+        "精力的に"
+      ]
+    },
+    {
+      "wordId": "voluntarily",
+      "distractors": [
+        "無償で",
+        "強制的に",
+        "声高に",
+        "断続的に"
+      ]
+    },
+    {
+      "wordId": "weirdly",
+      "distractors": [
+        "疲れた様子で",
+        "賢明に",
+        "普通に",
+        "陽気に"
+      ]
+    },
+    {
+      "wordId": "in-a-nutshell",
+      "distractors": [
+        "殻に閉じこもって",
+        "具体的に言うと",
+        "長々と",
+        "白状すると"
+      ]
+    },
+    {
+      "wordId": "abide-by",
+      "distractors": [
+        "〜に反対する",
+        "〜を軽視する",
+        "〜のそばに立つ",
+        "〜を見直す"
+      ]
+    },
+    {
+      "wordId": "come-with-the-territory",
+      "distractors": [
+        "領土を手に入れる",
+        "出世の糸口になる",
+        "土地勘がある",
+        "想定外である"
+      ]
+    },
+    {
+      "wordId": "drag-on",
+      "distractors": [
+        "を引きずり出す",
+        "あっさり終わる",
+        "停滞から抜け出す",
+        "焦らす"
+      ]
+    },
+    {
+      "wordId": "from-scratch",
+      "distractors": [
+        "引っかき傷が原因で",
+        "途中から",
+        "スクラッチくじで",
+        "手抜きで"
+      ]
+    },
+    {
+      "wordId": "give-it-a-shot",
+      "distractors": [
+        "銃で撃つ",
+        "注射を打つ",
+        "一杯おごる",
+        "写真を撮る"
+      ]
+    },
+    {
+      "wordId": "go-ahead",
+      "distractors": [
+        "出世する",
+        "先頭を走る",
+        "前置きをする",
+        "引き返す"
+      ]
+    },
+    {
+      "wordId": "go-through-a-rough-patch",
+      "distractors": [
+        "荒れ地を通り抜ける",
+        "応急処置でしのぐ",
+        "難関を突破する",
+        "けんか別れする"
+      ]
+    },
+    {
+      "wordId": "have-something-to-do-with",
+      "distractors": [
+        "〜にやるべき用事がある",
+        "〜と取引がある",
+        "〜とは無関係である",
+        "〜を手伝う"
+      ]
+    },
+    {
+      "wordId": "in-my-capacity-as",
+      "distractors": [
+        "〜の収容能力で",
+        "〜の代理として",
+        "〜を目指して",
+        "〜の能力の限界まで"
+      ]
+    },
+    {
+      "wordId": "line-up",
+      "distractors": [
+        "線を引く",
+        "電話をつなぐ",
+        "順番を抜かす",
+        "裏工作をする"
+      ]
+    },
+    {
+      "wordId": "look-forward-to",
+      "distractors": [
+        "〜の方向を見る",
+        "〜を前もって調べる",
+        "〜を警戒する",
+        "〜を見送る"
+      ]
+    },
+    {
+      "wordId": "make-sense",
+      "distractors": [
+        "感覚を研ぎ澄ます",
+        "感動を与える",
+        "決断を下す",
+        "異議を唱える"
+      ]
+    },
+    {
+      "wordId": "on-board",
+      "distractors": [
+        "板の上に立って",
+        "役員会に出席して",
+        "下宿して",
+        "退屈して"
+      ]
+    },
+    {
+      "wordId": "pick-up",
+      "distractors": [
+        "〜を選び出す",
+        "〜をつまみ食いする",
+        "〜を引き取り拒否する",
+        "〜を追い越す"
+      ]
+    },
+    {
+      "wordId": "quite-a-few",
+      "distractors": [
+        "ごく少数の",
+        "ちょうど半分の",
+        "まったくない",
+        "数え切れないほど無限の"
+      ]
+    },
+    {
+      "wordId": "run-late",
+      "distractors": [
+        "遅くまで走り込む",
+        "夜更かしする",
+        "締め切りを延ばす",
+        "早めに行動する"
+      ]
+    },
+    {
+      "wordId": "strike-up",
+      "distractors": [
+        "殴りかかる",
+        "ストライキを起こす",
+        "〜に命中させる",
+        "〜を打ち切る"
+      ]
+    },
+    {
+      "wordId": "take-center-stage",
+      "distractors": [
+        "裏方に回る",
+        "舞台を設営する",
+        "中立の立場を取る",
+        "主催者になる"
+      ]
+    },
+    {
+      "wordId": "take-over",
+      "distractors": [
+        "〜を追い越す",
+        "〜をやり直す",
+        "〜を持ち帰る",
+        "〜を乗り越える"
+      ]
+    },
+    {
+      "wordId": "work-out",
+      "distractors": [
+        "社外で働く",
+        "残業する",
+        "疲れ果てる",
+        "失業する"
+      ]
+    },
+    {
+      "wordId": "you-name-it",
+      "distractors": [
+        "名前を付けてあげる",
+        "名付け親になる",
+        "ずばり言い当てる",
+        "名乗り出る"
+      ]
+    },
+    {
+      "wordId": "for-the-sake-of",
+      "distractors": [
+        "日本酒と引き換えに",
+        "〜の危機に際して",
+        "〜を犠牲にして",
+        "〜の背後で"
+      ]
+    },
+    {
+      "wordId": "alarmed",
+      "distractors": [
+        "武装した",
+        "感心した",
+        "退屈した",
+        "安心した"
+      ]
+    },
+    {
+      "wordId": "apathy",
+      "distractors": [
+        "共感",
+        "同情",
+        "憎悪",
+        "熱意"
+      ]
+    },
+    {
+      "wordId": "ashamed",
+      "distractors": [
+        "誇りに思って",
+        "恐れて",
+        "驚いて",
+        "感謝して"
+      ]
+    },
+    {
+      "wordId": "awkward",
+      "distractors": [
+        "ひどい",
+        "前向きな",
+        "器用な",
+        "陽気な"
+      ]
+    },
+    {
+      "wordId": "betrayed",
+      "distractors": [
+        "祝福された",
+        "慰められた",
+        "保護された",
+        "称賛された"
+      ]
+    },
+    {
+      "wordId": "bothered",
+      "distractors": [
+        "退屈して",
+        "満足して",
+        "興奮して",
+        "打ちのめされて"
+      ]
+    },
+    {
+      "wordId": "cherish",
+      "distractors": [
+        "を応援する",
+        "を軽視する",
+        "を追い払う",
+        "を選び出す"
+      ]
+    },
+    {
+      "wordId": "desperate",
+      "distractors": [
+        "別々の",
+        "冷静な",
+        "慎重な",
+        "裕福な"
+      ]
+    },
+    {
+      "wordId": "disgusted",
+      "distractors": [
+        "議論された",
+        "変装した",
+        "感激した",
+        "疲れ果てた"
+      ]
+    },
+    {
+      "wordId": "distrust",
+      "distractors": [
+        "苦悩",
+        "軽蔑",
+        "破壊",
+        "混乱"
+      ]
+    },
+    {
+      "wordId": "dread",
+      "distractors": [
+        "を夢見る",
+        "を楽しみにする",
+        "を我慢する",
+        "を避ける"
+      ]
+    },
+    {
+      "wordId": "eager",
+      "distractors": [
+        "気が進まない",
+        "得意げな",
+        "慎重な",
+        "無関心な"
+      ]
+    },
+    {
+      "wordId": "ecstatic",
+      "distractors": [
+        "静的な",
+        "憂鬱な",
+        "冷静な",
+        "無感動な"
+      ]
+    },
+    {
+      "wordId": "enraged",
+      "distractors": [
+        "婚約した",
+        "魅了された",
+        "おびえた",
+        "落胆した"
+      ]
+    },
+    {
+      "wordId": "envious",
+      "distractors": [
+        "野心的な",
+        "明白な",
+        "神経質な",
+        "誇らしげな"
+      ]
+    },
+    {
+      "wordId": "fatigued",
+      "distractors": [
+        "運命づけられた",
+        "魅了された",
+        "飽きた",
+        "緊張した"
+      ]
+    },
+    {
+      "wordId": "fed-up",
+      "distractors": [
+        "満腹の",
+        "疲れ果てた",
+        "夢中の",
+        "元気づけられた"
+      ]
+    },
+    {
+      "wordId": "flustered",
+      "distractors": [
+        "欲求不満の",
+        "紅潮した",
+        "誇らしげな",
+        "平然とした"
+      ]
+    },
+    {
+      "wordId": "frighten",
+      "distractors": [
+        "を戦わせる",
+        "を明るくする",
+        "を締め付ける",
+        "を安心させる"
+      ]
+    },
+    {
+      "wordId": "furious",
+      "distractors": [
+        "好奇心の強い",
+        "豪華な",
+        "不安な",
+        "有名な"
+      ]
+    },
+    {
+      "wordId": "gloomy",
+      "distractors": [
+        "光り輝く",
+        "晴れやかな",
+        "騒がしい",
+        "ねばねばした"
+      ]
+    },
+    {
+      "wordId": "grateful",
+      "distractors": [
+        "偉大な",
+        "優雅な",
+        "満足した",
+        "恩着せがましい"
+      ]
+    },
+    {
+      "wordId": "guilty",
+      "distractors": [
+        "無実の",
+        "疑わしい",
+        "臆病な",
+        "上品な"
+      ]
+    },
+    {
+      "wordId": "hesitant",
+      "distractors": [
+        "断固とした",
+        "せっかちな",
+        "攻撃的な",
+        "従順な"
+      ]
+    },
+    {
+      "wordId": "hostility",
+      "distractors": [
+        "もてなし",
+        "謙虚さ",
+        "友好",
+        "湿度"
+      ]
+    },
+    {
+      "wordId": "humiliated",
+      "distractors": [
+        "謙虚になった",
+        "称賛された",
+        "元気づけられた",
+        "潤いを与えられた"
+      ]
+    },
+    {
+      "wordId": "impress",
+      "distractors": [
+        "を印刷する",
+        "を抑圧する",
+        "を表現する",
+        "を急がせる"
+      ]
+    },
+    {
+      "wordId": "impulse",
+      "distractors": [
+        "脈拍",
+        "本能",
+        "圧力",
+        "印象"
+      ]
+    },
+    {
+      "wordId": "indifference",
+      "distractors": [
+        "相違",
+        "干渉",
+        "熱中",
+        "寛容"
+      ]
+    },
+    {
+      "wordId": "intimidating",
+      "distractors": [
+        "親密な",
+        "模倣した",
+        "魅力的な",
+        "遠慮がちな"
+      ]
+    },
+    {
+      "wordId": "irritated",
+      "distractors": [
+        "うっとりした",
+        "落ち着いた",
+        "孤立した",
+        "感動した"
+      ]
+    },
+    {
+      "wordId": "miserable",
+      "distractors": [
+        "けちな",
+        "幸せな",
+        "神秘的な",
+        "立派な"
+      ]
+    },
+    {
+      "wordId": "nuts",
+      "distractors": [
+        "栄養満点の",
+        "空腹の",
+        "無口な",
+        "頑固な"
+      ]
+    },
+    {
+      "wordId": "obsessed",
+      "distractors": [
+        "観察された",
+        "時代遅れの",
+        "従順な",
+        "無関心な"
+      ]
+    },
+    {
+      "wordId": "rattled",
+      "distractors": [
+        "評価された",
+        "冷静な",
+        "縛られた",
+        "満足した"
+      ]
+    },
+    {
+      "wordId": "reluctant",
+      "distractors": [
+        "頼りがちな",
+        "熱心な",
+        "幸運な",
+        "上品な"
+      ]
+    },
+    {
+      "wordId": "resentful",
+      "distractors": [
+        "敬意を抱いた",
+        "最近の",
+        "感謝した",
+        "用心深い"
+      ]
+    },
+    {
+      "wordId": "scornful",
+      "distractors": [
+        "焦げた",
+        "敬服した",
+        "悲しげな",
+        "内気な"
+      ]
+    },
+    {
+      "wordId": "shaken",
+      "distractors": [
+        "目覚めた",
+        "平静な",
+        "奮い立った",
+        "疲れた"
+      ]
+    },
+    {
+      "wordId": "shame",
+      "distractors": [
+        "名声",
+        "非難",
+        "枠組み",
+        "誇り"
+      ]
+    },
+    {
+      "wordId": "solitude",
+      "distractors": [
+        "連帯",
+        "態度",
+        "群衆",
+        "安定"
+      ]
+    },
+    {
+      "wordId": "speechless",
+      "distractors": [
+        "おしゃべりな",
+        "無音の",
+        "無関心な",
+        "息を切らした"
+      ]
+    },
+    {
+      "wordId": "spooked",
+      "distractors": [
+        "甘やかされた",
+        "落ち着いた",
+        "感動した",
+        "だまされた"
+      ]
+    },
+    {
+      "wordId": "startled",
+      "distractors": [
+        "始められた",
+        "定着した",
+        "うっとりした",
+        "安心した"
+      ]
+    },
+    {
+      "wordId": "stressed",
+      "distractors": [
+        "引き伸ばされた",
+        "休養十分の",
+        "楽観的な",
+        "厳格な"
+      ]
+    },
+    {
+      "wordId": "tense",
+      "distractors": [
+        "濃密な",
+        "激しい",
+        "和やかな",
+        "巨大な"
+      ]
+    },
+    {
+      "wordId": "torn",
+      "distractors": [
+        "擦り切れた",
+        "生まれつきの",
+        "誓約した",
+        "焦げた"
+      ]
+    },
+    {
+      "wordId": "uncomfortable",
+      "distractors": [
+        "不完全な",
+        "無能な",
+        "不慣れな",
+        "不平等な"
+      ]
+    },
+    {
+      "wordId": "uneasy",
+      "distractors": [
+        "難しい",
+        "気楽な",
+        "不平等な",
+        "怠惰な"
+      ]
+    },
+    {
+      "wordId": "upset",
+      "distractors": [
+        "設立された",
+        "高揚した",
+        "昇進した",
+        "目覚めた"
+      ]
+    },
+    {
+      "wordId": "willing",
+      "distractors": [
+        "勝ち続けている",
+        "意志の強い",
+        "気が進まない",
+        "器用な"
+      ]
+    },
+    {
+      "wordId": "admirable",
+      "distractors": [
+        "許容できる",
+        "軽蔑すべき",
+        "曖昧な",
+        "快適な"
+      ]
+    },
+    {
+      "wordId": "admire",
+      "distractors": [
+        "を認める",
+        "を軽蔑する",
+        "を疑う",
+        "を雇う"
+      ]
+    },
+    {
+      "wordId": "ambition",
+      "distractors": [
+        "雰囲気",
+        "曖昧さ",
+        "謙虚さ",
+        "使節団"
+      ]
+    },
+    {
+      "wordId": "aspire",
+      "distractors": [
+        "期限が切れる",
+        "を刺激する",
+        "引退する",
+        "あきらめる"
+      ]
+    },
+    {
+      "wordId": "attain",
+      "distractors": [
+        "を維持する",
+        "を含む",
+        "を保持する",
+        "を楽しませる"
+      ]
+    },
+    {
+      "wordId": "benevolent",
+      "distractors": [
+        "悪意のある",
+        "暴力的な",
+        "無害な",
+        "上品な"
+      ]
+    },
+    {
+      "wordId": "bold",
+      "distractors": [
+        "はげ頭の",
+        "臆病な",
+        "冷たい",
+        "賢い"
+      ]
+    },
+    {
+      "wordId": "cautious",
+      "distractors": [
+        "好奇心の強い",
+        "意識のある",
+        "無謀な",
+        "巨大な"
+      ]
+    },
+    {
+      "wordId": "compassion",
+      "distractors": [
+        "情熱",
+        "比較",
+        "冷淡",
+        "強制"
+      ]
+    },
+    {
+      "wordId": "conscience",
+      "distractors": [
+        "意識",
+        "科学",
+        "合意",
+        "常識"
+      ]
+    },
+    {
+      "wordId": "courageous",
+      "distractors": [
+        "法外な",
+        "礼儀正しい",
+        "危険な",
+        "臆病な"
+      ]
+    },
+    {
+      "wordId": "curious",
+      "distractors": [
+        "用心深い",
+        "怒り狂った",
+        "貴重な",
+        "無関心な"
+      ]
+    },
+    {
+      "wordId": "devoted",
+      "distractors": [
+        "投票で選ばれた",
+        "昇進した",
+        "孤立した",
+        "冷淡な"
+      ]
+    },
+    {
+      "wordId": "dignity",
+      "distractors": [
+        "神格",
+        "密度",
+        "多様性",
+        "謙遜"
+      ]
+    },
+    {
+      "wordId": "diligent",
+      "distractors": [
+        "知的な",
+        "怠惰な",
+        "上品な",
+        "寛大な"
+      ]
+    },
+    {
+      "wordId": "discipline",
+      "distractors": [
+        "弟子",
+        "議論",
+        "発見",
+        "説明"
+      ]
+    },
+    {
+      "wordId": "endeavor",
+      "distractors": [
+        "憧れ",
+        "危険",
+        "忍耐",
+        "遺産"
+      ]
+    },
+    {
+      "wordId": "enthusiastic",
+      "distractors": [
+        "本格的な",
+        "無気力な",
+        "悲観的な",
+        "衝動的な"
+      ]
+    },
+    {
+      "wordId": "feat",
+      "distractors": [
+        "足",
+        "特徴",
+        "敗北",
+        "祝宴"
+      ]
+    },
+    {
+      "wordId": "frank",
+      "distractors": [
+        "失礼な",
+        "上機嫌な",
+        "遠回しな",
+        "気楽な"
+      ]
+    },
+    {
+      "wordId": "generous",
+      "distractors": [
+        "本物の",
+        "一般的な",
+        "遺伝性の",
+        "けちな"
+      ]
+    },
+    {
+      "wordId": "greed",
+      "distractors": [
+        "挨拶",
+        "悲しみ",
+        "信条",
+        "誇り"
+      ]
+    },
+    {
+      "wordId": "hone",
+      "distractors": [
+        "に敬意を払う",
+        "を披露する",
+        "を借りる",
+        "を放置する"
+      ]
+    },
+    {
+      "wordId": "imaginative",
+      "distractors": [
+        "想像上の",
+        "模倣的な",
+        "巨大な",
+        "衝動的な"
+      ]
+    },
+    {
+      "wordId": "indulgence",
+      "distractors": [
+        "勤勉",
+        "知性",
+        "我慢",
+        "潔白"
+      ]
+    },
+    {
+      "wordId": "ingenuity",
+      "distractors": [
+        "誠実さ",
+        "天才",
+        "継続性",
+        "忍耐力"
+      ]
+    },
+    {
+      "wordId": "inventive",
+      "distractors": [
+        "在庫の",
+        "侵略的な",
+        "保守的な",
+        "投資の"
+      ]
+    },
+    {
+      "wordId": "keen",
+      "distractors": [
+        "清潔な",
+        "賢い",
+        "静かな",
+        "意地悪な"
+      ]
+    },
+    {
+      "wordId": "naive",
+      "distractors": [
+        "現地の",
+        "海軍の",
+        "高慢な",
+        "神経質な"
+      ]
+    },
+    {
+      "wordId": "obedient",
+      "distractors": [
+        "肥満の",
+        "明白な",
+        "反抗的な",
+        "勤勉な"
+      ]
+    },
+    {
+      "wordId": "optimistic",
+      "distractors": [
+        "視覚の",
+        "任意の",
+        "悲観的な",
+        "野心的な"
+      ]
+    },
+    {
+      "wordId": "patience",
+      "distractors": [
+        "患者",
+        "情熱",
+        "沈黙",
+        "良心"
+      ]
+    },
+    {
+      "wordId": "persevere",
+      "distractors": [
+        "を保存する",
+        "を説得する",
+        "を妨害する",
+        "消滅する"
+      ]
+    },
+    {
+      "wordId": "pessimistic",
+      "distractors": [
+        "楽観的な",
+        "情熱的な",
+        "受動的な",
+        "神秘的な"
+      ]
+    },
+    {
+      "wordId": "proficient",
+      "distractors": [
+        "十分な",
+        "効率的な",
+        "もうかる",
+        "未熟な"
+      ]
+    },
+    {
+      "wordId": "pursue",
+      "distractors": [
+        "を説得する",
+        "を辛抱強く続ける",
+        "を放棄する",
+        "を保護する"
+      ]
+    },
+    {
+      "wordId": "refrain",
+      "distractors": [
+        "を改革する",
+        "を回復する",
+        "を返金する",
+        "を再開する"
+      ]
+    },
+    {
+      "wordId": "respected",
+      "distractors": [
+        "予期された",
+        "検査された",
+        "疑われた",
+        "拒絶された"
+      ]
+    },
+    {
+      "wordId": "selfishness",
+      "distractors": [
+        "無私無欲",
+        "自尊心",
+        "自信過剰",
+        "内気さ"
+      ]
+    },
+    {
+      "wordId": "sensible",
+      "distractors": [
+        "敏感な",
+        "感覚的な",
+        "感傷的な",
+        "無神経な"
+      ]
+    },
+    {
+      "wordId": "sincerity",
+      "distractors": [
+        "皮肉",
+        "単純さ",
+        "厳格さ",
+        "優雅さ"
+      ]
+    },
+    {
+      "wordId": "spontaneity",
+      "distractors": [
+        "同時性",
+        "安定性",
+        "慎重さ",
+        "単調さ"
+      ]
+    },
+    {
+      "wordId": "strive",
+      "distractors": [
+        "到着する",
+        "生き残る",
+        "繁栄する",
+        "我慢する"
+      ]
+    },
+    {
+      "wordId": "struggling",
+      "distractors": [
+        "成功している",
+        "怠けている",
+        "緊張している",
+        "孤立している"
+      ]
+    },
+    {
+      "wordId": "stubborn",
+      "distractors": [
+        "素直な",
+        "勇敢な",
+        "不器用な",
+        "気まぐれな"
+      ]
+    },
+    {
+      "wordId": "timid",
+      "distractors": [
+        "タイミングのよい",
+        "大胆な",
+        "湿気の多い",
+        "穏やかな"
+      ]
+    },
+    {
+      "wordId": "trait",
+      "distractors": [
+        "裏切り者",
+        "貿易",
+        "条約",
+        "苦労"
+      ]
+    },
+    {
+      "wordId": "vigorous",
+      "distractors": [
+        "厳格な",
+        "警戒中の",
+        "有害な",
+        "神経質な"
+      ]
+    },
+    {
+      "wordId": "virtue",
+      "distractors": [
+        "悪徳",
+        "仮想現実",
+        "勝利",
+        "忍耐"
+      ]
+    },
+    {
+      "wordId": "appetite",
+      "distractors": [
+        "前菜",
+        "態度",
+        "予約",
+        "習慣"
+      ]
+    },
+    {
+      "wordId": "bland",
+      "distractors": [
+        "ブランド物の",
+        "金髪の",
+        "濃厚な",
+        "辛い"
+      ]
+    },
+    {
+      "wordId": "brittle",
+      "distractors": [
+        "苦い",
+        "頑丈な",
+        "ちっぽけな",
+        "湿った"
+      ]
+    },
+    {
+      "wordId": "bumpy",
+      "distractors": [
+        "平らな",
+        "気難しい",
+        "混雑した",
+        "ずんぐりした"
+      ]
+    },
+    {
+      "wordId": "burnt",
+      "distractors": [
+        "埋められた",
+        "破裂した",
+        "生の",
+        "冷凍の"
+      ]
+    },
+    {
+      "wordId": "chewy",
+      "distractors": [
+        "カリカリした",
+        "とろけるような",
+        "安っぽい",
+        "水っぽい"
+      ]
+    },
+    {
+      "wordId": "chill",
+      "distractors": [
+        "を温める",
+        "を凍らせる",
+        "を蒸す",
+        "を味付けする"
+      ]
+    },
+    {
+      "wordId": "chunky",
+      "distractors": [
+        "滑らかな",
+        "細切れの",
+        "ふわふわの",
+        "ねばつく"
+      ]
+    },
+    {
+      "wordId": "coarse",
+      "distractors": [
+        "進路",
+        "きめ細かい",
+        "呪われた",
+        "淡白な"
+      ]
+    },
+    {
+      "wordId": "crunchy",
+      "distractors": [
+        "しっとりした",
+        "もちもちした",
+        "クリーミーな",
+        "生ぬるい"
+      ]
+    },
+    {
+      "wordId": "crust",
+      "distractors": [
+        "信頼",
+        "パンくず",
+        "中身",
+        "生地"
+      ]
+    },
+    {
+      "wordId": "gooey",
+      "distractors": [
+        "パサパサの",
+        "弾力のある",
+        "冷え切った",
+        "泡立った"
+      ]
+    },
+    {
+      "wordId": "greasy",
+      "distractors": [
+        "貪欲な",
+        "草深い",
+        "あっさりした",
+        "塩辛い"
+      ]
+    },
+    {
+      "wordId": "hollow",
+      "distractors": [
+        "神聖な",
+        "浅い",
+        "中身の詰まった",
+        "まろやかな"
+      ]
+    },
+    {
+      "wordId": "jiggly",
+      "distractors": [
+        "ざらざらの",
+        "ぎざぎざの",
+        "カチカチの",
+        "ぐるぐる回る"
+      ]
+    },
+    {
+      "wordId": "moist",
+      "distractors": [
+        "乾燥した",
+        "苔むした",
+        "冷たい",
+        "騒がしい"
+      ]
+    },
+    {
+      "wordId": "mushy",
+      "distractors": [
+        "きのこ入りの",
+        "カリッとした",
+        "弾力のある",
+        "骨太の"
+      ]
+    },
+    {
+      "wordId": "prickly",
+      "distractors": [
+        "つるつるした",
+        "ずる賢い",
+        "手早い",
+        "ふわふわした"
+      ]
+    },
+    {
+      "wordId": "ripe",
+      "distractors": [
+        "引き裂かれた",
+        "未熟な",
+        "豊作の",
+        "波打った"
+      ]
+    },
+    {
+      "wordId": "rotten",
+      "distractors": [
+        "回転した",
+        "忘れ去られた",
+        "新鮮な",
+        "凍った"
+      ]
+    },
+    {
+      "wordId": "savory",
+      "distractors": [
+        "甘い",
+        "抜け目ない",
+        "酸っぱい",
+        "安全な"
+      ]
+    },
+    {
+      "wordId": "slick",
+      "distractors": [
+        "病気の",
+        "分厚い",
+        "ざらついた",
+        "のろい"
+      ]
+    },
+    {
+      "wordId": "slimy",
+      "distractors": [
+        "ほっそりした",
+        "乾いた",
+        "塩辛い",
+        "ふさふさの"
+      ]
+    },
+    {
+      "wordId": "soak",
+      "distractors": [
+        "を求める",
+        "を燻製にする",
+        "を絞る",
+        "を沸騰させる"
+      ]
+    },
+    {
+      "wordId": "spoil",
+      "distractors": [
+        "を修理する",
+        "を盗む",
+        "をこぼす",
+        "を包む"
+      ]
+    },
+    {
+      "wordId": "stale",
+      "distractors": [
+        "安定した",
+        "失速した",
+        "焼きたての",
+        "塩気のない"
+      ]
+    },
+    {
+      "wordId": "stinky",
+      "distractors": [
+        "けちな",
+        "ちくちくする",
+        "香りのよい",
+        "ずるい"
+      ]
+    },
+    {
+      "wordId": "tender",
+      "distractors": [
+        "硬い",
+        "細身の",
+        "辛口の",
+        "大まかな"
+      ]
+    },
+    {
+      "wordId": "blurry",
+      "distractors": [
+        "くっきりした",
+        "騒がしい",
+        "青ざめた",
+        "まぶしい"
+      ]
+    },
+    {
+      "wordId": "charming",
+      "distractors": [
+        "慈善の",
+        "突進してくる",
+        "高慢な",
+        "平凡な"
+      ]
+    },
+    {
+      "wordId": "conspicuous",
+      "distractors": [
+        "疑わしい",
+        "陰謀の",
+        "目立たない",
+        "継続的な"
+      ]
+    },
+    {
+      "wordId": "dainty",
+      "distractors": [
+        "乳製品の",
+        "日常の",
+        "粗野な",
+        "巨大な"
+      ]
+    },
+    {
+      "wordId": "dazzling",
+      "distractors": [
+        "霧雨の",
+        "薄暗い",
+        "退屈な",
+        "湿った"
+      ]
+    },
+    {
+      "wordId": "deafening",
+      "distractors": [
+        "聴覚を失った",
+        "無音の",
+        "決定的な",
+        "反抗的な"
+      ]
+    },
+    {
+      "wordId": "dimly",
+      "distractors": [
+        "明るく",
+        "深く",
+        "大胆に",
+        "素早く"
+      ]
+    },
+    {
+      "wordId": "dizzying",
+      "distractors": [
+        "まばゆい",
+        "ゆったりした",
+        "穏やかな",
+        "湿った"
+      ]
+    },
+    {
+      "wordId": "dye",
+      "distractors": [
+        "死ぬ",
+        "を乾かす",
+        "を切る",
+        "を結ぶ"
+      ]
+    },
+    {
+      "wordId": "exquisite",
+      "distractors": [
+        "独占的な",
+        "必須の",
+        "粗雑な",
+        "過剰な"
+      ]
+    },
+    {
+      "wordId": "eyesore",
+      "distractors": [
+        "目の痛み",
+        "名所",
+        "視力",
+        "目撃者"
+      ]
+    },
+    {
+      "wordId": "faint",
+      "distractors": [
+        "派手な",
+        "鮮明な",
+        "勇敢な",
+        "完全な"
+      ]
+    },
+    {
+      "wordId": "fancy",
+      "distractors": [
+        "質素な",
+        "頑丈な",
+        "中古の",
+        "気難しい"
+      ]
+    },
+    {
+      "wordId": "glimpse",
+      "distractors": [
+        "きらめき",
+        "全景",
+        "幻影",
+        "名残"
+      ]
+    },
+    {
+      "wordId": "glowing",
+      "distractors": [
+        "成長している",
+        "流れるような",
+        "にらみつける",
+        "消えかけた"
+      ]
+    },
+    {
+      "wordId": "hazy",
+      "distractors": [
+        "危険な",
+        "怠惰な",
+        "騒がしい",
+        "慌ただしい"
+      ]
+    },
+    {
+      "wordId": "intricate",
+      "distractors": [
+        "親密な",
+        "内向的な",
+        "単純な",
+        "神秘的な"
+      ]
+    },
+    {
+      "wordId": "luxurious",
+      "distractors": [
+        "青々と茂った",
+        "質素な",
+        "光り輝く",
+        "気楽な"
+      ]
+    },
+    {
+      "wordId": "magnificent",
+      "distractors": [
+        "磁気を帯びた",
+        "巨大な",
+        "寛大な",
+        "平凡な"
+      ]
+    },
+    {
+      "wordId": "marvelous",
+      "distractors": [
+        "大理石の",
+        "好戦的な",
+        "平凡な",
+        "悲惨な"
+      ]
+    },
+    {
+      "wordId": "monotonous",
+      "distractors": [
+        "単一の",
+        "自律的な",
+        "匿名の",
+        "騒々しい"
+      ]
+    },
+    {
+      "wordId": "riveting",
+      "distractors": [
+        "川沿いの",
+        "退屈な",
+        "反復的な",
+        "痛烈な"
+      ]
+    },
+    {
+      "wordId": "sensational",
+      "distractors": [
+        "感覚の",
+        "敏感な",
+        "分別のある",
+        "地味な"
+      ]
+    },
+    {
+      "wordId": "spectacular",
+      "distractors": [
+        "観客の",
+        "憶測に基づく",
+        "特殊な",
+        "地味な"
+      ]
+    },
+    {
+      "wordId": "splendid",
+      "distractors": [
+        "分裂した",
+        "みすぼらしい",
+        "浪費された",
+        "慎重な"
+      ]
+    },
+    {
+      "wordId": "steep",
+      "distractors": [
+        "深い",
+        "なだらかな",
+        "高層の",
+        "静かな"
+      ]
+    },
+    {
+      "wordId": "stimulating",
+      "distractors": [
+        "模擬実験の",
+        "退屈な",
+        "鎮静作用のある",
+        "華やかな"
+      ]
+    },
+    {
+      "wordId": "stunning",
+      "distractors": [
+        "発育を妨げる",
+        "日焼けした",
+        "平凡な",
+        "騒々しい"
+      ]
+    },
+    {
+      "wordId": "subtle",
+      "distractors": [
+        "字幕付きの",
+        "露骨な",
+        "地下の",
+        "頑丈な"
+      ]
+    },
+    {
+      "wordId": "tidy",
+      "distractors": [
+        "潮の",
+        "ごく小さい",
+        "散らかった",
+        "窮屈な"
+      ]
+    },
+    {
+      "wordId": "acute",
+      "distractors": [
+        "慢性の",
+        "かわいらしい",
+        "正確な",
+        "鈍感な"
+      ]
+    },
+    {
+      "wordId": "adolescence",
+      "distractors": [
+        "老年期",
+        "幼少期",
+        "成人期",
+        "卒業"
+      ]
+    },
+    {
+      "wordId": "antibiotic",
+      "distractors": [
+        "抗体",
+        "ワクチン",
+        "防腐剤",
+        "栄養剤"
+      ]
+    },
+    {
+      "wordId": "chronic",
+      "distractors": [
+        "年代順の",
+        "急性の",
+        "皮肉な",
+        "定期的な"
+      ]
+    },
+    {
+      "wordId": "circulation",
+      "distractors": [
+        "計算",
+        "蒸発",
+        "刺激",
+        "隔離"
+      ]
+    },
+    {
+      "wordId": "clinically",
+      "distractors": [
+        "批判的に",
+        "論理的に",
+        "慢性的に",
+        "化学的に"
+      ]
+    },
+    {
+      "wordId": "cognition",
+      "distractors": [
+        "点火",
+        "直感",
+        "忍耐",
+        "相続"
+      ]
+    },
+    {
+      "wordId": "cure",
+      "distractors": [
+        "を診察する",
+        "を予防する",
+        "を悪化させる",
+        "を看病する"
+      ]
+    },
+    {
+      "wordId": "diagnosis",
+      "distractors": [
+        "処方箋",
+        "症状",
+        "予後",
+        "退院"
+      ]
+    },
+    {
+      "wordId": "disorder",
+      "distractors": [
+        "秩序",
+        "命令",
+        "規律",
+        "予約"
+      ]
+    },
+    {
+      "wordId": "elderly",
+      "distractors": [
+        "上品な",
+        "幼い",
+        "賢明な",
+        "孤独な"
+      ]
+    },
+    {
+      "wordId": "euthanasia",
+      "distractors": [
+        "麻酔",
+        "熱意",
+        "若さ",
+        "臓器移植"
+      ]
+    },
+    {
+      "wordId": "hallucination",
+      "distractors": [
+        "錯覚",
+        "幻滅",
+        "予知夢",
+        "瞑想"
+      ]
+    },
+    {
+      "wordId": "heredity",
+      "distractors": [
+        "遺産",
+        "相続",
+        "異端",
+        "本能"
+      ]
+    },
+    {
+      "wordId": "hygiene",
+      "distractors": [
+        "水素",
+        "湿度",
+        "栄養",
+        "治療"
+      ]
+    },
+    {
+      "wordId": "immune",
+      "distractors": [
+        "未熟な",
+        "巨大な",
+        "移民の",
+        "従順な"
+      ]
+    },
+    {
+      "wordId": "infancy",
+      "distractors": [
+        "感染症",
+        "思春期",
+        "空想",
+        "歩兵"
+      ]
+    },
+    {
+      "wordId": "infectious",
+      "distractors": [
+        "欠陥のある",
+        "愛情深い",
+        "効果的な",
+        "慢性の"
+      ]
+    },
+    {
+      "wordId": "innate",
+      "distractors": [
+        "無邪気な",
+        "後天的な",
+        "内部の",
+        "非活動的な"
+      ]
+    },
+    {
+      "wordId": "intake",
+      "distractors": [
+        "持ち帰り",
+        "誤解",
+        "出力",
+        "支出"
+      ]
+    },
+    {
+      "wordId": "juvenile",
+      "distractors": [
+        "高齢の",
+        "宝石の",
+        "陪審員の",
+        "気まぐれな"
+      ]
+    },
+    {
+      "wordId": "malnutrition",
+      "distractors": [
+        "過食",
+        "消化不良",
+        "感染症",
+        "貧血"
+      ]
+    },
+    {
+      "wordId": "nourishment",
+      "distractors": [
+        "養育",
+        "繁栄",
+        "処罰",
+        "娯楽"
+      ]
+    },
+    {
+      "wordId": "organism",
+      "distractors": [
+        "臓器",
+        "組織・団体",
+        "仕組み",
+        "楽器"
+      ]
+    },
+    {
+      "wordId": "outbreak",
+      "distractors": [
+        "脱獄",
+        "休憩",
+        "停電",
+        "結末"
+      ]
+    },
+    {
+      "wordId": "physiological",
+      "distractors": [
+        "心理的な",
+        "哲学的な",
+        "物理的な",
+        "病理学の"
+      ]
+    },
+    {
+      "wordId": "prevention",
+      "distractors": [
+        "介入",
+        "発明",
+        "意図",
+        "治療"
+      ]
+    },
+    {
+      "wordId": "primate",
+      "distractors": [
+        "首相",
+        "素数",
+        "私有地",
+        "原始人"
+      ]
+    },
+    {
+      "wordId": "psychiatry",
+      "distractors": [
+        "心理学",
+        "物理学",
+        "小児科",
+        "心霊術"
+      ]
+    },
+    {
+      "wordId": "remedy",
+      "distractors": [
+        "記憶力",
+        "後悔",
+        "規則",
+        "儀式"
+      ]
+    },
+    {
+      "wordId": "spinal",
+      "distractors": [
+        "らせん状の",
+        "回転する",
+        "精神的な",
+        "最終の"
+      ]
+    },
+    {
+      "wordId": "surgery",
+      "distractors": [
+        "調査",
+        "症状",
+        "保険",
+        "薬局"
+      ]
+    },
+    {
+      "wordId": "symptom",
+      "distractors": [
+        "同情",
+        "交響曲",
+        "象徴",
+        "体系"
+      ]
+    },
+    {
+      "wordId": "tissue",
+      "distractors": [
+        "問題",
+        "器官",
+        "繊維",
+        "細胞"
+      ]
+    },
+    {
+      "wordId": "unsanitary",
+      "distractors": [
+        "不健康な",
+        "正気でない",
+        "無許可の",
+        "不安定な"
+      ]
+    },
+    {
+      "wordId": "asteroid",
+      "distractors": [
+        "ステロイド",
+        "彗星",
+        "星座",
+        "銀河"
+      ]
+    },
+    {
+      "wordId": "celestial",
+      "distractors": [
+        "地上の",
+        "お祝いの",
+        "海洋の",
+        "電気の"
+      ]
+    },
+    {
+      "wordId": "contamination",
+      "distractors": [
+        "熟考",
+        "継続",
+        "封じ込め",
+        "浄化"
+      ]
+    },
+    {
+      "wordId": "continent",
+      "distractors": [
+        "内容",
+        "満足",
+        "大国",
+        "半島"
+      ]
+    },
+    {
+      "wordId": "crop",
+      "distractors": [
+        "家畜",
+        "雑草",
+        "土壌",
+        "肥料"
+      ]
+    },
+    {
+      "wordId": "deforestation",
+      "distractors": [
+        "植林",
+        "砂漠化",
+        "干拓",
+        "除草"
+      ]
+    },
+    {
+      "wordId": "depletion",
+      "distractors": [
+        "削除",
+        "蓄積",
+        "配備",
+        "反映"
+      ]
+    },
+    {
+      "wordId": "desertification",
+      "distractors": [
+        "脱走",
+        "森林伐採",
+        "液状化",
+        "塩害"
+      ]
+    },
+    {
+      "wordId": "drought",
+      "distractors": [
+        "下書き",
+        "洪水",
+        "疑念",
+        "徴兵"
+      ]
+    },
+    {
+      "wordId": "equator",
+      "distractors": [
+        "方程式",
+        "平等",
+        "子午線",
+        "分点"
+      ]
+    },
+    {
+      "wordId": "erosion",
+      "distractors": [
+        "爆発",
+        "腐食",
+        "噴火",
+        "移住"
+      ]
+    },
+    {
+      "wordId": "extraterrestrial",
+      "distractors": [
+        "並外れた",
+        "領土の",
+        "地中の",
+        "先史時代の"
+      ]
+    },
+    {
+      "wordId": "fertilization",
+      "distractors": [
+        "受粉",
+        "発酵",
+        "開花",
+        "発芽"
+      ]
+    },
+    {
+      "wordId": "geographical",
+      "distractors": [
+        "幾何学の",
+        "地質学の",
+        "歴史的な",
+        "天文学の"
+      ]
+    },
+    {
+      "wordId": "grain",
+      "distractors": [
+        "牧草",
+        "種子",
+        "豆類",
+        "樹皮"
+      ]
+    },
+    {
+      "wordId": "harvest",
+      "distractors": [
+        "種まき",
+        "放牧",
+        "出荷",
+        "保存"
+      ]
+    },
+    {
+      "wordId": "hemisphere",
+      "distractors": [
+        "大気圏",
+        "半径",
+        "成層圏",
+        "地平線"
+      ]
+    },
+    {
+      "wordId": "landform",
+      "distractors": [
+        "地滑り",
+        "大家",
+        "農地",
+        "埋め立て地"
+      ]
+    },
+    {
+      "wordId": "latitude",
+      "distractors": [
+        "経度",
+        "高度",
+        "態度",
+        "感謝"
+      ]
+    },
+    {
+      "wordId": "longitude",
+      "distractors": [
+        "緯度",
+        "長さ",
+        "高度",
+        "寿命"
+      ]
+    },
+    {
+      "wordId": "mineral",
+      "distractors": [
+        "鉱山",
+        "化石",
+        "岩盤",
+        "合金"
+      ]
+    },
+    {
+      "wordId": "orbital",
+      "distractors": [
+        "重力の",
+        "楕円形の",
+        "衛星の",
+        "大気の"
+      ]
+    },
+    {
+      "wordId": "photosynthesis",
+      "distractors": [
+        "写真の合成",
+        "呼吸",
+        "蒸散",
+        "突然変異"
+      ]
+    },
+    {
+      "wordId": "pollination",
+      "distractors": [
+        "汚染",
+        "受精",
+        "世論調査",
+        "移植"
+      ]
+    },
+    {
+      "wordId": "renewable",
+      "distractors": [
+        "信頼できる",
+        "返品可能な",
+        "使い捨ての",
+        "著名な"
+      ]
+    },
+    {
+      "wordId": "tide",
+      "distractors": [
+        "ネクタイ",
+        "波",
+        "洪水",
+        "入り江"
+      ]
+    },
+    {
+      "wordId": "endangered",
+      "distractors": [
+        "危険な",
+        "保護された",
+        "野生の",
+        "攻撃的な"
+      ]
+    },
+    {
+      "wordId": "absorb",
+      "distractors": [
+        "を放出する",
+        "を反射する",
+        "を溶かす",
+        "を圧縮する"
+      ]
+    },
+    {
+      "wordId": "apparatus",
+      "distractors": [
+        "外見",
+        "集合住宅",
+        "手順",
+        "素材"
+      ]
+    },
+    {
+      "wordId": "artificial",
+      "distractors": [
+        "芸術的な",
+        "表面的な",
+        "公式の",
+        "部分的な"
+      ]
+    },
+    {
+      "wordId": "building-block",
+      "distractors": [
+        "建築物",
+        "障害物",
+        "街区",
+        "設計図"
+      ]
+    },
+    {
+      "wordId": "byproduct",
+      "distractors": [
+        "主力製品",
+        "廃棄物",
+        "部品",
+        "模造品"
+      ]
+    },
+    {
+      "wordId": "catalyst",
+      "distractors": [
+        "大惨事",
+        "カタログ",
+        "抑制剤",
+        "結晶"
+      ]
+    },
+    {
+      "wordId": "decimal",
+      "distractors": [
+        "分数の",
+        "二進法の",
+        "整数の",
+        "致命的な"
+      ]
+    },
+    {
+      "wordId": "flame",
+      "distractors": [
+        "枠組み",
+        "名声",
+        "非難",
+        "煙"
+      ]
+    },
+    {
+      "wordId": "friction",
+      "distractors": [
+        "分数",
+        "小説",
+        "派閥",
+        "機能"
+      ]
+    },
+    {
+      "wordId": "lever",
+      "distractors": [
+        "肝臓",
+        "熱",
+        "層",
+        "定規"
+      ]
+    },
+    {
+      "wordId": "mold",
+      "distractors": [
+        "ほくろ",
+        "さび",
+        "ほこり",
+        "苔"
+      ]
+    },
+    {
+      "wordId": "neutron",
+      "distractors": [
+        "中立",
+        "電子",
+        "栄養素",
+        "原子"
+      ]
+    },
+    {
+      "wordId": "nucleus",
+      "distractors": [
+        "分子",
+        "細胞",
+        "電極",
+        "数式"
+      ]
+    },
+    {
+      "wordId": "obtuse",
+      "distractors": [
+        "鋭角の",
+        "曖昧な",
+        "肥満の",
+        "直角の"
+      ]
+    },
+    {
+      "wordId": "proton",
+      "distractors": [
+        "試作品",
+        "光子",
+        "主人公",
+        "電池"
+      ]
+    },
+    {
+      "wordId": "pulley",
+      "distractors": [
+        "引き綱",
+        "歯車",
+        "ばね",
+        "車輪"
+      ]
+    },
+    {
+      "wordId": "radioactivity",
+      "distractors": [
+        "ラジオ放送",
+        "電波",
+        "磁力",
+        "日射"
+      ]
+    },
+    {
+      "wordId": "ray",
+      "distractors": [
+        "線路",
+        "半径",
+        "波長",
+        "稲妻"
+      ]
+    },
+    {
+      "wordId": "spatial",
+      "distractors": [
+        "特別な",
+        "時間的な",
+        "部分的な",
+        "社会的な"
+      ]
+    },
+    {
+      "wordId": "substance",
+      "distractors": [
+        "代用品",
+        "立場",
+        "基準",
+        "補助金"
+      ]
+    },
+    {
+      "wordId": "subtraction",
+      "distractors": [
+        "足し算",
+        "抽出",
+        "気晴らし",
+        "圧縮"
+      ]
+    },
+    {
+      "wordId": "synthesize",
+      "distractors": [
+        "を分解する",
+        "を同期させる",
+        "を消毒する",
+        "を模倣する"
+      ]
+    },
+    {
+      "wordId": "transmission",
+      "distractors": [
+        "翻訳",
+        "移行",
+        "使節団",
+        "割り込み"
+      ]
+    },
+    {
+      "wordId": "adjacent",
+      "distractors": [
+        "形容詞の",
+        "遠く離れた",
+        "対角線上の",
+        "調整可能な"
+      ]
+    },
+    {
+      "wordId": "proximity",
+      "distractors": [
+        "近似値",
+        "代理人",
+        "優先度",
+        "親密さ"
+      ]
+    },
+    {
+      "wordId": "advocate",
+      "distractors": [
+        "を非難する",
+        "を回避する",
+        "を委任する",
+        "を禁止する"
+      ]
+    },
+    {
+      "wordId": "ally",
+      "distractors": [
+        "路地",
+        "合金",
+        "敵対国",
+        "大使"
+      ]
+    },
+    {
+      "wordId": "amend",
+      "distractors": [
+        "を称賛する",
+        "を修理する",
+        "を推薦する",
+        "を破棄する"
+      ]
+    },
+    {
+      "wordId": "assembly",
+      "distractors": [
+        "類似",
+        "祭典",
+        "行進",
+        "解散"
+      ]
+    },
+    {
+      "wordId": "autonomous",
+      "distractors": [
+        "自動的な",
+        "匿名の",
+        "単調な",
+        "従属的な"
+      ]
+    },
+    {
+      "wordId": "ballot",
+      "distractors": [
+        "風船",
+        "バレエ",
+        "弾丸",
+        "演壇"
+      ]
+    },
+    {
+      "wordId": "compromise",
+      "distractors": [
+        "約束",
+        "構成",
+        "対立",
+        "論争"
+      ]
+    },
+    {
+      "wordId": "compulsory",
+      "distractors": [
+        "衝動的な",
+        "任意の",
+        "包括的な",
+        "競争の"
+      ]
+    },
+    {
+      "wordId": "council",
+      "distractors": [
+        "助言",
+        "領事館",
+        "会計士",
+        "聖歌隊"
+      ]
+    },
+    {
+      "wordId": "declaration",
+      "distractors": [
+        "装飾",
+        "減少",
+        "辞退",
+        "予言"
+      ]
+    },
+    {
+      "wordId": "dictate",
+      "distractors": [
+        "を予言する",
+        "を否定する",
+        "を翻訳する",
+        "を清書する"
+      ]
+    },
+    {
+      "wordId": "diplomatic",
+      "distractors": [
+        "学位の",
+        "二国間の",
+        "攻撃的な",
+        "商業の"
+      ]
+    },
+    {
+      "wordId": "enact",
+      "distractors": [
+        "を廃止する",
+        "を起草する",
+        "を審議する",
+        "を施行する"
+      ]
+    },
+    {
+      "wordId": "enforce",
+      "distractors": [
+        "を制定する",
+        "を補強する",
+        "を奨励する",
+        "を免除する"
+      ]
+    },
+    {
+      "wordId": "entitled",
+      "distractors": [
+        "義務を負った",
+        "招待された",
+        "制限された",
+        "任命された"
+      ]
+    },
+    {
+      "wordId": "federal",
+      "distractors": [
+        "封建的な",
+        "地方の",
+        "民間の",
+        "軍事の"
+      ]
+    },
+    {
+      "wordId": "impose",
+      "distractors": [
+        "を提案する",
+        "を暴露する",
+        "を作曲する",
+        "を廃止する"
+      ]
+    },
+    {
+      "wordId": "intervention",
+      "distractors": [
+        "面接",
+        "発明",
+        "中断",
+        "予防"
+      ]
+    },
+    {
+      "wordId": "legislation",
+      "distractors": [
+        "訴訟",
+        "代表団",
+        "伝説",
+        "認可"
+      ]
+    },
+    {
+      "wordId": "legitimate",
+      "distractors": [
+        "究極の",
+        "親密な",
+        "違法な",
+        "慎重な"
+      ]
+    },
+    {
+      "wordId": "liberty",
+      "distractors": [
+        "図書館",
+        "特権",
+        "平等",
+        "秩序"
+      ]
+    },
+    {
+      "wordId": "mandatory",
+      "distractors": [
+        "任意の",
+        "独裁的な",
+        "一時的な",
+        "模範的な"
+      ]
+    },
+    {
+      "wordId": "might",
+      "distractors": [
+        "夜",
+        "騎士",
+        "軽さ",
+        "高さ"
+      ]
+    },
+    {
+      "wordId": "municipal",
+      "distractors": [
+        "国営の",
+        "音楽の",
+        "軍事の",
+        "商業の"
+      ]
+    },
+    {
+      "wordId": "oppressive",
+      "distractors": [
+        "印象的な",
+        "表現力豊かな",
+        "進歩的な",
+        "寛容な"
+      ]
+    },
+    {
+      "wordId": "pledge",
+      "distractors": [
+        "を懇願する",
+        "を辞退する",
+        "を予測する",
+        "を抗議する"
+      ]
+    },
+    {
+      "wordId": "polarize",
+      "distractors": [
+        "を麻痺させる",
+        "を民営化する",
+        "を統一する",
+        "を凍結する"
+      ]
+    },
+    {
+      "wordId": "precedent",
+      "distractors": [
+        "大統領",
+        "割合",
+        "贈り物",
+        "手順"
+      ]
+    },
+    {
+      "wordId": "proclaim",
+      "distractors": [
+        "を非難する",
+        "を回収する",
+        "を叫ぶ",
+        "を予約する"
+      ]
+    },
+    {
+      "wordId": "reform",
+      "distractors": [
+        "変形",
+        "復旧",
+        "報告",
+        "罰則"
+      ]
+    },
+    {
+      "wordId": "regime",
+      "distractors": [
+        "地域",
+        "食事療法",
+        "連隊",
+        "領収書"
+      ]
+    },
+    {
+      "wordId": "regulate",
+      "distractors": [
+        "を評価する",
+        "を繰り返す",
+        "を隔離する",
+        "を奨励する"
+      ]
+    },
+    {
+      "wordId": "representative",
+      "distractors": [
+        "評判",
+        "表現",
+        "受付係",
+        "複製"
+      ]
+    },
+    {
+      "wordId": "sanction",
+      "distractors": [
+        "聖域",
+        "衛生設備",
+        "断片",
+        "祝福"
+      ]
+    },
+    {
+      "wordId": "settlement",
+      "distractors": [
+        "沈殿物",
+        "交渉",
+        "布告",
+        "賠償"
+      ]
+    },
+    {
+      "wordId": "sovereignty",
+      "distractors": [
+        "記念品",
+        "君主制",
+        "深刻さ",
+        "安全保障"
+      ]
+    },
+    {
+      "wordId": "the-polls",
+      "distractors": [
+        "柱",
+        "政策",
+        "プール",
+        "集会"
+      ]
+    },
+    {
+      "wordId": "treaty",
+      "distractors": [
+        "待遇",
+        "ごちそう",
+        "貿易",
+        "裁判"
+      ]
+    },
+    {
+      "wordId": "turnout",
+      "distractors": [
+        "結果",
+        "離職率",
+        "交代",
+        "転換点"
+      ]
+    },
+    {
+      "wordId": "tyranny",
+      "distractors": [
+        "民主主義",
+        "無政府状態",
+        "君主制",
+        "官僚制"
+      ]
+    },
+    {
+      "wordId": "veto",
+      "distractors": [
+        "獣医",
+        "退役軍人",
+        "承認",
+        "棄権"
+      ]
+    },
+    {
+      "wordId": "afflict",
+      "distractors": [
+        "を対立させる",
+        "を引きつける",
+        "を慰める",
+        "を放置する"
+      ]
+    },
+    {
+      "wordId": "assault",
+      "distractors": [
+        "侮辱",
+        "暗殺",
+        "査定",
+        "誘拐"
+      ]
+    },
+    {
+      "wordId": "breach",
+      "distractors": [
+        "浜辺",
+        "説教",
+        "到達",
+        "漂白剤"
+      ]
+    },
+    {
+      "wordId": "bribery",
+      "distractors": [
+        "窃盗",
+        "強盗",
+        "詐欺",
+        "脱税"
+      ]
+    },
+    {
+      "wordId": "brutal",
+      "distractors": [
+        "獣の",
+        "冷静な",
+        "慎重な",
+        "気まぐれな"
+      ]
+    },
+    {
+      "wordId": "bullet",
+      "distractors": [
+        "投票用紙",
+        "財布",
+        "バレエ",
+        "予算"
+      ]
+    },
+    {
+      "wordId": "calamity",
+      "distractors": [
+        "平穏",
+        "祝典",
+        "幸運",
+        "名誉"
+      ]
+    },
+    {
+      "wordId": "catastrophe",
+      "distractors": [
+        "分類",
+        "戦略",
+        "偉業",
+        "喜劇"
+      ]
+    },
+    {
+      "wordId": "combat",
+      "distractors": [
+        "組み合わせ",
+        "協力",
+        "競技",
+        "論争"
+      ]
+    },
+    {
+      "wordId": "conceal",
+      "distractors": [
+        "を認める",
+        "を取り消す",
+        "を明かす",
+        "を含む"
+      ]
+    },
+    {
+      "wordId": "confined",
+      "distractors": [
+        "自信のある",
+        "確認された",
+        "混乱した",
+        "快適な"
+      ]
+    },
+    {
+      "wordId": "confront",
+      "distractors": [
+        "を慰める",
+        "に協力する",
+        "を回避する",
+        "を説得する"
+      ]
+    },
+    {
+      "wordId": "conquer",
+      "distractors": [
+        "を獲得する",
+        "に降伏する",
+        "を調査する",
+        "を建設する"
+      ]
+    },
+    {
+      "wordId": "defy",
+      "distractors": [
+        "を守る",
+        "を尊重する",
+        "を延期する",
+        "を軽蔑する"
+      ]
+    },
+    {
+      "wordId": "deprive",
+      "distractors": [
+        "に由来する",
+        "を民営化する",
+        "を軽蔑する",
+        "を保証する"
+      ]
+    },
+    {
+      "wordId": "destruction",
+      "distractors": [
+        "注意散漫",
+        "指示",
+        "建設",
+        "障害物"
+      ]
+    },
+    {
+      "wordId": "detain",
+      "distractors": [
+        "を保持する",
+        "を含む",
+        "を手に入れる",
+        "を延期する"
+      ]
+    },
+    {
+      "wordId": "devastating",
+      "distractors": [
+        "発展途上の",
+        "献身的な",
+        "逸脱した",
+        "挑発的な"
+      ]
+    },
+    {
+      "wordId": "disguise",
+      "distractors": [
+        "嫌悪",
+        "装置",
+        "道案内",
+        "却下"
+      ]
+    },
+    {
+      "wordId": "displaced",
+      "distractors": [
+        "展示された",
+        "不機嫌にさせられた",
+        "分散した",
+        "解雇された"
+      ]
+    },
+    {
+      "wordId": "exploit",
+      "distractors": [
+        "を探検する",
+        "を輸出する",
+        "を爆発させる",
+        "を拡大する"
+      ]
+    },
+    {
+      "wordId": "flee",
+      "distractors": [
+        "飛ぶ",
+        "解放する",
+        "浮かぶ",
+        "震える"
+      ]
+    },
+    {
+      "wordId": "fraud",
+      "distractors": [
+        "偽造",
+        "横領",
+        "誇張",
+        "脅迫"
+      ]
+    },
+    {
+      "wordId": "hardship",
+      "distractors": [
+        "硬さ",
+        "難破",
+        "友情",
+        "出荷"
+      ]
+    },
+    {
+      "wordId": "hazardous",
+      "distractors": [
+        "かすんだ",
+        "行き当たりばったりの",
+        "勇敢な",
+        "頑丈な"
+      ]
+    },
+    {
+      "wordId": "hostage",
+      "distractors": [
+        "宿主",
+        "敵意",
+        "遺産",
+        "大使"
+      ]
+    },
+    {
+      "wordId": "infringement",
+      "distractors": [
+        "基盤整備",
+        "断片",
+        "強化",
+        "賠償"
+      ]
+    },
+    {
+      "wordId": "inmate",
+      "distractors": [
+        "ルームメイト",
+        "移民",
+        "看守",
+        "内部告発者"
+      ]
+    },
+    {
+      "wordId": "intrusive",
+      "distractors": [
+        "直感的な",
+        "内向的な",
+        "攻撃的な",
+        "印象的な"
+      ]
+    },
+    {
+      "wordId": "lurk",
+      "distractors": [
+        "誘惑する",
+        "跳ねる",
+        "輝く",
+        "吠える"
+      ]
+    },
+    {
+      "wordId": "offender",
+      "distractors": [
+        "被害者",
+        "擁護者",
+        "目撃者",
+        "検察官"
+      ]
+    },
+    {
+      "wordId": "perilous",
+      "distractors": [
+        "周辺の",
+        "平行な",
+        "定期的な",
+        "貴重な"
+      ]
+    },
+    {
+      "wordId": "plague",
+      "distractors": [
+        "盗作",
+        "記念額",
+        "洪水",
+        "飢饉"
+      ]
+    },
+    {
+      "wordId": "protest",
+      "distractors": [
+        "保護",
+        "新教徒",
+        "試験",
+        "賛同"
+      ]
+    },
+    {
+      "wordId": "rebel",
+      "distractors": [
+        "お祭り騒ぎ",
+        "模範",
+        "支持者",
+        "亡命者"
+      ]
+    },
+    {
+      "wordId": "refugee",
+      "distractors": [
+        "避難所",
+        "審判",
+        "移民",
+        "巡礼者"
+      ]
+    },
+    {
+      "wordId": "riot",
+      "distractors": [
+        "儀式",
+        "権利",
+        "行進",
+        "日課"
+      ]
+    },
+    {
+      "wordId": "robber",
+      "distractors": [
+        "ゴム",
+        "こそ泥",
+        "密輸業者",
+        "詐欺師"
+      ]
+    },
+    {
+      "wordId": "seize",
+      "distractors": [
+        "をやめる",
+        "を探し求める",
+        "を解放する",
+        "を沸騰させる"
+      ]
+    },
+    {
+      "wordId": "steal",
+      "distractors": [
+        "を操縦する",
+        "を蒸す",
+        "を突き刺す",
+        "を返却する"
+      ]
+    },
+    {
+      "wordId": "strain",
+      "distractors": [
+        "列車",
+        "しみ",
+        "海峡",
+        "遺産"
+      ]
+    },
+    {
+      "wordId": "tackle",
+      "distractors": [
+        "をくすぐる",
+        "を扱う",
+        "を避ける",
+        "を積み上げる"
+      ]
+    },
+    {
+      "wordId": "testimony",
+      "distractors": [
+        "遺言",
+        "式典",
+        "試験",
+        "尋問"
+      ]
+    },
+    {
+      "wordId": "toll",
+      "distractors": [
+        "人形",
+        "高さ",
+        "関税",
+        "報酬"
+      ]
+    },
+    {
+      "wordId": "violent",
+      "distractors": [
+        "バイオリンの",
+        "すみれ色の",
+        "穏やかな",
+        "卑劣な"
+      ]
+    },
+    {
+      "wordId": "wound",
+      "distractors": [
+        "（ねじなどを）巻いた",
+        "木材",
+        "音響",
+        "森"
+      ]
+    },
+    {
+      "wordId": "advent",
+      "distractors": [
+        "冒険",
+        "広告",
+        "進歩",
+        "消滅"
+      ]
+    },
+    {
+      "wordId": "aesthetics",
+      "distractors": [
+        "麻酔薬",
+        "運動競技",
+        "統計学",
+        "倫理学"
+      ]
+    },
+    {
+      "wordId": "affair",
+      "distractors": [
+        "愛情",
+        "公正さ",
+        "見本市",
+        "割り当て"
+      ]
+    },
+    {
+      "wordId": "archaeology",
+      "distractors": [
+        "建築学",
+        "人類学",
+        "地質学",
+        "天文学"
+      ]
+    },
+    {
+      "wordId": "artisan",
+      "distractors": [
+        "芸術家",
+        "党派の支持者",
+        "素人",
+        "弟子"
+      ]
+    },
+    {
+      "wordId": "autobiography",
+      "distractors": [
+        "（他人が書いた）伝記",
+        "自動車史",
+        "履歴書",
+        "日記"
+      ]
+    },
+    {
+      "wordId": "backdrop",
+      "distractors": [
+        "裏口",
+        "逆風",
+        "反動",
+        "結末"
+      ]
+    },
+    {
+      "wordId": "banquet",
+      "distractors": [
+        "毛布",
+        "破産",
+        "花束",
+        "銀行口座"
+      ]
+    },
+    {
+      "wordId": "barbarian",
+      "distractors": [
+        "理髪師",
+        "菜食主義者",
+        "貴族",
+        "開拓者"
+      ]
+    },
+    {
+      "wordId": "biography",
+      "distractors": [
+        "自伝",
+        "生物学",
+        "地理学",
+        "参考文献一覧"
+      ]
+    },
+    {
+      "wordId": "bond",
+      "distractors": [
+        "楽団",
+        "境界線",
+        "溝",
+        "貯金"
+      ]
+    },
+    {
+      "wordId": "bury",
+      "distractors": [
+        "を燃やす",
+        "を運ぶ",
+        "を破裂させる",
+        "を掘り出す"
+      ]
+    },
+    {
+      "wordId": "celebration",
+      "distractors": [
+        "有名人",
+        "加速",
+        "卒業式",
+        "瞑想"
+      ]
+    },
+    {
+      "wordId": "celebrity",
+      "distractors": [
+        "祝典",
+        "セロリ",
+        "貴族",
+        "司会者"
+      ]
+    },
+    {
+      "wordId": "colonial",
+      "distractors": [
+        "大佐の",
+        "巨大な",
+        "田園の",
+        "古典様式の"
+      ]
+    },
+    {
+      "wordId": "compatible",
+      "distractors": [
+        "比較可能な",
+        "同情的な",
+        "競争力のある",
+        "対立する"
+      ]
+    },
+    {
+      "wordId": "conformity",
+      "distractors": [
+        "確認",
+        "快適さ",
+        "反抗",
+        "貢献"
+      ]
+    },
+    {
+      "wordId": "creed",
+      "distractors": [
+        "貪欲",
+        "品種",
+        "信用貸し",
+        "誓い"
+      ]
+    },
+    {
+      "wordId": "custom",
+      "distractors": [
+        "顧客",
+        "衣装",
+        "（個人の）癖",
+        "注文品"
+      ]
+    },
+    {
+      "wordId": "divine",
+      "distractors": [
+        "多様な",
+        "分裂した",
+        "王家の",
+        "独身の"
+      ]
+    },
+    {
+      "wordId": "diverse",
+      "distractors": [
+        "逆方向の",
+        "神聖な",
+        "離婚した",
+        "均質な"
+      ]
+    },
+    {
+      "wordId": "doctrine",
+      "distractors": [
+        "医師団",
+        "公文書",
+        "博士号",
+        "処方箋"
+      ]
+    },
+    {
+      "wordId": "elite",
+      "distractors": [
+        "富裕層",
+        "削除",
+        "電灯",
+        "隠者"
+      ]
+    },
+    {
+      "wordId": "excavation",
+      "distractors": [
+        "避難",
+        "休暇",
+        "例外",
+        "拡張"
+      ]
+    },
+    {
+      "wordId": "expedition",
+      "distractors": [
+        "展示会",
+        "期待",
+        "実験",
+        "追放"
+      ]
+    },
+    {
+      "wordId": "fad",
+      "distractors": [
+        "脂肪",
+        "事実",
+        "伝統",
+        "色あせ"
+      ]
+    },
+    {
+      "wordId": "folk",
+      "distractors": [
+        "外国の",
+        "古代の",
+        "宮廷の",
+        "都会の"
+      ]
+    },
+    {
+      "wordId": "genre",
+      "distractors": [
+        "遺伝子",
+        "世代",
+        "性別",
+        "起源"
+      ]
+    },
+    {
+      "wordId": "harmonization",
+      "distractors": [
+        "和音",
+        "覇権",
+        "交渉",
+        "分裂"
+      ]
+    },
+    {
+      "wordId": "homogeneous",
+      "distractors": [
+        "人道的な",
+        "独創的な",
+        "多様な",
+        "巨大な"
+      ]
+    },
+    {
+      "wordId": "inhabitant",
+      "distractors": [
+        "習慣",
+        "相続人",
+        "抑制剤",
+        "旅行者"
+      ]
+    },
+    {
+      "wordId": "like-minded",
+      "distractors": [
+        "見た目がそっくりな",
+        "心の狭い",
+        "気難しい",
+        "忘れっぽい"
+      ]
+    },
+    {
+      "wordId": "mutual",
+      "distractors": [
+        "中立の",
+        "無言の",
+        "一方的な",
+        "音楽の"
+      ]
+    },
+    {
+      "wordId": "prophet",
+      "distractors": [
+        "利益",
+        "教授",
+        "賢者",
+        "巡礼者"
+      ]
+    },
+    {
+      "wordId": "realm",
+      "distractors": [
+        "現実",
+        "統治",
+        "名声",
+        "巻物"
+      ]
+    },
+    {
+      "wordId": "renaissance",
+      "distractors": [
+        "追憶",
+        "抵抗運動",
+        "辞任",
+        "賠償"
+      ]
+    },
+    {
+      "wordId": "ritual",
+      "distractors": [
+        "権利",
+        "小売り",
+        "撤回",
+        "噂"
+      ]
+    },
+    {
+      "wordId": "sacred",
+      "distractors": [
+        "怖がった",
+        "乏しい",
+        "秘密の",
+        "傷だらけの"
+      ]
+    },
+    {
+      "wordId": "tomb",
+      "distractors": [
+        "子宮",
+        "爆弾",
+        "洞窟",
+        "祭壇"
+      ]
+    },
+    {
+      "wordId": "unite",
+      "distractors": [
+        "をほどく",
+        "を招待する",
+        "を統治する",
+        "を比較する"
+      ]
+    }
   ]
 }
