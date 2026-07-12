@@ -10,6 +10,7 @@ import { formatRate, formatSeconds } from '../lib/format';
 import { speakTerm, stopSpeaking } from '../lib/speech';
 import type { QuizQuestion } from '../lib/quizEngine';
 import { isTimelyCorrect, scoreQuestions } from '../lib/stats';
+import { toWordSequence, type WordNavState } from '../lib/wordNav';
 import type { QuizQuestionResult, SectionData } from '../types';
 import styles from './TestPage.module.css';
 
@@ -151,6 +152,11 @@ type ResultViewProps = {
 const ResultView: FC<ResultViewProps> = ({ section, answers, onRetrySame, onRetryNew }) => {
   const score = scoreQuestions(answers);
   const wrongAnswers = answers.filter((a) => !isTimelyCorrect(a));
+  // 「間違えた単語」リストの表示順を、単語ページの前後移動の並びにする
+  const wrongSequence = toWordSequence(
+    wrongAnswers.map((a) => a.wordId),
+    (id) => dictionary.wordById.has(id),
+  );
   return (
     <div className={styles.result}>
       <header className={styles.resultHeader}>
@@ -176,7 +182,7 @@ const ResultView: FC<ResultViewProps> = ({ section, answers, onRetrySame, onRetr
         ) : (
           <ul className={styles.wrongList}>
             {wrongAnswers.map((a, i) => (
-              <WrongAnswerRow key={`${a.wordId}-${i}`} answer={a} />
+              <WrongAnswerRow key={`${a.wordId}-${i}`} answer={a} navState={{ sequence: wrongSequence }} />
             ))}
           </ul>
         )}
@@ -199,13 +205,13 @@ const ResultView: FC<ResultViewProps> = ({ section, answers, onRetrySame, onRetr
   );
 };
 
-const WrongAnswerRow: FC<{ answer: QuizQuestionResult }> = ({ answer }) => {
+const WrongAnswerRow: FC<{ answer: QuizQuestionResult; navState: WordNavState }> = ({ answer, navState }) => {
   const word = dictionary.wordById.get(answer.wordId);
   if (!word) return null;
   const overtime = answer.correct && answer.timedOut;
   return (
     <li>
-      <Link to={`/words/${word.id}`} className={styles.wrongRow}>
+      <Link to={`/words/${word.id}`} state={navState} className={styles.wrongRow}>
         <span className={overtime ? styles.badgeOvertime : styles.badgeWrong}>{overtime ? '△' : '×'}</span>
         <span className={styles.wrongTerm}>{word.term}</span>
         <span className={styles.wrongMeaning}>{word.senses[0].ja}</span>
