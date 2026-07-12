@@ -1,5 +1,6 @@
 import { useEffect, useMemo, type FC } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
+import { ResultShare } from '../components/ResultShare';
 import { SpeakButton } from '../components/SpeakButton';
 import { TimerBar } from '../components/TimerBar';
 import { dictionary } from '../data/dictionary';
@@ -157,6 +158,19 @@ const ResultView: FC<ResultViewProps> = ({ section, answers, onRetrySame, onRetr
     wrongAnswers.map((a) => a.wordId),
     (id) => dictionary.wordById.has(id),
   );
+  // 出題された英単語の例（先頭いくつか）を共有文に添える
+  const askedTerms = answers
+    .map((a) => dictionary.wordById.get(a.wordId)?.term)
+    .filter((t): t is string => Boolean(t));
+  const exampleTerms = askedTerms.slice(0, 3);
+  const examplePart =
+    exampleTerms.length > 0
+      ? `\n出題単語: ${exampleTerms.join('、')}${askedTerms.length > exampleTerms.length ? ' など' : ''}`
+      : '';
+  const shareText =
+    `#単語侍 で単語テスト「${section.label}」に挑戦！\n` +
+    `${score.total}問中${score.timelyCorrect}問正解（正解率${formatRate(score.timelyCorrect, score.total)}）でした⚔️` +
+    examplePart;
   return (
     <div className={styles.result}>
       <header className={styles.resultHeader}>
@@ -187,6 +201,8 @@ const ResultView: FC<ResultViewProps> = ({ section, answers, onRetrySame, onRetr
           </ul>
         )}
       </section>
+
+      <ResultShare text={shareText} />
 
       <div className={styles.resultActions}>
         <button type="button" className={styles.retryBtn} onClick={onRetrySame}>
