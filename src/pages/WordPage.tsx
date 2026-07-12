@@ -6,6 +6,7 @@ import { dictionary } from '../data/dictionary';
 import { useWordStatus, type WordStatus } from '../hooks/useWordStatus';
 import { formatDateTime, formatRate } from '../lib/format';
 import { findTermSpan } from '../lib/highlight';
+import { sectionBadge } from '../lib/sectionColor';
 import { speakTerm, stopSpeaking } from '../lib/speech';
 import { DEFAULT_WORD_BACK, readNavOrigin, readNavSequence, type WordNavState } from '../lib/wordNav';
 import type { Word } from '../types';
@@ -42,6 +43,8 @@ export const WordPage: FC = () => {
   // 前後移動が辿るリスト上での現在位置と前後の単語
   const nav = resolveNav(sequence, word.id);
   const section = dictionary.sectionByWordId.get(word.id);
+  const sectionIndex = section ? dictionary.sections.findIndex((s) => s.id === section.id) : -1;
+  const badge = section ? sectionBadge(sectionIndex, dictionary.sections.length) : null;
 
   // 前後移動でも並びと遷移元を引き継ぎ、リストを辿り続けても戻る先が変わらないようにする
   const goToWord = (target: Word) => {
@@ -58,7 +61,11 @@ export const WordPage: FC = () => {
         <Link to={back.to} className={styles.backLink}>
           ‹ {back.label}
         </Link>
-        {section && <span className={styles.sectionChip}>{section.label}</span>}
+        {section && badge && (
+          <span className={styles.sectionChip} style={{ backgroundColor: badge.bg, color: badge.fg }}>
+            {section.label}
+          </span>
+        )}
       </div>
 
       <section className={styles.card}>

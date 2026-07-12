@@ -18,12 +18,13 @@
 }
 
 .sectionChip {
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  color: var(--color-primary);
-  background: var(--color-primary-soft);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  /* background-color と color（白/黒）はセクションごとに JS から指定する */
   border-radius: 999px;
-  padding: 3px 10px;
+  padding: 5px 14px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 1px 3px rgba(18, 25, 46, 0.18);
 }
 
 .card {
