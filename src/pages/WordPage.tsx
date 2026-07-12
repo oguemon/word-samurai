@@ -7,7 +7,13 @@ import { useWordStatus, type WordStatus } from '../hooks/useWordStatus';
 import { formatDateTime, formatRate } from '../lib/format';
 import { findTermSpan } from '../lib/highlight';
 import { speakTerm, stopSpeaking } from '../lib/speech';
-import { neighborIds, readNavSequence } from '../lib/wordNav';
+import {
+  DEFAULT_WORD_BACK,
+  neighborIds,
+  readNavOrigin,
+  readNavSequence,
+  type WordNavState,
+} from '../lib/wordNav';
 import type { Word } from '../types';
 import styles from './WordPage.module.css';
 
@@ -20,6 +26,9 @@ export const WordPage: FC = () => {
 
   // この単語を開いた元のリストの並び。無ければ辞書順にフォールバックする
   const sequence = readNavSequence(location.state);
+  // 遷移元（左上の戻るリンク）。無ければ単語一覧へ戻る
+  const origin = readNavOrigin(location.state);
+  const back = origin ?? DEFAULT_WORD_BACK;
 
   // 単語の表示時に自動で発音する（OSにブロックされる環境でも🔊ボタンで再生できる）
   useEffect(() => {
@@ -39,16 +48,20 @@ export const WordPage: FC = () => {
   const { prevWord, nextWord } = resolveNeighbors(sequence, word.id);
   const section = dictionary.sectionByWordId.get(word.id);
 
-  // 前後移動でも同じ並びを引き継ぎ、リストを辿り続けられるようにする
+  // 前後移動でも並びと遷移元を引き継ぎ、リストを辿り続けても戻る先が変わらないようにする
   const goToWord = (target: Word) => {
-    navigate(`/words/${target.id}`, sequence ? { state: { sequence } } : undefined);
+    const state: WordNavState = {};
+    if (sequence) state.sequence = sequence;
+    if (origin) state.origin = origin;
+    const carry = sequence !== null || origin !== null;
+    navigate(`/words/${target.id}`, carry ? { state } : undefined);
   };
 
   return (
     <div className={styles.page}>
       <div className={styles.topRow}>
-        <Link to="/" className={styles.backLink}>
-          ‹ 単語一覧
+        <Link to={back.to} className={styles.backLink}>
+          ‹ {back.label}
         </Link>
         {section && <span className={styles.sectionChip}>{section.label}</span>}
       </div>

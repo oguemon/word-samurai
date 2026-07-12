@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { neighborIds, readNavSequence, toWordSequence } from './wordNav';
+import { neighborIds, readNavOrigin, readNavSequence, toWordSequence } from './wordNav';
 
 describe('readNavSequence', () => {
   it('sequence が文字列配列なら取り出す', () => {
@@ -16,6 +16,23 @@ describe('readNavSequence', () => {
     expect(readNavSequence({})).toBeNull();
     expect(readNavSequence({ sequence: [] })).toBeNull();
     expect(readNavSequence('a,b')).toBeNull();
+  });
+});
+
+describe('readNavOrigin', () => {
+  it('label と to が文字列なら取り出す', () => {
+    expect(readNavOrigin({ origin: { label: '履歴＞テスト', to: '/history?tab=tests' } })).toEqual({
+      label: '履歴＞テスト',
+      to: '/history?tab=tests',
+    });
+  });
+
+  it('origin が無い・型違いなら null', () => {
+    expect(readNavOrigin(null)).toBeNull();
+    expect(readNavOrigin({})).toBeNull();
+    expect(readNavOrigin({ origin: { label: '履歴' } })).toBeNull();
+    expect(readNavOrigin({ origin: { label: 1, to: '/x' } })).toBeNull();
+    expect(readNavOrigin({ sequence: ['a'] })).toBeNull();
   });
 });
 
