@@ -1,5 +1,5 @@
 import { useEffect, type FC, type ReactNode } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { PosBadge } from '../components/PosBadge';
 import { SpeakButton } from '../components/SpeakButton';
 import { dictionary } from '../data/dictionary';
@@ -7,13 +7,19 @@ import { useWordStatus, type WordStatus } from '../hooks/useWordStatus';
 import { formatDateTime, formatRate } from '../lib/format';
 import { findTermSpan } from '../lib/highlight';
 import { speakTerm, stopSpeaking } from '../lib/speech';
+import { neighborIds, readNavSequence } from '../lib/wordNav';
+import type { Word } from '../types';
 import styles from './WordPage.module.css';
 
 export const WordPage: FC = () => {
   const { wordId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const word = wordId ? dictionary.wordById.get(wordId) : undefined;
   const status = useWordStatus(word);
+
+  // この単語を開いた元のリストの並び。無ければ辞書順にフォールバックする
+  const sequence = readNavSequence(location.state);
 
   // 単語の表示時に自動で発音する（OSにブロックされる環境でも🔊ボタンで再生できる）
   useEffect(() => {
@@ -30,10 +36,13 @@ export const WordPage: FC = () => {
     );
   }
 
-  const index = dictionary.indexById.get(word.id)!;
-  const prevWord = index > 0 ? dictionary.words[index - 1] : undefined;
-  const nextWord = index < dictionary.words.length - 1 ? dictionary.words[index + 1] : undefined;
+  const { prevWord, nextWord } = resolveNeighbors(sequence, word.id);
   const section = dictionary.sectionByWordId.get(word.id);
+
+  // 前後移動でも同じ並びを引き継ぎ、リストを辿り続けられるようにする
+  const goToWord = (target: Word) => {
+    navigate(`/words/${target.id}`, sequence ? { state: { sequence } } : undefined);
+  };
 
   return (
     <div className={styles.page}>
@@ -86,7 +95,7 @@ export const WordPage: FC = () => {
           type="button"
           className={styles.pagerBtn}
           disabled={!prevWord}
-          onClick={() => prevWord && navigate(`/words/${prevWord.id}`)}
+          onClick={() => prevWord && goToWord(prevWord)}
         >
           ‹ 前の単語
         </button>
@@ -94,13 +103,38 @@ export const WordPage: FC = () => {
           type="button"
           className={styles.pagerBtn}
           disabled={!nextWord}
-          onClick={() => nextWord && navigate(`/words/${nextWord.id}`)}
+          onClick={() => nextWord && goToWord(nextWord)}
         >
           次の単語 ›
         </button>
       </div>
     </div>
   );
+};
+
+/**
+ * 前後の単語を求める。開いた元のリストの並び（sequence）があればそれに沿い、
+ * 無い・その単語が含まれない場合は辞書全体の並びにフォールバックする。
+ */
+const resolveNeighbors = (
+  sequence: string[] | null,
+  wordId: string,
+): { prevWord?: Word; nextWord?: Word } => {
+  if (sequence) {
+    const neighbors = neighborIds(sequence, wordId);
+    if (neighbors) {
+      return {
+        prevWord: neighbors.prevId ? dictionary.wordById.get(neighbors.prevId) : undefined,
+        nextWord: neighbors.nextId ? dictionary.wordById.get(neighbors.nextId) : undefined,
+      };
+    }
+  }
+  const index = dictionary.indexById.get(wordId);
+  if (index === undefined) return {};
+  return {
+    prevWord: index > 0 ? dictionary.words[index - 1] : undefined,
+    nextWord: index < dictionary.words.length - 1 ? dictionary.words[index + 1] : undefined,
+  };
 };
 
 /** 例文中の「その単語」に当たる箇所（活用形を含む）へ下線を引いて返す */
