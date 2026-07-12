@@ -172,6 +172,33 @@
   opacity: 0.85;
 }
 
+.retryAltBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  width: 100%;
+  min-height: 52px;
+  padding: 6px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 700;
+  text-align: center;
+}
+
+.retryAltBtn:active {
+  background: var(--color-primary-soft);
+}
+
+.retryAltNote {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
 .secondaryBtn {
   display: flex;
   align-items: center;

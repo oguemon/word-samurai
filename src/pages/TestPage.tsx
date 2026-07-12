@@ -26,7 +26,14 @@ export const TestPage: FC = () => {
 
   if (!section) return <Navigate to="/test" replace />;
   if (session.finished) {
-    return <ResultView section={section} answers={session.answers} onRetry={session.retry} />;
+    return (
+      <ResultView
+        section={section}
+        answers={session.answers}
+        onRetrySame={session.retrySame}
+        onRetryNew={session.retryNew}
+      />
+    );
   }
   if (!session.question) return <Navigate to="/test" replace />;
   return (
@@ -128,10 +135,11 @@ const FeedbackPanel: FC<{ feedback: QuizFeedback; onAdvance: () => void }> = ({ 
 type ResultViewProps = {
   section: SectionData;
   answers: QuizQuestionResult[];
-  onRetry: () => void;
+  onRetrySame: () => void;
+  onRetryNew: () => void;
 };
 
-const ResultView: FC<ResultViewProps> = ({ section, answers, onRetry }) => {
+const ResultView: FC<ResultViewProps> = ({ section, answers, onRetrySame, onRetryNew }) => {
   const score = scoreQuestions(answers);
   const wrongAnswers = answers.filter((a) => !isTimelyCorrect(a));
   return (
@@ -166,9 +174,13 @@ const ResultView: FC<ResultViewProps> = ({ section, answers, onRetry }) => {
       </section>
 
       <div className={styles.resultActions}>
-        <button type="button" className={styles.retryBtn} onClick={onRetry}>
-          もう一度
-          <span className={styles.retryNote}>出題順は変わります</span>
+        <button type="button" className={styles.retryBtn} onClick={onRetrySame}>
+          もう一度解く
+          <span className={styles.retryNote}>同じ問題・同じ出題順</span>
+        </button>
+        <button type="button" className={styles.retryAltBtn} onClick={onRetryNew}>
+          さらに解く
+          <span className={styles.retryAltNote}>別の単語でテスト</span>
         </button>
         <Link to="/test" className={styles.secondaryBtn}>
           セクション選択へ

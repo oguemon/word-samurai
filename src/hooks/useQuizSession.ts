@@ -27,7 +27,10 @@ export type QuizSessionState = {
   startAt: number | null;
   handleChoice: (choiceIndex: number) => void;
   advance: () => void;
-  retry: () => void;
+  /** 同じ出題内容・出題順のままもう一度解き直す */
+  retrySame: () => void;
+  /** 同じセクションから単語を再抽選して解き直す */
+  retryNew: () => void;
 };
 
 /**
@@ -97,14 +100,24 @@ export const useQuizSession = (section: SectionData | undefined): QuizSessionSta
     setFeedback({ selectedIndex: choiceIndex, correct, timedOut, elapsedMs });
   };
 
-  const retry = () => {
-    if (!section) return;
+  // 出題内容はそのままに、進行状況だけを初期化する
+  const resetProgress = () => {
     recordedRef.current = false;
-    setQuiz(buildQuiz(section.words, dictionary.distractorsByWordId));
     setIndex(0);
     setAnswers([]);
     setFeedback(null);
     setFinished(false);
+  };
+
+  const retrySame = () => {
+    if (!section) return;
+    resetProgress();
+  };
+
+  const retryNew = () => {
+    if (!section) return;
+    setQuiz(buildQuiz(section.words, dictionary.distractorsByWordId));
+    resetProgress();
   };
 
   return {
@@ -117,6 +130,7 @@ export const useQuizSession = (section: SectionData | undefined): QuizSessionSta
     startAt,
     handleChoice,
     advance,
-    retry,
+    retrySame,
+    retryNew,
   };
 };
