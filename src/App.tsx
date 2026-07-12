@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { AppHeader } from './components/AppHeader';
 import { BottomNav } from './components/BottomNav';
 import { HistoryPage } from './pages/HistoryPage';
 import { TestPage } from './pages/TestPage';
@@ -12,6 +13,7 @@ const App: FC = () => {
   return (
     <HashRouter>
       <div className={styles.app}>
+        <AppHeader />
         <main className={styles.main}>
           <Routes>
             <Route path="/" element={<TopPage />} />

@@ -46,3 +46,10 @@ export const FREQUENT_MISS_MAX_RATE = 0.6;
 export const WEAK_SECTION_ID = 'weak';
 /** 「よく間違える単語」仮想セクションの表示名 */
 export const WEAK_SECTION_LABEL = 'よく間違える単語';
+
+/** サービス名 */
+export const SERVICE_NAME = '単語侍';
+/** 公開URL。SNS共有リンクなどで使う。変更するときはここだけ直す（一元管理） */
+export const SHARE_URL = 'http://word-samurai.oguemon.com/';
+/** 共有時に添えるデフォルト文言 */
+export const SHARE_TEXT = '単語侍｜英単語をテストで鍛える単語帳アプリ';

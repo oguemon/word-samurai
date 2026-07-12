@@ -1,0 +1,51 @@
+.share {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: transform 0.08s ease;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.x {
+  background: #000000;
+}
+
+.line {
+  background: #06c755;
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.copy {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.copied {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
