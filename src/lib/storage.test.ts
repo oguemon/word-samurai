@@ -27,12 +27,21 @@ describe('AppStorage.recordView', () => {
     expect(s.getViewLog()).toHaveLength(2);
   });
 
-  it('別の単語を挟めばデデュープ窓内でも記録する', () => {
+  it('別の単語を挟んで往復しても、窓内なら記録しない（前後移動対策）', () => {
     const s = new AppStorage({ backing: new MemoryStorage() });
     s.recordView('a', 1000);
     s.recordView('b', 1200);
-    expect(s.recordView('a', 1400)).toBe(1000);
-    expect(s.getViewLog()).toHaveLength(3);
+    // a・b とも直近の閲覧から窓内なので、行ったり来たりしても回数は増えない
+    expect(s.recordView('a', 1400)).toBeNull();
+    expect(s.recordView('b', 1600)).toBeNull();
+    expect(s.getViewLog().map((e) => e.wordId)).toEqual(['a', 'b']);
+  });
+
+  it('窓を過ぎれば同一単語を再び記録する', () => {
+    const s = new AppStorage({ backing: new MemoryStorage() });
+    s.recordView('a', 1000);
+    expect(s.recordView('a', 1000 + VIEW_DEDUPE_MS)).toBe(1000);
+    expect(s.getViewLog()).toHaveLength(2);
   });
 
   it('保持期間と件数の上限で古いログを削除する', () => {

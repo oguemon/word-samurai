@@ -112,17 +112,17 @@ export class AppStorage {
 
   /**
    * 閲覧を記録し、「最後に見た日時（今回の閲覧を除く）」を返す。
-   * 直近の記録が同じ単語かつ VIEW_DEDUPE_MS 以内なら重複とみなして追記しない
-   * （前後移動の連打や React StrictMode の二重実行への対策）。
+   * 同じ単語を直近見てから VIEW_DEDUPE_MS 以内の再閲覧は重複とみなして追記しない。
+   * 直前のログではなくその単語自身の最終閲覧時刻で判定するため、別の単語を挟んで
+   * 前後移動で往復しても回数は増えない（React StrictMode の二重実行対策も兼ねる）。
    */
   recordView(wordId: string, at: number): number | null {
     const log = this.getViewLog();
     const stats = this.getWordStats();
-    const last = log[log.length - 1];
     const existing = stats[wordId];
 
-    if (last && last.wordId === wordId && at - last.at < VIEW_DEDUPE_MS) {
-      return existing?.previousViewedAt ?? null;
+    if (existing && at - existing.lastViewedAt < VIEW_DEDUPE_MS) {
+      return existing.previousViewedAt;
     }
 
     const previousViewedAt = existing ? existing.lastViewedAt : null;

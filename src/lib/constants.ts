@@ -12,8 +12,12 @@ export const AUTO_ADVANCE_DELAY_MS = 700;
 export const DAY_MS = 24 * 60 * 60 * 1000;
 export const WEEK_MS = 7 * DAY_MS;
 
-/** 同一単語の連続閲覧を1回の閲覧とみなす窓（StrictMode の二重実行対策を兼ねる） */
-export const VIEW_DEDUPE_MS = 2000;
+/**
+ * 同一単語を直近に見てから、この時間内の再閲覧は履歴に記録しない。
+ * 前後移動で同じ単語を往復しても閲覧回数が積み上がらないようにする狙い
+ * （React StrictMode の二重実行対策も兼ねる）。
+ */
+export const VIEW_DEDUPE_MS = 60 * 1000;
 export const VIEW_LOG_MAX_AGE_MS = 90 * DAY_MS;
 export const VIEW_LOG_MAX_COUNT = 20000;
 export const QUIZ_LOG_MAX_AGE_MS = 180 * DAY_MS;
