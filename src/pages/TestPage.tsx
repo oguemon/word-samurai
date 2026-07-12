@@ -1,4 +1,4 @@
-import { useMemo, type FC } from 'react';
+import { useEffect, useMemo, type FC } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { SpeakButton } from '../components/SpeakButton';
 import { TimerBar } from '../components/TimerBar';
@@ -7,6 +7,7 @@ import { useQuizSession, type QuizFeedback } from '../hooks/useQuizSession';
 import { useWeakSection } from '../hooks/useWeakSection';
 import { WEAK_SECTION_ID } from '../lib/constants';
 import { formatRate, formatSeconds } from '../lib/format';
+import { speakTerm, stopSpeaking } from '../lib/speech';
 import type { QuizQuestion } from '../lib/quizEngine';
 import { isTimelyCorrect, scoreQuestions } from '../lib/stats';
 import type { QuizQuestionResult, SectionData } from '../types';
@@ -70,45 +71,53 @@ const QuestionView: FC<QuestionViewProps> = ({
   startAt,
   onChoice,
   onAdvance,
-}) => (
-  <div className={styles.page}>
-    <header className={styles.quizHeader}>
-      <span className={styles.quizSection}>{section.label}</span>
-      <span className={styles.progress}>
-        {questionNumber} / {totalCount}
-      </span>
-      <Link to="/test" className={styles.quitLink}>
-        中断
-      </Link>
-    </header>
+}) => {
+  // 出題が切り替わるたびに単語を自動で発音する（WordPage と同じ挙動）
+  useEffect(() => {
+    speakTerm(question.word.term);
+    return stopSpeaking;
+  }, [question.word.id]);
 
-    <TimerBar startAt={startAt} frozen={feedback !== null} />
+  return (
+    <div className={styles.page}>
+      <header className={styles.quizHeader}>
+        <span className={styles.quizSection}>{section.label}</span>
+        <span className={styles.progress}>
+          {questionNumber} / {totalCount}
+        </span>
+        <Link to="/test" className={styles.quitLink}>
+          中断
+        </Link>
+      </header>
 
-    <div className={styles.termBox}>
-      <div className={styles.quizTermRow}>
-        <span className={styles.quizTerm}>{question.word.term}</span>
-        <SpeakButton term={question.word.term} />
+      <TimerBar startAt={startAt} frozen={feedback !== null} />
+
+      <div className={styles.termBox}>
+        <div className={styles.quizTermRow}>
+          <span className={styles.quizTerm}>{question.word.term}</span>
+          <SpeakButton term={question.word.term} />
+        </div>
+        {question.word.phonetic && <span className={styles.quizPhonetic}>{question.word.phonetic}</span>}
       </div>
-      {question.word.phonetic && <span className={styles.quizPhonetic}>{question.word.phonetic}</span>}
-    </div>
 
-    <div className={styles.choices}>
-      {question.choices.map((choice, i) => (
-        <button
-          key={i}
-          type="button"
-          className={choiceClassName(i, question.correctIndex, feedback)}
-          onClick={() => onChoice(i)}
-          disabled={feedback !== null}
-        >
-          {choice}
-        </button>
-      ))}
-    </div>
+      <div className={styles.choices}>
+        {question.choices.map((choice, i) => (
+          <button
+            key={i}
+            type="button"
+            className={choiceClassName(i, question.correctIndex, feedback)}
+            onClick={() => onChoice(i)}
+            disabled={feedback !== null}
+          >
+            {choice}
+          </button>
+        ))}
+      </div>
 
-    {feedback && <FeedbackPanel feedback={feedback} onAdvance={onAdvance} />}
-  </div>
-);
+      {feedback && <FeedbackPanel feedback={feedback} onAdvance={onAdvance} />}
+    </div>
+  );
+};
 
 const choiceClassName = (choiceIndex: number, correctIndex: number, feedback: QuizFeedback | null): string => {
   if (!feedback) return styles.choice;
