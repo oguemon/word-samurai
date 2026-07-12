@@ -7,13 +7,7 @@ import { useWordStatus, type WordStatus } from '../hooks/useWordStatus';
 import { formatDateTime, formatRate } from '../lib/format';
 import { findTermSpan } from '../lib/highlight';
 import { speakTerm, stopSpeaking } from '../lib/speech';
-import {
-  DEFAULT_WORD_BACK,
-  neighborIds,
-  readNavOrigin,
-  readNavSequence,
-  type WordNavState,
-} from '../lib/wordNav';
+import { DEFAULT_WORD_BACK, readNavOrigin, readNavSequence, type WordNavState } from '../lib/wordNav';
 import type { Word } from '../types';
 import styles from './WordPage.module.css';
 
@@ -45,7 +39,8 @@ export const WordPage: FC = () => {
     );
   }
 
-  const { prevWord, nextWord } = resolveNeighbors(sequence, word.id);
+  // 前後移動が辿るリスト上での現在位置と前後の単語
+  const nav = resolveNav(sequence, word.id);
   const section = dictionary.sectionByWordId.get(word.id);
 
   // 前後移動でも並びと遷移元を引き継ぎ、リストを辿り続けても戻る先が変わらないようにする
@@ -103,50 +98,67 @@ export const WordPage: FC = () => {
         </dl>
       </section>
 
-      <div className={styles.pager}>
-        <button
-          type="button"
-          className={styles.pagerBtn}
-          disabled={!prevWord}
-          onClick={() => prevWord && goToWord(prevWord)}
-        >
-          ‹ 前の単語
-        </button>
-        <button
-          type="button"
-          className={styles.pagerBtn}
-          disabled={!nextWord}
-          onClick={() => nextWord && goToWord(nextWord)}
-        >
-          次の単語 ›
-        </button>
+      <div className={styles.pagerArea}>
+        {nav.total > 0 && (
+          <p className={styles.pagerPosition}>
+            {nav.total}語中 <span className={styles.pagerCurrent}>{nav.index}</span>番目
+          </p>
+        )}
+        <div className={styles.pager}>
+          <button
+            type="button"
+            className={styles.pagerBtn}
+            disabled={!nav.prevWord}
+            onClick={() => nav.prevWord && goToWord(nav.prevWord)}
+          >
+            ‹ 前の単語
+          </button>
+          <button
+            type="button"
+            className={styles.pagerBtn}
+            disabled={!nav.nextWord}
+            onClick={() => nav.nextWord && goToWord(nav.nextWord)}
+          >
+            次の単語 ›
+          </button>
+        </div>
       </div>
     </div>
   );
 };
 
+type WordNavInfo = {
+  /** リスト内での位置（1始まり）。単語が見つからなければ 0 */
+  index: number;
+  /** リストの総数 */
+  total: number;
+  prevWord?: Word;
+  nextWord?: Word;
+};
+
 /**
- * 前後の単語を求める。開いた元のリストの並び（sequence）があればそれに沿い、
+ * 現在位置と前後の単語を求める。開いた元のリストの並び（sequence）があればそれに沿い、
  * 無い・その単語が含まれない場合は辞書全体の並びにフォールバックする。
  */
-const resolveNeighbors = (
-  sequence: string[] | null,
-  wordId: string,
-): { prevWord?: Word; nextWord?: Word } => {
+const resolveNav = (sequence: string[] | null, wordId: string): WordNavInfo => {
   if (sequence) {
-    const neighbors = neighborIds(sequence, wordId);
-    if (neighbors) {
+    const i = sequence.indexOf(wordId);
+    if (i !== -1) {
       return {
-        prevWord: neighbors.prevId ? dictionary.wordById.get(neighbors.prevId) : undefined,
-        nextWord: neighbors.nextId ? dictionary.wordById.get(neighbors.nextId) : undefined,
+        index: i + 1,
+        total: sequence.length,
+        prevWord: i > 0 ? dictionary.wordById.get(sequence[i - 1]) : undefined,
+        nextWord: i < sequence.length - 1 ? dictionary.wordById.get(sequence[i + 1]) : undefined,
       };
     }
   }
-  const index = dictionary.indexById.get(wordId);
-  if (index === undefined) return {};
+  const i = dictionary.indexById.get(wordId);
+  if (i === undefined) return { index: 0, total: 0 };
   return {
-    prevWord: index > 0 ? dictionary.words[index - 1] : undefined,
-    nextWord: index < dictionary.words.length - 1 ? dictionary.words[index + 1] : undefined,
+    index: i + 1,
+    total: dictionary.words.length,
+    prevWord: i > 0 ? dictionary.words[i - 1] : undefined,
+    nextWord: i < dictionary.words.length - 1 ? dictionary.words[i + 1] : undefined,
   };
 };
 
