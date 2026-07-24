@@ -13,11 +13,13 @@ export const formatMonthDay = (t: number): string => {
   return `${d.getMonth() + 1}月${d.getDate()}日`;
 };
 
-/** 日別グループの見出し: 今日 / 昨日 / M月D日（年が違えば YYYY年M月D日） */
+/** 日別グループの見出し: 今日 / 昨日 / N日前（10日前まで） / M月D日（年が違えば YYYY年M月D日） */
 export const formatDayLabel = (day: number, now: number): string => {
   const today = startOfDay(now);
   if (day === today) return '今日';
   if (day === today - DAY_MS) return '昨日';
+  const daysAgo = Math.round((today - day) / DAY_MS);
+  if (daysAgo >= 2 && daysAgo <= 10) return `${daysAgo}日前`;
   const d = new Date(day);
   const yearNow = new Date(now).getFullYear();
   return d.getFullYear() === yearNow ? formatMonthDay(day) : `${d.getFullYear()}年${formatMonthDay(day)}`;
