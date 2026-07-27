@@ -19,6 +19,13 @@
   --color-warning: #b26a11;
   --color-warning-soft: #fdf1df;
 
+  /* ヒートマップの濃淡（0=学習なし → 4=最も多い）。--color-primary を基準に段階を作る */
+  --color-heat-0: #e9ecf4;
+  --color-heat-1: #c9d6f7;
+  --color-heat-2: #93aef0;
+  --color-heat-3: #5a80e0;
+  --color-heat-4: #3056d3;
+
   --radius-md: 10px;
   --radius-lg: 14px;
   --shadow-card: 0 1px 2px rgba(18, 25, 46, 0.06), 0 2px 8px rgba(18, 25, 46, 0.04);

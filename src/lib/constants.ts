@@ -36,6 +36,13 @@ export const WEAK_LIMIT = 20;
 /** 「最近のテスト結果」の表示件数 */
 export const RECENT_SESSIONS_LIMIT = 10;
 
+/** 学習履歴ページ・時間帯×曜日ヒートマップの対象週数 */
+export const STUDY_HEATMAP_WEEKS = 4;
+/** 学習履歴ページ・日別グラフ（単語数／テスト）の対象日数 */
+export const STUDY_HISTORY_DAYS = 30;
+/** ヒートマップの濃さの段数（0＝学習なしを除く） */
+export const HEAT_LEVELS = 4;
+
 /** 「よく間違える単語」: 出題済み単語数に対する抽出割合（正答率の下位20%） */
 export const FREQUENT_MISS_RATIO = 0.2;
 /** 「よく間違える単語」の最大語数 */

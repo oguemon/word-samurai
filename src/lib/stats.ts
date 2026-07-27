@@ -17,6 +17,14 @@ export const startOfDay = (t: number): number => {
   return d.getTime();
 };
 
+/** n日後（負なら n日前）の 0:00。DAY_MS の加算だとサマータイムのある地域でずれるため Date で計算する */
+export const addDays = (t: number, n: number): number => {
+  const d = new Date(t);
+  d.setDate(d.getDate() + n);
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
+};
+
 export type DayViewGroup = {
   /** その日の 0:00（epoch ms） */
   day: number;

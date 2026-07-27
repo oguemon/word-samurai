@@ -21,6 +21,12 @@ const TABS = [
     label: '履歴',
     isActive: (path: string) => path.startsWith('/history'),
   },
+  {
+    to: '/stats',
+    icon: '📊',
+    label: '学習履歴',
+    isActive: (path: string) => path.startsWith('/stats'),
+  },
 ];
 
 export const BottomNav: FC = () => {

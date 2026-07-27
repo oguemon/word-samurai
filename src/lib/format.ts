@@ -13,6 +13,12 @@ export const formatMonthDay = (t: number): string => {
   return `${d.getMonth() + 1}月${d.getDate()}日`;
 };
 
+/** グラフの軸ラベルなど、幅が限られる場所向けの短い日付表示: 7/26 */
+export const formatMonthDayShort = (t: number): string => {
+  const d = new Date(t);
+  return `${d.getMonth() + 1}/${d.getDate()}`;
+};
+
 /** 日別グループの見出し: 今日 / 昨日 / N日前（10日前まで） / M月D日（年が違えば YYYY年M月D日） */
 export const formatDayLabel = (day: number, now: number): string => {
   const today = startOfDay(now);
